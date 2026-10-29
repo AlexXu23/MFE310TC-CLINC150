@@ -1,14 +1,13 @@
 {
   "snapshot_date": "2026-10-29",
-  "status": "Prepared locally; publication and checkpoint access pending",
-  "repository_url": null,
-  "commit_sha": null,
+  "status": "Code/results published and publicly readable; separate checkpoint access pending",
+  "repository_url": "https://github.com/AlexXu23/MFE310TC-CLINC150",
+  "commit_sha": "fdd333f78425d1f5147d36483d424f8c5623ec9c",
   "checkpoint_release_url": null,
   "local_gpu_exception": "User-confirmed in original project documentation; current report states supervisor-confirmed exception.",
   "remaining": [
-    "Choose GitHub repository and marker access/visibility",
-    "Publish indexed assets or an agreed minimum inference bundle",
-    "Insert actual repository URL and assessed commit into final report appendix",
-    "Freeze matching repository/ZIP after final checks"
-  ]
+    "Provide access to indexed checkpoints if fresh inference is required; the compact snapshot supports CSV result auditing."
+  ],
+  "visibility": "public",
+  "commit_sha_role": "Original assessed code/results commit; later documentation-only commit is recorded in the accompanying finalization receipt."
 }

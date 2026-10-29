@@ -101,8 +101,15 @@ Students remain responsible for final interpretation and contribution statements
 
 ## GitHub and assessed snapshot
 
-This directory is ready for repository review; it has not been uploaded.
-The repository URL, visibility and checkpoint-access route are pending.
-Once published, record the actual repository URL and commit in the report
-appendix and submission record, and regenerate the ZIP from that same version.
-The submitted archive must match the assessed repository state.
+The code/results are published in the public repository
+[https://github.com/AlexXu23/MFE310TC-CLINC150](https://github.com/AlexXu23/MFE310TC-CLINC150). The original assessed code and measured results were
+first published in commit [fdd333f](https://github.com/AlexXu23/MFE310TC-CLINC150/tree/fdd333f78425d1f5147d36483d424f8c5623ec9c).
+The subsequent publication-metadata update changes documentation and manifests;
+experimental code, prediction CSVs and measured results remain unchanged.
+
+The final ZIP preserves the repository file bytes. Its accompanying
+`GITHUB_FINALIZATION_RECEIPT.json` records the final repository commit and ZIP
+SHA256 without requiring a self-referential commit hash inside this repository.
+The report appendix should link to that final repository commit.
+Checkpoint/feature-cache access remains pending; see `docs/ASSET_ACCESS.md`.
+CSV result auditing works directly from this repository and ZIP.

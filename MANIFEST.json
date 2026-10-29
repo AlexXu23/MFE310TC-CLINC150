@@ -6619,8 +6619,8 @@
     },
     {
       "path": "docs/GITHUB_AND_SUBMISSION.md",
-      "bytes": 1126,
-      "sha256": "6b0908ed4a276f3a79e4a6027e17a79079f46518cb5082dc2f7c1487ec1350bc"
+      "bytes": 1458,
+      "sha256": "48b0ec07b2510d0e0ddae489952b72c3dd7310745108cd5a72fd9a63bf05dea2"
     },
     {
       "path": "docs/PROVENANCE.md",
@@ -6673,9 +6673,14 @@
       "sha256": "dc5e58801fbb26a98fe5751a4902aa3593b003b3b6d753ba608657454739587a"
     },
     {
+      "path": "qa/github_upload_verification.json",
+      "bytes": 680,
+      "sha256": "be8ff5d10f9884adb53a5bfa87fdc2d6de0c3f49e96b6a38b0b3b9e5119c6e7f"
+    },
+    {
       "path": "README.md",
-      "bytes": 6173,
-      "sha256": "62b6a944a8a2af9a7c53ed345f1412b760801938499a0d1e7b9129011e906383"
+      "bytes": 6742,
+      "sha256": "829bb4c35e8e30279584626322df0461966063690c3e778ec93a58f992601739"
     },
     {
       "path": "report_evidence/augmentation_effects_en.png",
@@ -6699,8 +6704,8 @@
     },
     {
       "path": "SUBMISSION_STATUS.json",
-      "bytes": 629,
-      "sha256": "be96d01a9658de37a66628220177cce5accdf2e3b0fc0e43b6e95c35708af127"
+      "bytes": 764,
+      "sha256": "6b8ada79aedc4d0361d8ab4416bc4525d9e9bcf97f5f27cde9ec3b858cfbf2be"
     },
     {
       "path": "tools/bundle_assets.py",
