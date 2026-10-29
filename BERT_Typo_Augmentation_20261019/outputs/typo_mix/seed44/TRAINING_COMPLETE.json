@@ -1,0 +1,23 @@
+{
+  "arm": "typo_mix",
+  "seed": 44,
+  "epochs": 1,
+  "presentations": 15000,
+  "optimizer_updates": 938,
+  "train_precision": "bfloat16 autocast, float32 parameters",
+  "inputs_frozen_sha256": "8700a1fafe4ed73e1cec59e0f363008eb635fc031310c2403a8a9f13dda1d282",
+  "mean_batch_loss": 0.853715453320729,
+  "elapsed_seconds": 73.625,
+  "peak_allocated_gpu_bytes": 2222103040,
+  "completed_at": "2026-10-19T19:06:16.520005+08:00",
+  "output_hashes": {
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/final_model/config.json": "f3f35899c8a299efd58e52f1919390525b9208d2db35dbe73cbf12ee2325f89c",
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/final_model/model.safetensors": "9a50249926b97ae9dd188d2cd821631ac77b14dcb84b77e3fddb3a9882d673e0",
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/final_model/special_tokens_map.json": "5aa43c2f985a25296d5a5ce621c2f77376ca8091a47993c492fd5460b895b140",
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/final_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/final_model/tokenizer_config.json": "fd20f11a150c8c2e5a7460f4b6d6d0f0b91e19023b5a19723981a699f42911fd",
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/final_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/training_order.csv": "6ca60d728379f90e3cacc900872a798f2e815bde5bdf41ead0e000cd80d2557e",
+    "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/training_steps.csv": "a3dbb5ac9a0823df36fa6a4ba67dd0eaa01115d4b540405aed15ca6bd1695eab"
+  }
+}

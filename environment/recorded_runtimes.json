@@ -1,0 +1,47 @@
+{
+  "original_training": {
+    "original_training": {
+      "python": "3.12.14",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.6",
+      "scikit_learn": "1.9.1",
+      "cuda_runtime": "12.8",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    "packaging_python": "3.12.14",
+    "torch_installation_source": "https://download.pytorch.org/whl/cu128",
+    "lock_policy": "The original local wheel URI is replaced by the installed torch version."
+  },
+  "followup_inference_and_continuation": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "torch": "2.5.1+cu121",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "4.57.6",
+    "numpy": "2.2.4",
+    "sklearn": "1.8.0",
+    "protocol_inference": {
+      "precision": "float32 for features AND logits in all new comparison arms",
+      "autocast": false,
+      "tf32": false,
+      "attention_implementation": "eager",
+      "batch_size": 32,
+      "max_length": 64,
+      "padding": "dynamic to multiple of 8",
+      "device": "cuda",
+      "eval_mode": true
+    }
+  },
+  "source_files": [
+    "CLINC150_Team_20261019/environment/original_runtime.json",
+    "BERT_Rejection_Study_20261019/outputs/environment.json"
+  ],
+  "historical_hardware_not_recorded": [
+    "CPU model",
+    "RAM size",
+    "NVIDIA driver version"
+  ],
+  "os_note": "Preserve the original platform strings verbatim; the later record reports Windows-10-10.0.26300-SP0."
+}

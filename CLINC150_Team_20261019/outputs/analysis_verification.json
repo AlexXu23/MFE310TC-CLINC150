@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "dataset_and_provenance_hashes": "PASS",
+  "original_prediction_files_checked": 12,
+  "independent_rejection_arrays_checked": 126,
+  "independent_per_intent_rows_checked": 1800,
+  "independent_sensitivity_rows_checked": 21,
+  "review_cases_traceable_to_source": 72,
+  "independent_calibration_rows_checked": 6,
+  "qualitative_notes": "Coverage and provenance verified; linguistic judgments remain AI-assisted and require human confirmation.",
+  "limitations": "Does not prove semantic correctness, fairness or causal model explanations; calibration bootstrap is conditional, not a repeated-training significance test."
+}

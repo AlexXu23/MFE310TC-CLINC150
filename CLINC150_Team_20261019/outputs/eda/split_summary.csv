@@ -1,0 +1,7 @@
+source_split,scope,examples,unique_texts,intents
+oos_test,oos,1000,1000,1
+oos_train,oos,100,100,1
+oos_val,oos,100,100,1
+test,in_scope,4500,4500,150
+train,in_scope,15000,15000,150
+val,in_scope,3000,3000,150

@@ -1,0 +1,262 @@
+﻿row_id,kind,text,gold,tfidf_prediction,seed42_prediction,seed43_prediction,seed44_prediction,human_reviewed
+4,all_bert_corrected,what's the word for trees in norway,translate,definition,translate,translate,translate,False
+8,all_bert_corrected,what's the french word you use for potato,translate,definition,translate,translate,translate,False
+9,all_bert_corrected,what would the word for grass be in finland,translate,definition,translate,translate,translate,False
+50,all_bert_corrected,how much money can i transfer today,transfer,income,transfer,transfer,transfer,False
+133,all_bert_corrected,what is the reason humans even exist,meaning_of_life,calculator,meaning_of_life,meaning_of_life,meaning_of_life,False
+224,all_bert_corrected,am i safe to go to africa,travel_alert,vaccines,travel_alert,travel_alert,travel_alert,False
+235,all_bert_corrected,safety concerns for malaysia,travel_alert,ingredient_substitution,travel_alert,travel_alert,travel_alert,False
+246,all_bert_corrected,how is a vacation request made,pto_request,pto_request_status,pto_request,pto_request,pto_request,False
+247,all_bert_corrected,what is the process of making a vacation request,pto_request,pto_request_status,pto_request,pto_request,pto_request,False
+256,all_bert_corrected,can you help me plan a vacation,pto_request,what_can_i_ask_you,pto_request,pto_request,pto_request,False
+274,all_bert_corrected,how can i up my credit score,improve_credit_score,credit_score,improve_credit_score,improve_credit_score,improve_credit_score,False
+275,all_bert_corrected,can you explain to me how i might boost my credit score,improve_credit_score,credit_score,improve_credit_score,improve_credit_score,improve_credit_score,False
+287,all_bert_corrected,can you tell me some strategies for raising my credit score,improve_credit_score,credit_score,improve_credit_score,improve_credit_score,improve_credit_score,False
+349,all_bert_corrected,i'd like to use you using russian,change_language,what_is_your_name,change_language,change_language,change_language,False
+363,all_bert_corrected,what's the date on my last pay stub,payday,date,payday,payday,payday,False
+366,all_bert_corrected,when did i last collect my salary,payday,last_maintenance,payday,payday,payday,False
+372,all_bert_corrected,when's pay day for me,payday,bill_due,payday,payday,payday,False
+374,all_bert_corrected,when's my next pay day,payday,next_holiday,payday,payday,payday,False
+375,all_bert_corrected,what day's my pay coming next,payday,next_holiday,payday,payday,payday,False
+396,all_bert_corrected,i need to know the time it takes to get a new credit card sent to someone who lost theirs,replacement_card_duration,new_card,replacement_card_duration,replacement_card_duration,replacement_card_duration,False
+398,all_bert_corrected,what is amount of time it takes to get a new credit card i lost mine recently,replacement_card_duration,new_card,replacement_card_duration,replacement_card_duration,replacement_card_duration,False
+406,all_bert_corrected,what is the shipping time for my card,replacement_card_duration,damaged_card,replacement_card_duration,replacement_card_duration,replacement_card_duration,False
+422,all_bert_corrected,is it after noon,time,weather,time,time,time,False
+423,all_bert_corrected,is it six o clock yet,time,weather,time,time,time,False
+505,all_bert_corrected,what time is boarding scheduled,flight_status,time,flight_status,flight_status,flight_status,False
+542,all_bert_regressed,change my name to bob,change_user_name,change_user_name,change_ai_name,change_ai_name,change_ai_name,False
+547,all_bert_corrected,refer to me as bailey,change_user_name,user_name,change_user_name,change_user_name,change_user_name,False
+555,all_bert_corrected,"ai, my name is deb please use my name when you talk to me",change_user_name,user_name,change_user_name,change_user_name,change_user_name,False
+560,all_bert_regressed,change my name please,change_user_name,change_user_name,change_ai_name,change_ai_name,change_ai_name,False
+561,all_bert_regressed,please go ahead and change my name,change_user_name,change_user_name,change_ai_name,change_ai_name,change_ai_name,False
+564,all_bert_corrected,my name is going to be sherlock,change_user_name,user_name,change_user_name,change_user_name,change_user_name,False
+601,all_bert_corrected,add laundry detergent to the list,shopping_list_update,todo_list_update,shopping_list_update,shopping_list_update,shopping_list_update,False
+603,all_bert_regressed,the list should also have 2 loaves of bread,shopping_list_update,shopping_list_update,ingredients_list,recipe,ingredients_list,False
+606,all_bert_corrected,put milk on my shopping list,shopping_list_update,shopping_list,shopping_list_update,shopping_list_update,shopping_list_update,False
+624,all_bert_corrected,take paper towels off of my shopping list,shopping_list_update,shopping_list,shopping_list_update,shopping_list_update,shopping_list_update,False
+625,all_bert_corrected,i need milk on my shopping list,shopping_list_update,shopping_list,shopping_list_update,shopping_list_update,shopping_list_update,False
+650,all_bert_corrected,tell me what you can do for me,what_can_i_ask_you,user_name,what_can_i_ask_you,what_can_i_ask_you,what_can_i_ask_you,False
+673,all_bert_corrected,i can't say,maybe,translate,maybe,maybe,maybe,False
+675,all_bert_corrected,i am unable to say,maybe,translate,maybe,maybe,maybe,False
+676,all_bert_corrected,i am not able to say,maybe,translate,maybe,maybe,maybe,False
+687,all_bert_regressed,that might be the case,maybe,maybe,yes,yes,yes,False
+688,all_bert_corrected,i'm not completely certain,maybe,no,maybe,maybe,maybe,False
+692,all_bert_corrected,how do i do an oil change,oil_change_how,oil_change_when,oil_change_how,oil_change_how,oil_change_how,False
+693,all_bert_corrected,diy oil change,oil_change_how,oil_change_when,oil_change_how,oil_change_how,oil_change_how,False
+695,all_bert_corrected,give me instructions for an oil change,oil_change_how,oil_change_when,oil_change_how,oil_change_how,oil_change_how,False
+696,all_bert_corrected,diy oil change and oil type,oil_change_how,oil_change_when,oil_change_how,oil_change_how,oil_change_how,False
+697,all_bert_corrected,oil type and do it yourself oil change information please,oil_change_how,oil_change_when,oil_change_how,oil_change_how,oil_change_how,False
+749,all_bert_corrected,i want to eat at seven in the restaurant for two people,restaurant_reservation,restaurant_suggestion,restaurant_reservation,restaurant_reservation,restaurant_reservation,False
+750,all_bert_corrected,what are my coffers at,balance,what_can_i_ask_you,balance,balance,balance,False
+774,all_bert_corrected,how much does my bank account have,balance,account_blocked,balance,balance,balance,False
+807,all_bert_corrected,i need to confirm the reservation for frank at chili's,confirm_reservation,cancel_reservation,confirm_reservation,confirm_reservation,confirm_reservation,False
+855,all_bert_corrected,how do i do a 401(k) rollover,rollover_401k,recipe,rollover_401k,rollover_401k,rollover_401k,False
+856,all_bert_corrected,can 401ks be moved,rollover_401k,maybe,rollover_401k,rollover_401k,rollover_401k,False
+874,all_bert_corrected,who is your maker,who_made_you,who_do_you_work_for,who_made_you,who_made_you,who_made_you,False
+880,all_bert_corrected,i wanna know your maker,who_made_you,what_is_your_name,who_made_you,who_made_you,who_made_you,False
+908,all_bert_corrected,how many minutes am i from texaco,distance,timer,distance,distance,distance,False
+910,all_bert_corrected,is it going to be much longer until i reach the bank,distance,travel_notification,distance,distance,distance,False
+911,all_bert_corrected,am i close to arriving at the post office,distance,directions,distance,distance,distance,False
+917,all_bert_corrected,when will the bus get me to vermont,distance,directions,distance,distance,distance,False
+923,all_bert_corrected,give me an eta on when i will arrive at my destination,distance,flight_status,distance,distance,distance,False
+926,all_bert_corrected,how much farther is orlando from my location,distance,share_location,distance,distance,distance,False
+929,all_bert_corrected,can you tell me about what time i should be arriving at the airport,distance,time,distance,distance,distance,False
+932,all_bert_corrected,what do i go by,user_name,change_user_name,user_name,user_name,user_name,False
+945,all_bert_corrected,what did i tell you to call me,user_name,change_user_name,user_name,user_name,user_name,False
+980,all_bert_corrected,does denver reside in the eastern timezones,timezone,food_last,timezone,timezone,timezone,False
+1016,all_bert_corrected,change this song please,next_song,what_song,next_song,next_song,next_song,False
+1077,all_bert_corrected,i need reviews for places serving tacos in chicago,restaurant_suggestion,restaurant_reviews,restaurant_suggestion,restaurant_suggestion,restaurant_suggestion,False
+1110,all_bert_corrected,i have a car payment that needs to be paid,pay_bill,bill_due,pay_bill,pay_bill,pay_bill,False
+1111,all_bert_corrected,i need to put in a payment towards my phone bill,pay_bill,find_phone,pay_bill,pay_bill,pay_bill,False
+1134,all_bert_regressed,"today my electric bill will be paid, or should be",pay_bill,pay_bill,bill_due,bill_due,bill_due,False
+1135,all_bert_regressed,today is the day i should pay my electric bill,pay_bill,pay_bill,bill_due,bill_due,bill_due,False
+1138,all_bert_corrected,pay $175 on my visa,pay_bill,credit_limit,pay_bill,pay_bill,pay_bill,False
+1155,all_bert_corrected,have i gone over my entertainment budget,spending_history,rollover_401k,spending_history,spending_history,spending_history,False
+1165,all_bert_corrected,did i stick to my dinner budget,spending_history,meal_suggestion,spending_history,spending_history,spending_history,False
+1239,all_bert_corrected,what's the best way to get a mastercard,new_card,directions,new_card,new_card,new_card,False
+1243,all_bert_corrected,i need to get a mastercard somehow,new_card,vaccines,new_card,new_card,new_card,False
+1247,all_bert_corrected,what do i do to get a visa card,new_card,international_visa,new_card,new_card,new_card,False
+1253,all_bert_corrected,what's it take to get a mastercard,new_card,distance,new_card,new_card,new_card,False
+1287,all_bert_corrected,i lost all my stuff that i had packed,lost_luggage,yes,lost_luggage,lost_luggage,lost_luggage,False
+1300,all_bert_regressed,i didn't catch that,repeat,repeat,maybe,no,no,False
+1303,all_bert_corrected,would you mind repeating that,repeat,cancel,repeat,repeat,repeat,False
+1313,all_bert_corrected,what'd you say,repeat,translate,repeat,repeat,repeat,False
+1317,all_bert_corrected,what were you just saying,repeat,where_are_you_from,repeat,repeat,repeat,False
+1366,all_bert_corrected,when do you think i ought to change the oil in my car next,oil_change_when,oil_change_how,oil_change_when,oil_change_when,oil_change_when,False
+1369,all_bert_regressed,where can i find information on oil changes for my car,oil_change_when,oil_change_when,oil_change_how,oil_change_how,oil_change_how,False
+1370,all_bert_regressed,what are the manufacturers guidance on oil changes,oil_change_when,oil_change_when,oil_change_how,oil_change_how,oil_change_how,False
+1375,all_bert_corrected,do i need to change my oil soon,oil_change_when,oil_change_how,oil_change_when,oil_change_when,oil_change_when,False
+1386,all_bert_corrected,that checks out,yes,order_checks,yes,yes,yes,False
+1394,all_bert_corrected,sure,yes,maybe,yes,yes,yes,False
+1395,all_bert_corrected,okay,yes,greeting,yes,yes,yes,False
+1396,all_bert_corrected,definitely,yes,no,yes,yes,yes,False
+1397,all_bert_corrected,roger that,yes,no,yes,yes,yes,False
+1400,all_bert_corrected,you're right,yes,change_speed,yes,yes,yes,False
+1408,all_bert_corrected,yup,yes,maybe,yes,yes,yes,False
+1412,all_bert_corrected,"help me plan my traveling itinerary for my trip to madrid, i want to see lots of sights!",travel_suggestion,vaccines,travel_suggestion,travel_suggestion,travel_suggestion,False
+1413,all_bert_corrected,help me pick a new location to travel to,travel_suggestion,travel_alert,travel_suggestion,travel_suggestion,travel_suggestion,False
+1426,all_bert_corrected,i want to explore a new place but don't know where i should go do you have any ideas,travel_suggestion,restaurant_suggestion,travel_suggestion,travel_suggestion,travel_suggestion,False
+1440,all_bert_corrected,which insurance plan to i have,insurance,insurance_change,insurance,insurance,insurance,False
+1471,all_bert_corrected,i don't need grocery shopping on my todo list anymore,todo_list_update,todo_list,todo_list_update,todo_list_update,todo_list_update,False
+1475,all_bert_corrected,i don't need mowing the lawn on my to do list anymore,todo_list_update,todo_list,todo_list_update,todo_list_update,todo_list_update,False
+1476,all_bert_corrected,empty the contents of my to do list,todo_list_update,todo_list,todo_list_update,todo_list_update,todo_list_update,False
+1492,all_bert_corrected,please note vacuuming on my to do list,todo_list_update,todo_list,todo_list_update,todo_list_update,todo_list_update,False
+1493,all_bert_corrected,insert mowing on the chore list,todo_list_update,todo_list,todo_list_update,todo_list_update,todo_list_update,False
+1502,all_bert_corrected,what were you supposed to remind me of,reminder,reminder_update,reminder,reminder,reminder,False
+1505,all_bert_corrected,what did i ask you to remind me of,reminder,reminder_update,reminder,reminder,reminder,False
+1515,all_bert_corrected,what kinds of things are you supposed to remind me of,reminder,what_can_i_ask_you,reminder,reminder,reminder,False
+1607,all_bert_corrected,it is very much false,no,yes,no,no,no,False
+1610,all_bert_corrected,that can't be true,no,yes,no,no,no,False
+1705,all_bert_corrected,is event on my calendar,calendar,calendar_update,calendar,calendar,calendar,False
+1751,all_bert_corrected,i need to know the answer to 10000 multiplied by 44,calculator,maybe,calculator,calculator,calculator,False
+1807,all_bert_corrected,can i fly with my razors or are there restrictions,carry_on,are_you_a_bot,carry_on,carry_on,carry_on,False
+1808,all_bert_corrected,are there restrictions for carrying lighters in my backpack on a plane,carry_on,travel_suggestion,carry_on,carry_on,carry_on,False
+1844,all_bert_regressed,how much of my pto is left,pto_used,pto_used,pto_balance,pto_balance,pto_balance,False
+1872,all_bert_corrected,find a place near me to have my tires inspected,schedule_maintenance,tire_change,schedule_maintenance,schedule_maintenance,schedule_maintenance,False
+1886,all_bert_corrected,should i call a car maintenance,schedule_maintenance,make_call,schedule_maintenance,schedule_maintenance,schedule_maintenance,False
+1888,all_bert_corrected,should i take my car to a maintenance,schedule_maintenance,last_maintenance,schedule_maintenance,schedule_maintenance,schedule_maintenance,False
+1907,all_bert_regressed,tell my bank's fraud department i'm going to mexico,travel_notification,travel_notification,report_fraud,report_fraud,report_fraud,False
+1915,all_bert_corrected,alert my bank of my travel to dubai for the dates april 14th through april 22nd,travel_notification,travel_alert,travel_notification,travel_notification,travel_notification,False
+1918,all_bert_corrected,must call my bank about my travel plans,travel_notification,make_call,travel_notification,travel_notification,travel_notification,False
+2012,all_bert_corrected,how many days milk can be preserved,food_last,pto_used,food_last,food_last,food_last,False
+2013,all_bert_corrected,what is expire of milk,food_last,calculator,food_last,food_last,food_last,False
+2015,all_bert_corrected,when does the jerky expire,food_last,expiration_date,food_last,food_last,food_last,False
+2017,all_bert_corrected,when is the egg expired,food_last,bill_due,food_last,food_last,food_last,False
+2018,all_bert_corrected,when does the honey expire,food_last,expiration_date,food_last,food_last,food_last,False
+2052,all_bert_corrected,when can i expect meal of salmon to be finished,cook_time,meal_suggestion,cook_time,cook_time,cook_time,False
+2070,all_bert_corrected,i want to be reminded to pay the electric bill,reminder_update,pay_bill,reminder_update,reminder_update,reminder_update,False
+2078,all_bert_corrected,make a reminder to pay my cable bill today,reminder_update,pay_bill,reminder_update,reminder_update,reminder_update,False
+2098,all_bert_corrected,can you set a reminder alarm for me to workout,reminder_update,alarm,reminder_update,reminder_update,reminder_update,False
+2115,all_bert_corrected,my bank of america visa platinum was swiped from my belongings,report_lost_card,travel_notification,report_lost_card,report_lost_card,report_lost_card,False
+2130,all_bert_corrected,can i swap chili for sloppy joe mix in the recipe,ingredient_substitution,recipe,ingredient_substitution,ingredient_substitution,ingredient_substitution,False
+2150,all_bert_regressed,"if i use applesauce instead of oil, will that mess it up",ingredient_substitution,ingredient_substitution,oil_change_how,oil_change_how,oil_change_when,False
+2169,all_bert_corrected,get mom on the phone,make_call,sync_device,make_call,make_call,make_call,False
+2180,all_bert_corrected,i need you to phone sal,make_call,sync_device,make_call,make_call,make_call,False
+2227,all_bert_corrected,is laundry on my todo list,todo_list,todo_list_update,todo_list,todo_list,todo_list,False
+2247,all_bert_corrected,what must i do today,todo_list,meeting_schedule,todo_list,todo_list,todo_list,False
+2321,all_bert_corrected,what's the ultimate day for me to pay the internet bill,bill_due,pay_bill,bill_due,bill_due,bill_due,False
+2322,all_bert_corrected,tell me the last day i can pay my gas bill,bill_due,pay_bill,bill_due,bill_due,bill_due,False
+2366,all_bert_corrected,how much is alorie intake,calories,bill_balance,calories,calories,calories,False
+2376,all_bert_corrected,what do i do about a card that's too messed up to be properly scanned,damaged_card,report_lost_card,damaged_card,damaged_card,damaged_card,False
+2406,all_bert_corrected,do they serve good tacos at the buffet,restaurant_reviews,restaurant_suggestion,restaurant_reviews,restaurant_reviews,restaurant_reviews,False
+2409,all_bert_corrected,"yum, pulled pork tacos at the buffet",restaurant_reviews,restaurant_reservation,restaurant_reviews,restaurant_reviews,restaurant_reviews,False
+2414,all_bert_corrected,give me some feedback about the pasta at piada please,restaurant_reviews,fun_fact,restaurant_reviews,restaurant_reviews,restaurant_reviews,False
+2415,all_bert_corrected,how is gramercy tavern rated,restaurant_reviews,greeting,restaurant_reviews,restaurant_reviews,restaurant_reviews,False
+2418,all_bert_regressed,do people say per se is any good or not,restaurant_reviews,restaurant_reviews,no,definition,maybe,False
+2419,all_bert_corrected,what do food critics say about gramercy tavern,restaurant_reviews,translate,restaurant_reviews,restaurant_reviews,restaurant_reviews,False
+2422,all_bert_corrected,what rating do the critics give the french laundry,restaurant_reviews,change_language,restaurant_reviews,restaurant_reviews,restaurant_reviews,False
+2520,all_bert_corrected,which gas would be best,gas_type,gas,gas_type,gas_type,gas_type,False
+2539,all_bert_corrected,what raiting of gas is called for,gas_type,gas,gas_type,gas_type,gas_type,False
+2554,all_bert_corrected,is electricity the same in france,plug_type,timezone,plug_type,plug_type,plug_type,False
+2590,all_bert_corrected,when is my car due for an tire change,tire_change,bill_due,tire_change,tire_change,tire_change,False
+2600,all_bert_corrected,how long does the average set of tire last before needing replacement,tire_change,replacement_card_duration,tire_change,tire_change,tire_change,False
+2602,all_bert_regressed,how many miles are my tires rated for,tire_change,tire_change,tire_pressure,tire_pressure,tire_pressure,False
+2603,all_bert_corrected,what is the time for a tire change,tire_change,time,tire_change,tire_change,tire_change,False
+2655,all_bert_corrected,how long do i have to wait to get a day off,next_holiday,how_busy,next_holiday,next_holiday,next_holiday,False
+2678,all_bert_corrected,decrease your decibel level,change_volume,change_speed,change_volume,change_volume,change_volume,False
+2682,all_bert_corrected,not so loud,change_volume,no,change_volume,change_volume,change_volume,False
+2701,all_bert_corrected,who is responsible for your employment,who_do_you_work_for,who_made_you,who_do_you_work_for,who_do_you_work_for,who_do_you_work_for,False
+2714,all_bert_regressed,is there another person that controls you,who_do_you_work_for,who_do_you_work_for,are_you_a_bot,who_made_you,are_you_a_bot,False
+2721,all_bert_corrected,who employs you,who_do_you_work_for,who_made_you,who_do_you_work_for,who_do_you_work_for,who_do_you_work_for,False
+2729,all_bert_corrected,who can i talk to above you,who_do_you_work_for,who_made_you,who_do_you_work_for,who_do_you_work_for,who_do_you_work_for,False
+2731,all_bert_corrected,how much do i have available on my visa card,credit_limit,rewards_balance,credit_limit,credit_limit,credit_limit,False
+2746,all_bert_corrected,how much is my maximum to spend on credit cards,credit_limit,bill_balance,credit_limit,credit_limit,credit_limit,False
+2767,all_bert_corrected,are cool people at the bar at 9:00 pm,how_busy,restaurant_reservation,how_busy,how_busy,how_busy,False
+2772,all_bert_corrected,is the breakfast place full in the mornings,how_busy,food_last,how_busy,how_busy,how_busy,False
+2782,all_bert_corrected,can you find out the waiting times for mr joes pizza,how_busy,calculator,how_busy,how_busy,how_busy,False
+2834,all_bert_corrected,can you help with delivery tracking,order_status,what_can_i_ask_you,order_status,order_status,order_status,False
+2837,all_bert_corrected,i placed an order and i need it tracked,order_status,order,order_status,order_status,order_status,False
+2838,all_bert_corrected,could you track an order for me,order_status,order,order_status,order_status,order_status,False
+2875,all_bert_regressed,change the code of my savings account to be 1234,pin_change,pin_change,freeze_account,freeze_account,freeze_account,False
+2895,all_bert_corrected,thank you goodbye,goodbye,thank_you,goodbye,goodbye,goodbye,False
+2897,all_bert_corrected,that will be all have a nice day!,goodbye,yes,goodbye,goodbye,goodbye,False
+2907,all_bert_corrected,"thanks for your help, goodbye!",goodbye,thank_you,goodbye,goodbye,goodbye,False
+2921,all_bert_regressed,how can i unfreeze my bank account,account_blocked,account_blocked,freeze_account,freeze_account,freeze_account,False
+2930,all_bert_corrected,reasons that us bank would place a hold on my account,account_blocked,freeze_account,account_blocked,account_blocked,account_blocked,False
+2935,all_bert_regressed,can you help me unblock my account,account_blocked,account_blocked,freeze_account,freeze_account,freeze_account,False
+2968,all_bert_corrected,who is the singer on the speaker now,what_song,smart_home,what_song,what_song,what_song,False
+2969,all_bert_corrected,what kind of music on the speaker now,what_song,play_music,what_song,what_song,what_song,False
+3022,all_bert_corrected,have i recently had an oil change,last_maintenance,oil_change_when,last_maintenance,last_maintenance,last_maintenance,False
+3026,all_bert_corrected,i last got my oil changed when,last_maintenance,oil_change_when,last_maintenance,last_maintenance,last_maintenance,False
+3041,all_bert_corrected,when for i meet jane for our meeting,meeting_schedule,schedule_meeting,meeting_schedule,meeting_schedule,meeting_schedule,False
+3043,all_bert_corrected,is there a meeting with sam today,meeting_schedule,schedule_meeting,meeting_schedule,meeting_schedule,meeting_schedule,False
+3057,all_bert_corrected,what time is today's meeting,meeting_schedule,time,meeting_schedule,meeting_schedule,meeting_schedule,False
+3067,all_bert_corrected,tell me what's in tacos,ingredients_list,definition,ingredients_list,ingredients_list,ingredients_list,False
+3081,all_bert_corrected,what am i gonna need for sushi,ingredients_list,restaurant_suggestion,ingredients_list,ingredients_list,ingredients_list,False
+3088,all_bert_corrected,tell me all the things i need to buy to make pasta,ingredients_list,order,ingredients_list,ingredients_list,ingredients_list,False
+3119,all_bert_corrected,there has been unauthorized use of my visa,report_fraud,application_status,report_fraud,report_fraud,report_fraud,False
+3141,all_bert_regressed,how does measurement a convert to measurement b,measurement_conversion,measurement_conversion,calculator,calculator,calculator,False
+3169,all_bert_corrected,what is it like the temperature at ac,smart_home,weather,smart_home,smart_home,smart_home,False
+3173,all_bert_corrected,i want the light less bright please,smart_home,schedule_maintenance,smart_home,smart_home,smart_home,False
+3208,all_bert_corrected,i'm travelling to boston on march 2 until march 4 please make a hotel reservation for me,book_hotel,restaurant_reservation,book_hotel,book_hotel,book_hotel,False
+3211,all_bert_corrected,where am i currently,current_location,share_location,current_location,current_location,current_location,False
+3226,all_bert_corrected,whats my location,current_location,share_location,current_location,current_location,current_location,False
+3235,all_bert_regressed,open map and pin point my location,current_location,current_location,pin_change,pin_change,pin_change,False
+3237,all_bert_corrected,what could help me locate myself,current_location,calculator,current_location,current_location,current_location,False
+3287,all_bert_corrected,how much do i owe the irs,taxes,bill_balance,taxes,taxes,taxes,False
+3374,all_bert_corrected,can you turn off the process,cancel,smart_home,cancel,cancel,cancel,False
+3382,all_bert_corrected,hush,cancel,maybe,cancel,cancel,cancel,False
+3390,all_bert_corrected,are visas needed to travel to jamaica,international_visa,vaccines,international_visa,international_visa,international_visa,False
+3393,all_bert_corrected,are visas required to go to cuba,international_visa,vaccines,international_visa,international_visa,international_visa,False
+3398,all_bert_corrected,is a visa necessary for traveling to south africa,international_visa,vaccines,international_visa,international_visa,international_visa,False
+3400,all_bert_corrected,do americans need visas in canada,international_visa,travel_suggestion,international_visa,international_visa,international_visa,False
+3404,all_bert_corrected,what are the visa requirements for brazil,international_visa,restaurant_reviews,international_visa,international_visa,international_visa,False
+3418,all_bert_corrected,are visas for international travel,international_visa,travel_alert,international_visa,international_visa,international_visa,False
+3438,all_bert_corrected,"if you were traveling to indonesia, as i am, would you have your shots updated before your visit",vaccines,where_are_you_from,vaccines,vaccines,vaccines,False
+3469,all_bert_regressed,can you see if i have any vacation days available for a request,pto_balance,pto_balance,pto_request_status,pto_request,pto_request,False
+3488,all_bert_corrected,i need some directions to phoenix,directions,vaccines,directions,directions,directions,False
+3609,all_bert_corrected,can you tell me what you are called,what_is_your_name,what_can_i_ask_you,what_is_your_name,what_is_your_name,what_is_your_name,False
+3619,all_bert_corrected,and your name is,what_is_your_name,change_ai_name,what_is_your_name,what_is_your_name,what_is_your_name,False
+3625,all_bert_regressed,what name do you want me to use,what_is_your_name,what_is_your_name,user_name,user_name,user_name,False
+3660,all_bert_corrected,what's my bank of america account getting in interest,interest_rate,balance,interest_rate,interest_rate,interest_rate,False
+3670,all_bert_corrected,what's my checking account yielding in interest,interest_rate,balance,interest_rate,interest_rate,interest_rate,False
+3692,all_bert_regressed,can i get more credit,credit_limit_change,credit_limit_change,improve_credit_score,improve_credit_score,improve_credit_score,False
+3718,all_bert_corrected,how do i adjust my credit limit,credit_limit_change,credit_limit,credit_limit_change,credit_limit_change,credit_limit_change,False
+3783,all_bert_corrected,iterate over the items on my grocery list,shopping_list,todo_list,shopping_list,shopping_list,shopping_list,False
+3790,all_bert_corrected,what's on my purchase list,shopping_list,todo_list,shopping_list,shopping_list,shopping_list,False
+3799,all_bert_corrected,does the shopping list have apples on it,shopping_list,shopping_list_update,shopping_list,shopping_list,shopping_list,False
+3847,all_bert_regressed,how much is my water and sewer,bill_balance,bill_balance,gas,gas,traffic,False
+3853,all_bert_regressed,"i think all my bills are paid, but can you double check",bill_balance,bill_balance,pay_bill,pay_bill,pay_bill,False
+3864,all_bert_regressed,how much do i have to pay this month,bill_balance,bill_balance,income,income,income,False
+3866,all_bert_corrected,is the phone bill the same as last month,bill_balance,transactions,bill_balance,bill_balance,bill_balance,False
+3877,all_bert_corrected,i'd like for this person to know my location,share_location,current_location,share_location,share_location,share_location,False
+3893,all_bert_corrected,show allison how to get to me,share_location,distance,share_location,share_location,share_location,False
+3898,all_bert_corrected,send sarah my current location,share_location,current_location,share_location,share_location,share_location,False
+3921,all_bert_corrected,put in a request for cashing in credit points,redeem_rewards,pto_request,redeem_rewards,redeem_rewards,redeem_rewards,False
+3926,all_bert_corrected,what can i get with my mastercard points,redeem_rewards,rewards_balance,redeem_rewards,redeem_rewards,redeem_rewards,False
+3939,all_bert_corrected,i'm in the mood for slow songs and nothing else,play_music,food_last,play_music,play_music,play_music,False
+3947,all_bert_corrected,turn on my tunes,play_music,smart_home,play_music,play_music,play_music,False
+3955,all_bert_corrected,turn on metallicas greatest hits,play_music,smart_home,play_music,play_music,play_music,False
+3956,all_bert_corrected,put on my 90s playlist,play_music,update_playlist,play_music,play_music,play_music,False
+3971,all_bert_corrected,cancel event scheduled for this afternoon,calendar_update,cancel,calendar_update,calendar_update,calendar_update,False
+3988,all_bert_corrected,what is the best way to remove this appointment,calendar_update,recipe,calendar_update,calendar_update,calendar_update,False
+4000,all_bert_corrected,is it true your a real person,are_you_a_bot,yes,are_you_a_bot,are_you_a_bot,are_you_a_bot,False
+4026,all_bert_corrected,can i reach seattle with this amount of fuel,gas,gas_type,gas,gas,gas,False
+4039,all_bert_regressed,how many more miles can i drive on my current tank,gas,gas,mpg,mpg,mpg,False
+4050,all_bert_corrected,"i want to bring my card on the texas trip in june, will it be expired by then",expiration_date,damaged_card,expiration_date,expiration_date,expiration_date,False
+4067,all_bert_corrected,when it my citi card expired,expiration_date,damaged_card,expiration_date,expiration_date,expiration_date,False
+4089,all_bert_corrected,i would like the song playing right now put on my driving playlist,update_playlist,what_song,update_playlist,update_playlist,update_playlist,False
+4173,all_bert_corrected,what do you think about changing your name to heath,change_ai_name,what_is_your_name,change_ai_name,change_ai_name,change_ai_name,False
+4188,all_bert_corrected,you are going to be called joe now,change_ai_name,change_user_name,change_ai_name,change_ai_name,change_ai_name,False
+4189,all_bert_regressed,start responding to joe,change_ai_name,change_ai_name,cancel,cancel,cancel,False
+4205,all_bert_corrected,when were you made,how_old_are_you,where_are_you_from,how_old_are_you,how_old_are_you,how_old_are_you,False
+4213,all_bert_corrected,what's your bday,how_old_are_you,where_are_you_from,how_old_are_you,how_old_are_you,how_old_are_you,False
+4223,all_bert_corrected,how young are you,how_old_are_you,are_you_a_bot,how_old_are_you,how_old_are_you,how_old_are_you,False
+4231,all_bert_corrected,find a decent rental care for next week at the philadelphia airport,car_rental,restaurant_reservation,car_rental,car_rental,car_rental,False
+4246,all_bert_corrected,"march 2nd through march 18th, i'm going to need a jeep in frankfort",car_rental,book_hotel,car_rental,car_rental,car_rental,False
+4300,all_bert_corrected,what are good thai dishes,meal_suggestion,restaurant_suggestion,meal_suggestion,meal_suggestion,meal_suggestion,False
+4302,all_bert_corrected,can you recommend thai food,meal_suggestion,restaurant_suggestion,meal_suggestion,meal_suggestion,meal_suggestion,False
+4309,all_bert_regressed,what would you suggest for japanese,meal_suggestion,meal_suggestion,change_language,change_language,change_language,False
+4320,all_bert_corrected,what do i need to do to cook a chicken,recipe,cook_time,recipe,recipe,recipe,False
+4321,all_bert_corrected,how do i go about cooking a 10lb turkey,recipe,cook_time,recipe,recipe,recipe,False
+4323,all_bert_corrected,what instructions do i need to bake a cake from scratch,recipe,ingredients_list,recipe,recipe,recipe,False
+4338,all_bert_corrected,recipes for garlic bread please,recipe,ingredient_substitution,recipe,recipe,recipe,False
+4353,all_bert_regressed,what do i take home,income,income,order,travel_suggestion,shopping_list,False
+4364,all_bert_corrected,what is my compensation,income,calculator,income,income,income,False
+4366,all_bert_corrected,how much do i get paid,income,payday,income,income,income,False
+4370,all_bert_corrected,what will i get paid this year,income,payday,income,income,income,False
+4378,all_bert_regressed,what is my payment going to be,income,income,min_payment,min_payment,min_payment,False
+4379,all_bert_corrected,how much is the pay offered for my work,income,bill_balance,income,income,income,False
+4390,all_bert_corrected,order all items on my shopping list,order,shopping_list,order,order,order,False
+4399,all_bert_corrected,order my whole shopping list,order,shopping_list,order,order,order,False
+4484,all_bert_regressed,why my card stop working,card_declined,card_declined,damaged_card,damaged_card,damaged_card,False

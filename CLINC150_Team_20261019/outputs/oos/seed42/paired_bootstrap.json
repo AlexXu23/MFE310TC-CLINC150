@@ -1,0 +1,21 @@
+{
+  "comparison": "temperature_scaled_minus_raw_MSP_max_oos_f1",
+  "repeats": 2000,
+  "seed": 2026,
+  "scope_counts_fixed": true,
+  "limitations": "Conditional on one trained checkpoint and frozen validation choices; excludes training and validation-selection uncertainty.",
+  "delta_95_percentile_CI": {
+    "oos_f1": [
+      -0.0446440235890884,
+      -0.010682583252189376
+    ],
+    "oos_recall": [
+      -0.03500000000000003,
+      0.0030249999999998663
+    ],
+    "in_scope_acceptance": [
+      -0.010666666666666713,
+      -0.005111111111111177
+    ]
+  }
+}

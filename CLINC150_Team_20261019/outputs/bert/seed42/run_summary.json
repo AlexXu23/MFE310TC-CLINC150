@@ -1,0 +1,38 @@
+{
+  "config": {
+    "model_name": ".models/bert-base-uncased",
+    "max_length": 64,
+    "learning_rate": 2e-05,
+    "epochs": 3,
+    "train_batch_size": 16,
+    "eval_batch_size": 64,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "gradient_clip_norm": 1.0,
+    "fp16": true
+  },
+  "data_sha256": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+  "best_epoch": 3,
+  "best_validation_macro_f1": 0.9522774135092547,
+  "test_in_scope_accuracy": 0.95,
+  "test_in_scope_macro_f1": 0.9498114654877308,
+  "validation_logits_shape": [
+    3100,
+    150
+  ],
+  "test_logits_shape": [
+    5500,
+    150
+  ],
+  "runtime_seconds": 331.01599526405334,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "scikit_learn": "1.9.1",
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  }
+}

@@ -1,0 +1,11 @@
+source_split,source_row,split,scope,text,label,normalized_text,words,characters,has_digit,has_non_ascii,has_question_mark,email_like,wordpieces_with_special_tokens,unk_tokens,truncated_at_64,domain,group_id,cross_official_split,label_conflict
+train,11896,train,in_scope,hey what's up,greeting,hey what's up,3,13,False,False,False,False,7,0,False,small_talk,0,True,False
+val,2369,val,in_scope,hey what's up,greeting,hey what's up,3,13,False,False,False,False,7,0,False,small_talk,0,True,False
+train,11130,train,in_scope,turn up your volume,whisper_mode,turn up your volume,4,19,False,False,False,False,6,0,False,meta,1,True,True
+val,1794,val,in_scope,turn up your volume,change_volume,turn up your volume,4,19,False,False,False,False,6,0,False,meta,1,True,True
+train,7424,train,in_scope,what is on my to do list,todo_list,what is on my to do list,7,24,False,False,False,False,9,0,False,home,2,True,True
+val,1011,val,in_scope,what is on my to do list,reminder,what is on my to do list,7,24,False,False,False,False,9,0,False,home,2,True,True
+test,938,test,in_scope,what's your designation,user_name,what's your designation,3,23,False,False,False,False,7,0,False,meta,3,True,True
+train,12066,train,in_scope,what's your designation,what_is_your_name,what's your designation,3,23,False,False,False,False,7,0,False,small_talk,3,True,True
+test,599,test,in_scope,where did you grow up,where_are_you_from,where did you grow up,5,21,False,False,False,False,7,0,False,small_talk,4,True,True
+train,14018,train,in_scope,where did you grow up,how_old_are_you,where did you grow up,5,21,False,False,False,False,7,0,False,small_talk,4,True,True

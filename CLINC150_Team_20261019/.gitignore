@@ -1,0 +1,9 @@
+# Assessed prediction/results files and public raw data are intentionally included.
+.venv/
+__pycache__/
+*.py[cod]
+.downloads/
+*.safetensors
+*.npy
+*.npz
+*.joblib

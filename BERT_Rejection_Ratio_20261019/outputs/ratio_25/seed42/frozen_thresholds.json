@@ -1,0 +1,20 @@
+{
+  "mahalanobis/max_oos_f1": {
+    "threshold": 4749.818703083104,
+    "true_oos_rejected": 64.0,
+    "in_scope_rejected": 15.0,
+    "oos_precision": 0.810126582278481,
+    "oos_recall": 0.64,
+    "oos_f1": 0.7150837988826816,
+    "in_scope_acceptance": 0.995
+  },
+  "mahalanobis/is_acceptance_95": {
+    "threshold": 2282.9905812395036,
+    "true_oos_rejected": 93.0,
+    "in_scope_rejected": 146.0,
+    "oos_precision": 0.3891213389121339,
+    "oos_recall": 0.93,
+    "oos_f1": 0.5486725663716815,
+    "in_scope_acceptance": 0.9513333333333334
+  }
+}

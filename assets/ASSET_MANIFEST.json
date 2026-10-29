@@ -1,0 +1,990 @@
+{
+  "status": "Local inventory; separate asset archive not yet published",
+  "bytes": 6149396446,
+  "files": [
+    {
+      "path": "CLINC150_Team_20261019/.models/bert-base-uncased/model.safetensors",
+      "bytes": 440449768,
+      "sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed42/best_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "9906bcf58ddd53220332ecfe4d9341340f7fe8c5d840307474f39a4b5bb1542a",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed42/test_logits.npy",
+      "bytes": 3300128,
+      "sha256": "eb19973bc5352c7d50e4db6cbc60e18b7464aa263775433c1e21a56a3078185e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed42/test_targets.npz",
+      "bytes": 821,
+      "sha256": "2dc4f77c30d3c2a142dd697065ed58c1efbff86586cad697a575e12876de0ad9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed42/validation_logits.npy",
+      "bytes": 1860128,
+      "sha256": "1c053035312495839e4be7ec9bbf10e5cc3d8c5b946709f8b3199326ae4a2a69",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed42/validation_targets.npz",
+      "bytes": 790,
+      "sha256": "2ba070c1e219d98aefeba1c6aa0dfcbd17488e46c53af1f9d0f41e5d6e9a9cb0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed43/best_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "d05cda19826ce037180eef93d2cd70f6efe2bb323c3e2c80721cecaf83949c02",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed43/test_logits.npy",
+      "bytes": 3300128,
+      "sha256": "9a9ac699ed9394f29d7ee060c80a5a2e851df0b4d98e44b529418bd94f2e684c",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed43/test_targets.npz",
+      "bytes": 821,
+      "sha256": "2dc4f77c30d3c2a142dd697065ed58c1efbff86586cad697a575e12876de0ad9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed43/validation_logits.npy",
+      "bytes": 1860128,
+      "sha256": "b4b8d77072148628f582a7c8855402dba6b87a3e06aa1c0aa85c83f45fe40131",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed43/validation_targets.npz",
+      "bytes": 790,
+      "sha256": "2ba070c1e219d98aefeba1c6aa0dfcbd17488e46c53af1f9d0f41e5d6e9a9cb0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed44/best_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "613d2d49a532d162842304bb68fa51ae90f9aa4d21564733bd32ae73b13ae856",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed44/test_logits.npy",
+      "bytes": 3300128,
+      "sha256": "5557277eb84dd7f124768ce38ea473153d1b936201b4b327219dc958fc6978e5",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed44/test_targets.npz",
+      "bytes": 821,
+      "sha256": "2dc4f77c30d3c2a142dd697065ed58c1efbff86586cad697a575e12876de0ad9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed44/validation_logits.npy",
+      "bytes": 1860128,
+      "sha256": "2b85baef20a14e23801ce8063808c6eb4b4d03740cd0b1c13635e9f73eea2415",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/bert/seed44/validation_targets.npz",
+      "bytes": 790,
+      "sha256": "2ba070c1e219d98aefeba1c6aa0dfcbd17488e46c53af1f9d0f41e5d6e9a9cb0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed42/clean_logits.npy",
+      "bytes": 3300128,
+      "sha256": "eb19973bc5352c7d50e4db6cbc60e18b7464aa263775433c1e21a56a3078185e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed42/typo_light_logits.npy",
+      "bytes": 3300128,
+      "sha256": "e9341f011832f5cf3eda9ed9d6641bc28bc4a73b669b53e80cd20a5718243b27",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed42/typo_medium_logits.npy",
+      "bytes": 3300128,
+      "sha256": "0654b6db7b7ba1aa2bf0d968634bae0e3e31e5d26511c341ade2232570661f14",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed43/clean_logits.npy",
+      "bytes": 3300128,
+      "sha256": "9a9ac699ed9394f29d7ee060c80a5a2e851df0b4d98e44b529418bd94f2e684c",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed43/typo_light_logits.npy",
+      "bytes": 3300128,
+      "sha256": "d28e15c30e8af019b59ca9600e8b2e7dd8e2a2fdedeae5fcc0451238519ea3fa",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed43/typo_medium_logits.npy",
+      "bytes": 3300128,
+      "sha256": "82fdc6f0c43567d9a2ce0d17ff8492d1b0af4cbb7a1747a078245180f4aab47c",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed44/clean_logits.npy",
+      "bytes": 3300128,
+      "sha256": "5557277eb84dd7f124768ce38ea473153d1b936201b4b327219dc958fc6978e5",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed44/typo_light_logits.npy",
+      "bytes": 3300128,
+      "sha256": "d40c81454b8716600ceda3ade33befe708baa10ce0edf9d23846a2daddd8fe0c",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/seed44/typo_medium_logits.npy",
+      "bytes": 3300128,
+      "sha256": "bccfd8c9257b04c86294d95bf63663680c66d06a0dd926f1491d4566e817cb05",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/tfidf_lr/baseline_model.joblib",
+      "bytes": 33418848,
+      "sha256": "0fd97902a52f71b5c0d086c50f71ba59238b38042421463eae265486d3de18a7",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/tfidf_lr/clean_logits.npy",
+      "bytes": 6600128,
+      "sha256": "90335c90bc21f287b477b22a20b92aa334704bda236f3a9120fa9478671989a2",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/tfidf_lr/typo_light_logits.npy",
+      "bytes": 6600128,
+      "sha256": "78b1c8a9491e104bd4055a2d236091156e63af986c8dbeb87f0f6f93f8114d29",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "CLINC150_Team_20261019/outputs/robustness/multiseed/tfidf_lr/typo_medium_logits.npy",
+      "bytes": 6600128,
+      "sha256": "0d34d6158d72eb75544c714d19dc9199a4f604466b38f8c50e50340c5c0e9bdc",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed42/distance_model.npz",
+      "bytes": 10772518,
+      "sha256": "92cf2ac235134a673d98f5f5493b71a24b1c8461d28c1887c76c4e57caabb1ab",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed42/test_cls.npy",
+      "bytes": 16896128,
+      "sha256": "f26577ed1a1e4c48828db9ba9b53279045e8f635768675c9327c92528b9d6532",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed42/test_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "c6067e82c82fec18a9ec9c3891ecd52fac8ff162084549f462b5d15d89724ac0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed42/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "37aeda3485a4f2fb331dc309d48fcebe7ff9ab87432eb22f7461ec8e7571f4f5",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed42/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "80c328f7f6e456e7770c6c893425ccd995833330a4a51b849edc69bac4d58407",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed42/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "66a4e30ed87dafa0fc51367db889d115b8c71d260227085036d7c6a55487c722",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed42/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "38342d90d926e6f47a280e6271a480ee9238e2729452c3f37d9c86e15cf675db",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed43/distance_model.npz",
+      "bytes": 10770512,
+      "sha256": "3b2b756d0aee017d52df4c6ad00f233cea93c598c431cb6718498044ee7810a9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed43/test_cls.npy",
+      "bytes": 16896128,
+      "sha256": "30ed0b2942b5f7488d5a16eda705682d29a32ea362b353f8b4a8e7da69ce658e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed43/test_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "1bc447a93e9576416be632f0fdaf6e69f9e61fb003631a2170c2f553061aa4bf",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed43/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "2e77a75401d056ca9e77a440c5d711aee5a93ea9a9841430284ace1b4b2c1f21",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed43/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "9aa4506fd01c41695a4b7f5646a8b79c66707c8d96ec2a14be7b863af6080db0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed43/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "2b42836a66ac6e6c1c11dd8f08dadeca91d2835ac8a8a893c5138563799e2f06",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed43/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "69bfe5399b439ff2bc619f65cf2a67f91bad1e8071811a7403b596a1b53b6d93",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed44/distance_model.npz",
+      "bytes": 10773180,
+      "sha256": "c8e200ee8ee2245d9b38769cd04423a27b91d4a5508da65972d44e58f4859c28",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed44/test_cls.npy",
+      "bytes": 16896128,
+      "sha256": "bcf6cababa8547bef113cc01ca0ba9a2527857c08f07246b01a9d7629e1e3134",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed44/test_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "7f94815a0de51de3b478967970c9de0f9af831f3d92cc5752542d38bb0fc6179",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed44/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "5cf6bffc5df6c207d15faf2e94b8ecf686021fc931813579c8f2b3d153ea80c4",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed44/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "056cc30844c137d9b2dad3817ca238a15922f1c1db9b074b4989e0e220943128",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed44/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "f65ecf41c4dbc27a40bfc70dd03449c248d7155c210e8a04374213786559747a",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/outputs/seed44/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "009f6cfc2fd7b317e6e9bec2723b597164b37edc876274e63ae62d87eec04a84",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed42/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "c1f786ccd9b55dab10a4f81d777646e31d7a901d63abfa606723d7994764971b",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed42/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "7209a3b8a18745d2f07847057ac2aa3ceb2309fa242c04ea73bd6b82004dd978",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed42/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "e5d5b8a1a4537aababebd47b35cc349a68ac19fabaf79fdb81ba7475b0203d07",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed42/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "c0d29cc60cf45bf87b88e5a68a4bf4f6fa26fcce07b7bcb1e012bf799bfb841d",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed43/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "1550f8e1d1c5f1b4151599884caf6a068026467f489d7f90d04e364e2aba330d",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed43/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "04b7808161aa6d2ced060573d7003310df9e9c58d82fb6a77156d0d12ce33177",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed43/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "62e204a30fe939e45b018b79762c4f640cd20e690e321b66da1e554f841adef0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed43/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "65d46771e3f5162a48b311820b60d103520675f6cf028fb00e4d25e04d640a7c",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed44/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "359aebc28bc021caf3aba88210f47ebe075d1984f72d791b9ced1438bfbf96ae",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed44/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "694615484916330fa02f7e4c5de40b89f456fd70f8cacb5b42b6ff1f0c977439",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed44/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "b87296068f1eb5af2bce761a4d4bf7a0ffd05550fc21a161e940284dda91dfd5",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Study_20261019/typo_stress_test/outputs/seed44/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "fd23644f4c6c1725733f5aac6cff5afeaaac48d0729ae8143432649a3326a01d",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/clean_cls.npy",
+      "bytes": 16896128,
+      "sha256": "187879b90c2d7a38e52228e15f00e9de27cd24d4913f36615fe89973c74024ef",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/clean_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "84afe980746602ce4ec786c797c85c680025b8c4d81b43470d877950ee6e39c8",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/distance_model.npz",
+      "bytes": 10768156,
+      "sha256": "c04d1376dc3b20647f4bede4aa3c59c3e75ded0444454b65fbc72dda06a88886",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "86b37e6a0e4aa0cfed31b28c145b7fa5d44fc3e94ed7c57c39b34437f20b009d",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "7307455684ae68b801746e3fe7be4759feca911afc8728747d5341e129c2a440",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "0f718053efe77669081fdbd0a222a9e1a34cc3a5b5a31d5db3854a1219283a36",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "e03be402f5df47c087e4c25b4eb7ce42f4da3c469f1a38abe6f2ed97ba9549a0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "67e6e45b12cc7fbdcf0eb224b25a629e5bb888824e0b3c75976244edbd977856",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "8fd1895e2b8914a3b13b7b9d22f97099254c397df120dc97bbc5e1d45beadfa4",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "303685a8784d3a97006272f0050f9f788ce012c83cd712860e3c72aad524593e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "b3131ec620059c3aa1eb09d368fbf5f88e9ceca2b838e3f6684005890d784ed1",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "46648279f4f87ad4d54f20dc8f3eb8eeaadb6740d8d80d8cd28206b0f7946d2d",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/clean_cls.npy",
+      "bytes": 16896128,
+      "sha256": "4a82b167220784643dd5085644493c610b94e208880c164dc0108d7c63f6b3bc",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/clean_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "bb9154325551dab2f4ea5013e6dbce5bfbfd33c55d12ef190928f9b54d3dfae0",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/distance_model.npz",
+      "bytes": 10765533,
+      "sha256": "887aa36bc713f29174271633d0712231c1422d54a07213e2573dc3a4f8800f7a",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "0062ba7ae5a3ca8348edb08996b9677a88b210f7a04de0380c434e1a8c317871",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "f145312dd2ca7458e9842d9ae313ff89261610d5725aeb596ea1e6f35ace1d67",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "8e2777f596216a89e049e5d792189931f72e487027a1a9a3383f3398578eb0a5",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "1a1fc11c49f56d9243ce947aedcade18aa77e936585459ed505c6db501b9fa78",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "9d6e8764a9ec9be7f23b1e732987bc9b9991b43f1c326530846e0727d285fb78",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "bd4c280f06f56ab4d2f39469a7259e17f315f8c8e54be3b700756e17918f2d2f",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "8bdf1b526ba1e704300adb7a92ee77163bbf8e43dbc07fe9931e5c176ca849ce",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "d3f976f2af3e583494bdac3dc61578a75e78a454313729d07098900e276c1130",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "fa93b5b30ed499e1121919682388ae17b70d9be04a6f26e16c34583485563ea9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/clean_cls.npy",
+      "bytes": 16896128,
+      "sha256": "eb33cccc21373ab8d15f5678eff1c193b49c8a689cd30994f997e6ccb1bfa620",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/clean_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "f41d03769ad53a93c58753ea423e610451f39f7ceb51687967e25d3a471c7396",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/distance_model.npz",
+      "bytes": 10768296,
+      "sha256": "e8cbff164795330db0080af8e4a41e36fd275e348f46c60eb43bec72b2ca3a65",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "d47edea075dfdf7741b4a6079c9a67ab1c7e7289b11ecdd944f0410d5c704102",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "83bc39bf4d253ee6989fd438c7541204b4fdaa8c68a67dd12c6004d858b18fad",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "c192719e13684ae9c790423551fd7365d646415228caf5efcf3d9a7642ac2d6f",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "c95f9bf2d1b34133b4463d6be72247039047dc500474b5be928a4bf5032ea63e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "c35438939a96468c4779d4849778675d61935d04032f33cb4cb5060959356dea",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "fb523a3ebdf78a8442828f2a2bb0019fb7a01b281ee0cc55ea644ea69abc181f",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "6d96720a3fee4340343887aaae7bd2af6d0826e733d3c40544ce89f1cb78a63e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "93a3014a21c95503f115de94a6f19ea79d4249dc5886917155769977dd1dd95d",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "3d210804d39deea9e592eb9b877074684b4cc1e51f33a8521d3d87e81b47e6eb",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/clean_cls.npy",
+      "bytes": 16896128,
+      "sha256": "0a3ffefd45abc7d383247e6b65ae13f9cd8cd76579e33802404043d86065b0da",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/clean_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "1796e18a8160efdaf5e779d8822b2162ddb1ce06b6df5e9cca70f5206847110d",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/distance_model.npz",
+      "bytes": 10771424,
+      "sha256": "aed4a870f73133a88ae9bc5ddaf5348d988a1bdd491ef895090711ddb81ebf02",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "fcd6a134a015694ff1c4423df65993aa15c01dbf675623319c07bcc8c0551f46",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "a5caa5bfb46384a67cbab48d64ef90200512e32251c1cb08901a1df0b45e6364",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "262294413bdadeaa89ad5c48a75a41b770dfde33be0832e81445e862b31aed33",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "f2f6ab7452ef7c06a7557e13f0a4a3d6fa6d35da422692d1e7b8c1f4abed5f97",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "54899e7f944a831e44f94d08ade281c19892b22eba7058a6bf7f2fc7c1bebdd8",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "3bd7a177583034ea2019df119abb20e7adff87f0b5e84f6066be2c60900cb523",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "36bcb38fbc4375407d318b11c99bbc40edb200efcdc1e82339a5a8a8bbb677f9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "3aea678bf2f07df1660cd3a3c9cb972f36adf2df166602508c887e3929ed1f93",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "3643053cf166959f26179ad723a004a691f87097690c06ecc8909f403bb4f6b2",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/clean_cls.npy",
+      "bytes": 16896128,
+      "sha256": "292e638429f6abb0c9df9965b44879a7c6a5ac1df7cace8ff910f9701c49a84e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/clean_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "1f9ae231400f3101e7b0c19599536492eaad30c147cb43009c9f994f4c1fe980",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/distance_model.npz",
+      "bytes": 10770883,
+      "sha256": "b5d74f4de49876fa78f624471629e117f7bb5c15594453521dfae501db6e9546",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "e365b73b84722add691b405f0137860db9a9b10445aefc27d5fe16f5b08e710e",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "6fdfa58dc3bf67ebd0f237484e79e8c3e7ab81d9c38ddeeae0f8108fc192bc4b",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "680ccd7c9e0d20d26c1c9c7fab45ce1ca267eba91c33d0bc44d006476ff7051a",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "56b2bfc573bca29a3099ad8ff5d2c9087ab963751022c56da61fd8921c24bf65",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "2280b7522527a2ef573a0307484e08b2ea235ee5a34294a35aa4203c1ec35c8f",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "34f8aa1d842a4f5d9da4c33fcabc2a7bc6cfc139b13c5102ca0a283964a04964",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "6e5b82bc0d5f2969871554380f479783335003aa5b54fe64ba9add28f8c63a46",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "4c3b519c0141a3bbfcc00b510c87d6063073e886acfadb76d4a008f42ab75ce7",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "45a8a0d96ddc3645f5fc254cf17fdd8707727460c5fdac19a525a6368a9eb68f",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/clean_cls.npy",
+      "bytes": 16896128,
+      "sha256": "0feee84c9de070940bfb5cee3919f56079b94178ef9be911be1fed47b2a4a6df",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/clean_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "9876774248cb636836b70b9d73d841b8f68ab0cfd58814fade27bf34385b899c",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/distance_model.npz",
+      "bytes": 10772827,
+      "sha256": "477734f652ba75a32f8064fd88b02b8955b0dd5f07d69cb7a879068eff6751c7",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "9a50249926b97ae9dd188d2cd821631ac77b14dcb84b77e3fddb3a9882d673e0",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "26cc3a3b622b0c80439454ceb16f46c40e9b77cc7870a9849c8513876dc36d00",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "fa095fb97af894198ceee7edcac9d79711e4c42911792254ec42a6525513d412",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/typo_light_cls.npy",
+      "bytes": 16896128,
+      "sha256": "60199afdd9f8c5a53f1eef44fc5bef9d658c0d38d6afefd6891637a6abea5b18",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/typo_light_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "a1c591d2b8c3011fdfdee8891f9dd1c41e201d5cf022f4a6939a6a2365831106",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/typo_medium_cls.npy",
+      "bytes": 16896128,
+      "sha256": "9aae9097ff16415628d25a13cc3ddd28111a8919d4e304e764205e7c02c7b87f",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/typo_medium_logits_fp32.npy",
+      "bytes": 3300128,
+      "sha256": "b629362c429fbc0f680ab11c4abedce4b87174b83c6e508d13ecd3408730fa86",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/validation_cls.npy",
+      "bytes": 9523328,
+      "sha256": "b535e9512655d416021097345ded9e28f0d71af3ba309a4a43bbe20e7bc56225",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/validation_logits_fp32.npy",
+      "bytes": 1860128,
+      "sha256": "8d6657a87364413e84759f6c54f585f2893b174657561cf008668c0092747d7e",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/features/seed42/noisy_train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "ba0fde6de3131f1650f86615dfbd81c888ae55cff75d6f1569a744c21e73a3ec",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/features/seed42/noisy_train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "4897f75b571c7efb01425558a8031c6c7ed93b7ce5a05aea94323a1ad8982255",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/features/seed43/noisy_train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "d13ab6242534feff2e78b4bd57cacdb7eb4bfbdcc5efcccecd78e83734760533",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/features/seed43/noisy_train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "64e014000f4f292f75197ae7db26769921676310ae002b186ce9ee758c01691a",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/features/seed44/noisy_train_cls.npy",
+      "bytes": 46080128,
+      "sha256": "9c2922d0e58570e7153d445e514e11adbc106abeaa8a35170a5ea8dcb50441e9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/features/seed44/noisy_train_logits_fp32.npy",
+      "bytes": 9000128,
+      "sha256": "fe3f12ea2cf58e31d71a821af9305dee93ecff945f6700c073058fc9649fd239",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_duplicate/seed42/distance_model.npz",
+      "bytes": 10781955,
+      "sha256": "6367cb19dbf391aab80db894726dff7707ff73fe8434c7eecb2fb9b4f23329ac",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_duplicate/seed43/distance_model.npz",
+      "bytes": 10781129,
+      "sha256": "fc78fff4b4f67d71a86ef847f527264ea6bb4a5ce134c3ae3c2f5bbe4f79fe8a",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_duplicate/seed44/distance_model.npz",
+      "bytes": 10782252,
+      "sha256": "69eb5e4c1863b52db6348630421cbb89054c13621e29b061a2955742b212d5ff",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_only/seed42/distance_model.npz",
+      "bytes": 10771424,
+      "sha256": "aed4a870f73133a88ae9bc5ddaf5348d988a1bdd491ef895090711ddb81ebf02",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_only/seed43/distance_model.npz",
+      "bytes": 10770883,
+      "sha256": "b5d74f4de49876fa78f624471629e117f7bb5c15594453521dfae501db6e9546",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_only/seed44/distance_model.npz",
+      "bytes": 10772827,
+      "sha256": "477734f652ba75a32f8064fd88b02b8955b0dd5f07d69cb7a879068eff6751c7",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_plus_typo/seed42/distance_model.npz",
+      "bytes": 10826004,
+      "sha256": "21c0b50577cbb2eaac81c09b743bc511ddd375abc0d23a99c2a11ff92c061999",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_plus_typo/seed43/distance_model.npz",
+      "bytes": 10827248,
+      "sha256": "0bed907997dfcc6ea2e914ce48fe9eefc2be66ccf09e8a23bbe6c765d42faeea",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Mixed_Rejection_20261019/outputs/clean_plus_typo/seed44/distance_model.npz",
+      "bytes": 10827125,
+      "sha256": "2589c2d832e99ec6dcf42f65177d02504cee6ecdafe8490e4be4a2b9f71f4e38",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/clean_reference/seed42/distance_model.npz",
+      "bytes": 10771424,
+      "sha256": "aed4a870f73133a88ae9bc5ddaf5348d988a1bdd491ef895090711ddb81ebf02",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/clean_reference/seed43/distance_model.npz",
+      "bytes": 10770883,
+      "sha256": "b5d74f4de49876fa78f624471629e117f7bb5c15594453521dfae501db6e9546",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/clean_reference/seed44/distance_model.npz",
+      "bytes": 10772827,
+      "sha256": "477734f652ba75a32f8064fd88b02b8955b0dd5f07d69cb7a879068eff6751c7",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_00/seed42/distance_model.npz",
+      "bytes": 10781955,
+      "sha256": "6367cb19dbf391aab80db894726dff7707ff73fe8434c7eecb2fb9b4f23329ac",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_00/seed43/distance_model.npz",
+      "bytes": 10781129,
+      "sha256": "fc78fff4b4f67d71a86ef847f527264ea6bb4a5ce134c3ae3c2f5bbe4f79fe8a",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_00/seed44/distance_model.npz",
+      "bytes": 10782252,
+      "sha256": "69eb5e4c1863b52db6348630421cbb89054c13621e29b061a2955742b212d5ff",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_10/seed42/distance_model.npz",
+      "bytes": 10807912,
+      "sha256": "2afff56395c778cfbcb9951d0275701e4491a4879c6bedc17bca3c2677834cfd",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_10/seed43/distance_model.npz",
+      "bytes": 10808479,
+      "sha256": "60ec363a327e3701f75dd0ed9664c257af845f51bbb7baa9afa8c1700473fc93",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_10/seed44/distance_model.npz",
+      "bytes": 10810180,
+      "sha256": "328d7e9ef98c1dc3ffb18cc68501d5090acce3e67fc634c1ca09d15d20fe7423",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_25/seed42/distance_model.npz",
+      "bytes": 10819547,
+      "sha256": "b0e190c4f20a343d6d513e1d569323a8989810412430e2ef28746afb079182a5",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_25/seed43/distance_model.npz",
+      "bytes": 10820648,
+      "sha256": "8315f8eb64b74092ed43f0796e25dee09eb8b9155b03943795ee07301a9acbc9",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_25/seed44/distance_model.npz",
+      "bytes": 10820752,
+      "sha256": "cc144ef9c9f2a85631d8dd8b02246f2e7db14d573728767cd5e05bc77b078e9c",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_50/seed42/distance_model.npz",
+      "bytes": 10826004,
+      "sha256": "21c0b50577cbb2eaac81c09b743bc511ddd375abc0d23a99c2a11ff92c061999",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_50/seed43/distance_model.npz",
+      "bytes": 10827248,
+      "sha256": "0bed907997dfcc6ea2e914ce48fe9eefc2be66ccf09e8a23bbe6c765d42faeea",
+      "kind": "numeric_cache_or_fitted_model"
+    },
+    {
+      "path": "BERT_Rejection_Ratio_20261019/outputs/ratio_50/seed44/distance_model.npz",
+      "bytes": 10827125,
+      "sha256": "2589c2d832e99ec6dcf42f65177d02504cee6ecdafe8490e4be4a2b9f71f4e38",
+      "kind": "numeric_cache_or_fitted_model"
+    }
+  ]
+}

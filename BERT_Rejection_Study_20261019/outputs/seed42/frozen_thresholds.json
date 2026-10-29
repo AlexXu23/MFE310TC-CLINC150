@@ -1,0 +1,56 @@
+{
+  "msp/max_oos_f1": {
+    "threshold": 0.8635584454777616,
+    "true_oos_rejected": 56.0,
+    "in_scope_rejected": 39.0,
+    "oos_precision": 0.5894736842105263,
+    "oos_recall": 0.56,
+    "oos_f1": 0.5743589743589743,
+    "in_scope_acceptance": 0.987
+  },
+  "msp/is_acceptance_95": {
+    "threshold": 0.7209220286154626,
+    "true_oos_rejected": 83.0,
+    "in_scope_rejected": 141.0,
+    "oos_precision": 0.3705357142857143,
+    "oos_recall": 0.83,
+    "oos_f1": 0.5123456790123456,
+    "in_scope_acceptance": 0.953
+  },
+  "entropy/max_oos_f1": {
+    "threshold": 3.8972482043352947,
+    "true_oos_rejected": 70.0,
+    "in_scope_rejected": 64.0,
+    "oos_precision": 0.5223880597014925,
+    "oos_recall": 0.7,
+    "oos_f1": 0.5982905982905983,
+    "in_scope_acceptance": 0.9786666666666667
+  },
+  "entropy/is_acceptance_95": {
+    "threshold": 3.4710087399639886,
+    "true_oos_rejected": 82.0,
+    "in_scope_rejected": 137.0,
+    "oos_precision": 0.3744292237442922,
+    "oos_recall": 0.82,
+    "oos_f1": 0.5141065830721002,
+    "in_scope_acceptance": 0.9543333333333334
+  },
+  "mahalanobis/max_oos_f1": {
+    "threshold": 7094.348267243073,
+    "true_oos_rejected": 69.0,
+    "in_scope_rejected": 24.0,
+    "oos_precision": 0.7419354838709677,
+    "oos_recall": 0.69,
+    "oos_f1": 0.7150259067357512,
+    "in_scope_acceptance": 0.992
+  },
+  "mahalanobis/is_acceptance_95": {
+    "threshold": 3660.9530965166186,
+    "true_oos_rejected": 94.0,
+    "in_scope_rejected": 139.0,
+    "oos_precision": 0.4034334763948498,
+    "oos_recall": 0.94,
+    "oos_f1": 0.5645645645645646,
+    "in_scope_acceptance": 0.9536666666666667
+  }
+}

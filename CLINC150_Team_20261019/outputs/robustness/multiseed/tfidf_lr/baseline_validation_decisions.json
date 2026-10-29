@@ -1,0 +1,83 @@
+{
+  "selected_C": 4.0,
+  "decisions": [
+    {
+      "calibration": "raw",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "temperature": 1.0,
+      "threshold": 0.9199050111638356,
+      "true_oos_rejected": 55.0,
+      "in_scope_rejected": 105.0,
+      "oos_precision": 0.34375,
+      "oos_recall": 0.55,
+      "oos_f1": 0.42307692307692313,
+      "in_scope_acceptance": 0.965
+    },
+    {
+      "calibration": "raw",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "temperature": 1.0,
+      "threshold": 0.8993144945522337,
+      "true_oos_rejected": 60.0,
+      "in_scope_rejected": 147.0,
+      "oos_precision": 0.2898550724637681,
+      "oos_recall": 0.6,
+      "oos_f1": 0.3908794788273615,
+      "in_scope_acceptance": 0.951
+    },
+    {
+      "calibration": "raw",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "temperature": 1.0,
+      "threshold": 4.734211596858276,
+      "true_oos_rejected": 40.0,
+      "in_scope_rejected": 71.0,
+      "oos_precision": 0.36036036036036034,
+      "oos_recall": 0.4,
+      "oos_f1": 0.3791469194312796,
+      "in_scope_acceptance": 0.9763333333333334
+    },
+    {
+      "calibration": "raw",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "temperature": 1.0,
+      "threshold": 4.590726192775245,
+      "true_oos_rejected": 52.0,
+      "in_scope_rejected": 149.0,
+      "oos_precision": 0.25870646766169153,
+      "oos_recall": 0.52,
+      "oos_f1": 0.34551495016611294,
+      "in_scope_acceptance": 0.9503333333333334
+    },
+    {
+      "calibration": "raw",
+      "score": "margin",
+      "policy": "max_oos_f1",
+      "temperature": 1.0,
+      "threshold": 0.9637754527758077,
+      "true_oos_rejected": 59.0,
+      "in_scope_rejected": 173.0,
+      "oos_precision": 0.2543103448275862,
+      "oos_recall": 0.59,
+      "oos_f1": 0.35542168674698793,
+      "in_scope_acceptance": 0.9423333333333334
+    },
+    {
+      "calibration": "raw",
+      "score": "margin",
+      "policy": "is_acceptance_95",
+      "temperature": 1.0,
+      "threshold": 0.9716588223590402,
+      "true_oos_rejected": 52.0,
+      "in_scope_rejected": 150.0,
+      "oos_precision": 0.25742574257425743,
+      "oos_recall": 0.52,
+      "oos_f1": 0.3443708609271523,
+      "in_scope_acceptance": 0.95
+    }
+  ]
+}

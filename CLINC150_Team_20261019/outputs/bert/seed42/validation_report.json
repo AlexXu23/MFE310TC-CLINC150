@@ -1,0 +1,28 @@
+{
+  "validation": {
+    "shape": [
+      3100,
+      150
+    ],
+    "dtype": "float32",
+    "in_scope_rows": 3000,
+    "oos_rows": 100,
+    "in_scope_accuracy": 0.9526666666666667,
+    "in_scope_macro_f1": 0.9522774135092547,
+    "logit_min": -3.26953125,
+    "logit_max": 6.84375
+  },
+  "test": {
+    "shape": [
+      5500,
+      150
+    ],
+    "dtype": "float32",
+    "in_scope_rows": 4500,
+    "oos_rows": 1000,
+    "in_scope_accuracy": 0.95,
+    "in_scope_macro_f1": 0.9498114654877308,
+    "logit_min": -3.240234375,
+    "logit_max": 6.83984375
+  }
+}

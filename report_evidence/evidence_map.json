@@ -1,0 +1,33 @@
+{
+  "report_source": "Submission_English_Recording_20261029/output/MFE310TC_Report_EN_20261029.pdf",
+  "report_source_sha256": "9d4dc0e8bd5e01cef8c702065aa16cacb86aeef439c15c1042b521013e18f9fe",
+  "source_report_included": false,
+  "purpose": "Current principal claim routes; does not change the report or claim full inference reproduction.",
+  "claims": {
+    "Original clean BERT versus TF-IDF and typo degradation": [
+      "CLINC150_Team_20261019/outputs/multiseed/typo_classification_mean_sd.csv"
+    ],
+    "Calibration versus OOS rejection": [
+      "CLINC150_Team_20261019/outputs/multiseed/clean_calibration_by_seed.csv",
+      "CLINC150_Team_20261019/outputs/multiseed/clean_oos_by_seed.csv"
+    ],
+    "Matched spelling augmentation": [
+      "BERT_Typo_Augmentation_20261019/outputs/metrics_by_seed.csv",
+      "BERT_Typo_Augmentation_20261019/outputs/summary_mean_sd.csv",
+      "BERT_Typo_Augmentation_20261019/outputs/paired_intervals.csv"
+    ],
+    "Reference mixture and alignment": [
+      "BERT_Rejection_Ratio_20261019/outputs/summary_mean_sd.csv",
+      "BERT_Rejection_Alignment_20261019/outputs/summary_mean_sd.csv"
+    ],
+    "Five validation acceptance targets": [
+      "BERT_Rejection_Operating_Points_20261019/outputs/operating_points.csv",
+      "BERT_Rejection_Operating_Points_20261019/outputs/summary_mean_sd.csv",
+      "BERT_Rejection_Operating_Points_20261019/outputs/primary_paired_intervals.csv"
+    ],
+    "Common-correct rejection and illustrative cases": [
+      "BERT_Typo_Augmentation_20261019/outputs/common_correct_rejection_diagnostic.csv",
+      "demo/recorded_demo_inference_results.json"
+    ]
+  }
+}

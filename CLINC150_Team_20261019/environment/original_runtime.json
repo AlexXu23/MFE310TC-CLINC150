@@ -1,0 +1,14 @@
+{
+  "original_training": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "scikit_learn": "1.9.1",
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "packaging_python": "3.12.14",
+  "torch_installation_source": "https://download.pytorch.org/whl/cu128",
+  "lock_policy": "The original local wheel URI is replaced by the installed torch version."
+}

@@ -1,0 +1,20 @@
+{
+  "checks": [
+    {
+      "seed": 42,
+      "clean_max_abs_logit_delta": 0.0,
+      "clean_prediction_agreement": 1.0
+    },
+    {
+      "seed": 43,
+      "clean_max_abs_logit_delta": 0.0,
+      "clean_prediction_agreement": 1.0
+    },
+    {
+      "seed": 44,
+      "clean_max_abs_logit_delta": 0.0,
+      "clean_prediction_agreement": 1.0
+    }
+  ],
+  "baseline_clean_reproduced": true
+}

@@ -1,0 +1,18 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "same_perturbations_for_all_models": true,
+  "thresholds": "Frozen clean validation decisions per model seed; no noisy validation or test tuning",
+  "baseline": "Historical C=4.0, one deterministic fit, not replicated as independent seeds",
+  "aggregate_sd": "Sample SD across training seeds, ddof=1; not confidence intervals",
+  "scope": "Both in-scope and OOS test text perturbed; original scope labels inherited",
+  "typo_manifest_sha256": "e2c5caf1a88435d12f9dd1b3355bf9c00c4781ab397ee1b1bba3a62ed2d8c11f"
+}

@@ -1,0 +1,528 @@
+{
+  "verified_test_settings": 162,
+  "verified_validation_settings": 36,
+  "verified_test_prediction_rows": 148500,
+  "validation_candidates_checked": 55818,
+  "validation_operating_points": 36,
+  "all_validation_thresholds_and_tie_rules_verified": true,
+  "model_specific_thresholds_frozen_before_new_model_test": true,
+  "training_data_source_and_deterministic_mutations_verified": true,
+  "paired_training_order_and_938_update_ledgers_verified": true,
+  "training_data_summary": [
+    {
+      "arm": "clean_continue",
+      "training_rows": 15000,
+      "policy_counts": {
+        "clean": 15000,
+        "typo_light": 0,
+        "typo_medium": 0
+      },
+      "actual_changed_rows": 0
+    },
+    {
+      "arm": "typo_mix",
+      "training_rows": 15000,
+      "policy_counts": {
+        "clean": 7500,
+        "typo_light": 3750,
+        "typo_medium": 3750
+      },
+      "actual_changed_rows": 6955
+    }
+  ],
+  "training_runs": [
+    {
+      "arm": "clean_continue",
+      "seed": 42,
+      "presentations": 15000,
+      "optimizer_updates": 938,
+      "warmup_updates": 94,
+      "mean_batch_loss": 0.4807823848114339,
+      "training_complete_sha256": "f6590d1d75dcbc5634f2fd21ed3ffba60f34843cae3c33887aa7013274c7bfa6"
+    },
+    {
+      "arm": "typo_mix",
+      "seed": 42,
+      "presentations": 15000,
+      "optimizer_updates": 938,
+      "warmup_updates": 94,
+      "mean_batch_loss": 0.8385225796242004,
+      "training_complete_sha256": "e12301fd5cddd6661ce0ae9c2d07a80834475ecceef637908685227f6244d227"
+    },
+    {
+      "arm": "clean_continue",
+      "seed": 43,
+      "presentations": 15000,
+      "optimizer_updates": 938,
+      "warmup_updates": 94,
+      "mean_batch_loss": 0.4702860948119336,
+      "training_complete_sha256": "7964dfd122e2ddf32e4d8acc660b2893e443a4d9afcd9139a4234d5d6471f524"
+    },
+    {
+      "arm": "typo_mix",
+      "seed": 43,
+      "presentations": 15000,
+      "optimizer_updates": 938,
+      "warmup_updates": 94,
+      "mean_batch_loss": 0.8387544221207023,
+      "training_complete_sha256": "3acfbafd7ad50e25f689edabedfb22a5e39681511666644672b8d891e9a7eaea"
+    },
+    {
+      "arm": "clean_continue",
+      "seed": 44,
+      "presentations": 15000,
+      "optimizer_updates": 938,
+      "warmup_updates": 94,
+      "mean_batch_loss": 0.4934930862394223,
+      "training_complete_sha256": "20200d3728d918002261d9c831d683c5debb1a57266194a822d6e6340645c323"
+    },
+    {
+      "arm": "typo_mix",
+      "seed": 44,
+      "presentations": 15000,
+      "optimizer_updates": 938,
+      "warmup_updates": 94,
+      "mean_batch_loss": 0.853715453320729,
+      "training_complete_sha256": "f9e9fd68d91f06af56c13c209fe8fb7541909ce1ec31d244025116db5662b500"
+    }
+  ],
+  "clean_original_train_only_distance_statistics_verified": true,
+  "original_json_row_alignment": true,
+  "shared_classifier_predictions_verified": true,
+  "independent_manual_confusion_metrics": true,
+  "independent_auc_average_precision": true,
+  "distance_direct_solve_checks": [
+    {
+      "context": "original/42/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.6370904631912708e-11
+    },
+    {
+      "context": "original/42/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 2.546585164964199e-11
+    },
+    {
+      "context": "original/42/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 8.412825991399586e-12
+    },
+    {
+      "context": "original/43/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.4551915228366852e-11
+    },
+    {
+      "context": "original/43/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 8.185452315956354e-12
+    },
+    {
+      "context": "original/43/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.9099388737231493e-11
+    },
+    {
+      "context": "original/44/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.2732925824820995e-11
+    },
+    {
+      "context": "original/44/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 7.275957614183426e-12
+    },
+    {
+      "context": "original/44/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 7.275957614183426e-12
+    },
+    {
+      "context": "clean_continue/42/validation",
+      "row_ids": [
+        757,
+        1025,
+        1878,
+        3006,
+        3053,
+        3014
+      ],
+      "max_abs_distance_error": 1.1823431123048067e-11
+    },
+    {
+      "context": "clean_continue/42/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.6370904631912708e-11
+    },
+    {
+      "context": "clean_continue/42/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 7.275957614183426e-12
+    },
+    {
+      "context": "clean_continue/42/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.0913936421275139e-11
+    },
+    {
+      "context": "clean_continue/43/validation",
+      "row_ids": [
+        757,
+        1025,
+        1878,
+        3006,
+        3053,
+        3014
+      ],
+      "max_abs_distance_error": 9.094947017729282e-12
+    },
+    {
+      "context": "clean_continue/43/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.8189894035458565e-11
+    },
+    {
+      "context": "clean_continue/43/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.0913936421275139e-11
+    },
+    {
+      "context": "clean_continue/43/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.4551915228366852e-11
+    },
+    {
+      "context": "clean_continue/44/validation",
+      "row_ids": [
+        757,
+        1025,
+        1878,
+        3006,
+        3053,
+        3014
+      ],
+      "max_abs_distance_error": 9.094947017729282e-12
+    },
+    {
+      "context": "clean_continue/44/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.6370904631912708e-11
+    },
+    {
+      "context": "clean_continue/44/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.0913936421275139e-11
+    },
+    {
+      "context": "clean_continue/44/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.6370904631912708e-11
+    },
+    {
+      "context": "typo_mix/42/validation",
+      "row_ids": [
+        757,
+        1025,
+        1878,
+        3006,
+        3053,
+        3014
+      ],
+      "max_abs_distance_error": 1.6370904631912708e-11
+    },
+    {
+      "context": "typo_mix/42/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.2732925824820995e-11
+    },
+    {
+      "context": "typo_mix/42/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.2732925824820995e-11
+    },
+    {
+      "context": "typo_mix/42/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.8189894035458565e-11
+    },
+    {
+      "context": "typo_mix/43/validation",
+      "row_ids": [
+        757,
+        1025,
+        1878,
+        3006,
+        3053,
+        3014
+      ],
+      "max_abs_distance_error": 7.275957614183426e-12
+    },
+    {
+      "context": "typo_mix/43/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 6.59383658785373e-12
+    },
+    {
+      "context": "typo_mix/43/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.4551915228366852e-11
+    },
+    {
+      "context": "typo_mix/43/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 8.185452315956354e-12
+    },
+    {
+      "context": "typo_mix/44/validation",
+      "row_ids": [
+        757,
+        1025,
+        1878,
+        3006,
+        3053,
+        3014
+      ],
+      "max_abs_distance_error": 3.751665644813329e-12
+    },
+    {
+      "context": "typo_mix/44/clean",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.0913936421275139e-11
+    },
+    {
+      "context": "typo_mix/44/typo_light",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 1.2732925824820995e-11
+    },
+    {
+      "context": "typo_mix/44/typo_medium",
+      "row_ids": [
+        1137,
+        1539,
+        2818,
+        4564,
+        5034,
+        4647
+      ],
+      "max_abs_distance_error": 9.094947017729282e-12
+    }
+  ],
+  "normal_transitions": {
+    "status": "PASS",
+    "checked": true,
+    "verified_rows": 162,
+    "sha256": "9d978ee1fbf82934a860d79c047df53adf2fb1d741b198cffe9d1cf04a0594d2",
+    "four_current_condition_states_and_clean_ac_flows_verified": true,
+    "new_minus_recovered_equals_net_rejection_change": true
+  },
+  "hash_inventory_counts": {
+    "frozen_inputs": 68,
+    "development_outputs": 151,
+    "test_outputs": 109,
+    "original_source_hashes": 23,
+    "original_code_hashes": 3,
+    "original_development_hashes": 15,
+    "original_typo_outputs": 29
+  },
+  "frozen_manifest_and_source_hashes_verified": true,
+  "inputs_manifest_sha256": "8700a1fafe4ed73e1cec59e0f363008eb635fc031310c2403a8a9f13dda1d282",
+  "development_manifest_sha256": "934c6b46aea9a031590718e61126ade58f3af96e6f0d654bac75bbeaa8d33c2c",
+  "test_completion_sha256": "875b8c60d7f30de1bf81f41ecb9ca3df788f032f7113acde567d1ea7d6eff4ac",
+  "metrics_sha256": "54d3e58bdb70d601650b27d12e19f08095db34bf5f793c63238ec6f461f8204e",
+  "limitations": [
+    "Verifies frozen training ledgers, model/data bindings and saved FP32 outputs; does not rerun training or BERT inference.",
+    "Training source review and frozen ledgers support the prescribed optimizer/precision setup; ledgers alone cannot prove every GPU operation.",
+    "Reconstructs covariance using each recorded shrinkage coefficient; does not independently re-estimate that coefficient.",
+    "Direct covariance solves sample six rows per model/split or condition, all 150 centers for each sampled row.",
+    "Test-extraction completion times and frozen runner gate are checked; records do not separately timestamp extraction start."
+  ],
+  "status": "PASS",
+  "independent_helper_sha256": {
+    "BERT_Rejection_Study_20261019/verify_rejection.py": "142ba3c2ddf49f4729170548336d1a87c7462726735cd9455d12d3f5f372b594"
+  },
+  "verifier_sha256": "b70f6d97b7fb6d07c5224b8d1a462fe3c1de5acfcf08288c9c7782610233945a",
+  "started_at_utc": "2026-10-19T11:08:36.534983+00:00",
+  "completed_at_utc": "2026-10-19T11:09:07.388532+00:00"
+}

@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-19",
+  "kind": "exploratory_fixed_score_operating_point_alignment",
+  "arms": [
+    "clean_reference",
+    "ratio_00",
+    "ratio_10",
+    "ratio_25",
+    "ratio_50"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "policies": [
+    "is_acceptance_95",
+    "aligned_is_acceptance_95"
+  ],
+  "primary_policy": "aligned_is_acceptance_95",
+  "reference_policy": "is_acceptance_95",
+  "frozen": "All BERT weights, classifier predictions, feature arrays,15 detector means/covariances/precisions and cached scores remain identical to the ratio experiment. No model inference or detector refitting.",
+  "alignment": {
+    "target_acceptance": 0.95,
+    "target_accepted": 2850,
+    "normal_validation_rows": 3000,
+    "selection_data": "Only3000 in-scope rows from each saved clean validation_predictions.csv; OOS labels/scores never supplied to the selection function",
+    "candidates": "Sorted unique IS scores plus nextafter(max_IS_score,+inf); accept iff score<threshold, reject iff score>=threshold",
+    "joint_target": "Intersect attainable integer accepted-count sets of all15 detectors; choose smallest common count>=2850",
+    "threshold": "For each detector choose smallest listed candidate yielding that common count; record requested and achieved acceptance explicitly",
+    "ties": "No randomized tie-breaking, no test-dependent tolerance; if ties prevent95%, align at nearest higher common attainable count and disclose it"
+  },
+  "original_policy": "Original constraint ISaccept>=95%, then maximize validation OOS recall/F1 with original tie rules; retain exact saved threshold for within-detector comparison",
+  "validation_oos": "Evaluate100 OOS only after IS-only cutoffs are determined; never tune new cutoffs using those rows",
+  "gate": "All15 new thresholds frozen with scores/source hashes before any test rethresholding",
+  "comparisons": {
+    "within_detector": "Aligned minus original policy for each arm,seed,condition",
+    "across_ratios": "Each of10%/25% versus0%/50%, under both policies",
+    "gap_decomposition": "old_gap=M(candidate,old)-M(reference,old); aligned_gap=M(candidate,new)-M(reference,new); gap_change=old_gap-aligned_gap. Exact fixed-score counterfactual accounting at this selected common validation point, not universal causal attribution or an optimality claim.",
+    "historical_reference": "clean_reference15000 remains supplementary; ratio arms all use30000 views"
+  },
+  "metrics": [
+    "normal false rejection",
+    "normal correct-and-accepted",
+    "normal wrong-head-and-accepted",
+    "OOS false acceptance",
+    "OOS F1",
+    "OOS recall",
+    "normal acceptance",
+    "combined accuracy"
+  ],
+  "invariants": [
+    "Scores and classifier labels identical within each detector before/after alignment",
+    "All arms share identical classifier predictions for same seed/input",
+    "Old-policy decisions and metrics reproduce prior results",
+    "Within a detector, moving a threshold downward can only add rejections; upward can only remove them"
+  ],
+  "bootstrap": "2000 paired stratified draws,150 IS intents x30 plus1000 OOS, shared row weights across arms/policies/seeds/conditions; fixed scores and both sets of thresholds",
+  "limitations": [
+    "Previously inspected tests motivated alignment; exploratory repeated-test followup, not untouched confirmation",
+    "Aligning validation acceptance does not guarantee equal clean-test or noisy-test acceptance",
+    "Changing old OOS-aware threshold selection to IS-only selection is part of the intervention; residual differences can include validation-to-test transfer and distribution/score ordering effects",
+    "Gap change is conditional on the95% target, fixed datasets/models/subsets/thresholds, not an invariant percentage of causation",
+    "Inherited train-val/test duplicates remain; exclusion599/938 does not cure historical exposure",
+    "Intervals omit validation threshold selection,detector/model refitting,new-noise and subset uncertainty; no multiplicity correction"
+  ]
+}

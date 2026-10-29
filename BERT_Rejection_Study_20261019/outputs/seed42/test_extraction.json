@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "split": "test",
+  "rows": 5500,
+  "feature_shape": [
+    5500,
+    768
+  ],
+  "text_sha256": "ec1a694b6c198eb3396398e253b8e54432080d0e179f2267fb9518ddd465f21d",
+  "protocol_sha256": "3c020930e0833255b39b56632d9fe1d3921b521c9747919140313a1002aa0b87",
+  "feature_sha256": "f26577ed1a1e4c48828db9ba9b53279045e8f635768675c9327c92528b9d6532",
+  "logit_sha256": "c6067e82c82fec18a9ec9c3891ecd52fac8ff162084549f462b5d15d89724ac0",
+  "elapsed_seconds": 3.5460000000020955,
+  "peak_allocated_gpu_bytes": 552039424,
+  "completed_at": "2026-10-19T18:31:44.608315+08:00"
+}

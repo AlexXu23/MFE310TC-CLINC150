@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "verified_operating_points": 12,
+  "source_json_row_alignment": true,
+  "input_hashes_unchanged": true,
+  "independent_sklearn_metrics": true,
+  "temperature_inverse_gradient": -7.557295944593534e-11
+}

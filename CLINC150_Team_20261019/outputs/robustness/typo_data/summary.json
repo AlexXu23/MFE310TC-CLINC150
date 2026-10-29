@@ -1,0 +1,73 @@
+{
+  "seed": 2026,
+  "examples_per_condition": 5500,
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "data_sha256": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+  "files_sha256": {
+    "clean.csv": "61b4e58e6714944593b164431b21a3788cce516af7bab2f92530a6ea14876520",
+    "typo_light.csv": "0547f3f4f980aa178b12b2b758bb83c87e86bcfcbd179d788e0ce12343dac65d",
+    "typo_medium.csv": "1075ac7793208d8dcd9b96a245b710bc816b01f6229f09550aec4ec5e36651a9"
+  },
+  "coverage": [
+    {
+      "condition": "clean",
+      "scope": "in_scope",
+      "n": 4500,
+      "changed": 0,
+      "changed_fraction": 0.0,
+      "mean_modified_tokens": 0.0,
+      "two_tokens_changed": 0
+    },
+    {
+      "condition": "clean",
+      "scope": "oos",
+      "n": 1000,
+      "changed": 0,
+      "changed_fraction": 0.0,
+      "mean_modified_tokens": 0.0,
+      "two_tokens_changed": 0
+    },
+    {
+      "condition": "typo_light",
+      "scope": "in_scope",
+      "n": 4500,
+      "changed": 4144,
+      "changed_fraction": 0.9208888888888889,
+      "mean_modified_tokens": 0.9208888888888889,
+      "two_tokens_changed": 0
+    },
+    {
+      "condition": "typo_light",
+      "scope": "oos",
+      "n": 1000,
+      "changed": 984,
+      "changed_fraction": 0.984,
+      "mean_modified_tokens": 0.984,
+      "two_tokens_changed": 0
+    },
+    {
+      "condition": "typo_medium",
+      "scope": "in_scope",
+      "n": 4500,
+      "changed": 4144,
+      "changed_fraction": 0.9208888888888889,
+      "mean_modified_tokens": 1.604,
+      "two_tokens_changed": 3074
+    },
+    {
+      "condition": "typo_medium",
+      "scope": "oos",
+      "n": 1000,
+      "changed": 984,
+      "changed_fraction": 0.984,
+      "mean_modified_tokens": 1.829,
+      "two_tokens_changed": 845
+    }
+  ],
+  "medium_contains_light_mutations": true,
+  "label_preservation": "Inherited labels; automatic character stress test, not human-verified semantic equivalence."
+}

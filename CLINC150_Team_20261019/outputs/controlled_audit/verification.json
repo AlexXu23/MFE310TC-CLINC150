@@ -1,0 +1,56 @@
+{
+  "verified_controls": [
+    {
+      "seed": 42,
+      "single_scalar_refit_matches": true,
+      "argmax_unchanged_all_5500": true,
+      "all_12_validation_thresholds_reproduced": true,
+      "all_12_test_comparisons_reproduced": true
+    },
+    {
+      "seed": 43,
+      "single_scalar_refit_matches": true,
+      "argmax_unchanged_all_5500": true,
+      "all_12_validation_thresholds_reproduced": true,
+      "all_12_test_comparisons_reproduced": true
+    },
+    {
+      "seed": 44,
+      "single_scalar_refit_matches": true,
+      "argmax_unchanged_all_5500": true,
+      "all_12_validation_thresholds_reproduced": true,
+      "all_12_test_comparisons_reproduced": true
+    }
+  ],
+  "input_sha256": {
+    "outputs/bert/seed42/validation_logits.npy": "1c053035312495839e4be7ec9bbf10e5cc3d8c5b946709f8b3199326ae4a2a69",
+    "outputs/bert/seed42/test_logits.npy": "eb19973bc5352c7d50e4db6cbc60e18b7464aa263775433c1e21a56a3078185e",
+    "outputs/bert/seed42/run_summary.json": "5be7121406d58d068b0ab4ebf73d4a28c097adba7899b106966f418b3143adfd",
+    "outputs/oos/seed42/frozen_validation_decisions.json": "bc553304ac71c879d9a0481facddd91cbb041c3228efc15811fe4bebb8321be8",
+    "outputs/bert/seed43/validation_logits.npy": "b4b8d77072148628f582a7c8855402dba6b87a3e06aa1c0aa85c83f45fe40131",
+    "outputs/bert/seed43/test_logits.npy": "9a9ac699ed9394f29d7ee060c80a5a2e851df0b4d98e44b529418bd94f2e684c",
+    "outputs/bert/seed43/run_summary.json": "f239abfd9555495f95fee6826600ec88f88253ced4b81bcf796ce46898afd3dd",
+    "outputs/oos/seed43/frozen_validation_decisions.json": "969154ebce5b6a700093aa0dcc490394c7c9afdae2cfd9cba3c3960883d6d8a9",
+    "outputs/bert/seed44/validation_logits.npy": "2b85baef20a14e23801ce8063808c6eb4b4d03740cd0b1c13635e9f73eea2415",
+    "outputs/bert/seed44/test_logits.npy": "5557277eb84dd7f124768ce38ea473153d1b936201b4b327219dc958fc6978e5",
+    "outputs/bert/seed44/run_summary.json": "cef9fcd74e88b16aa7850ef1decef887509ec9c741bae0000c11539bf5875dfd",
+    "outputs/oos/seed44/frozen_validation_decisions.json": "e9cf5812abd8dd2c9b1d86c240b3e389a27e3b9fd85bb245adbc24fdc73351cf"
+  },
+  "intervention": "One positive scalar T fitted by in-scope validation NLL; classifier weights, data and class predictions fixed.",
+  "primary_endpoint_unchanged": "MSP OOS F1 with validation max-OOS-F1 thresholds; negative result retained.",
+  "calibration_endpoints": "In-scope test NLL, ECE (15 equal-width bins), multiclass Brier (sum over classes).",
+  "threshold_control": "Same selection algorithm and validation data in both arms; numeric thresholds differ because scores change units.",
+  "conditional_bootstrap": {
+    "repeats": 2000,
+    "seed": 20261019,
+    "unit": "same test row in both arms",
+    "scope": "Each fixed seed separately; excludes training and validation-selection uncertainty."
+  },
+  "historical_limitations": [
+    "BERT checkpoint selection and temperature fitting both use in-scope validation: validation-fit calibration is not independent validation.",
+    "Temperature fitting and threshold selection reuse validation rows; test labels do not enter either optimization.",
+    "This audit follows existing test exposure and is not a new preregistration or unseen confirmation set.",
+    "Only three training seeds; no population-level significance claim from n=3.",
+    "One-dimensional calibration is not an OOS training objective and need not preserve across-example uncertainty rankings."
+  ]
+}

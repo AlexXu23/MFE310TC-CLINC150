@@ -1,0 +1,19 @@
+{
+  "CLINC150": {
+    "authors": "Stefan Larson et al.",
+    "paper": "https://aclanthology.org/D19-1131/",
+    "license": "CC-BY-3.0",
+    "modifications": "Deterministic typo variants and model-derived predictions are labeled separately."
+  },
+  "BERT": {
+    "authors": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova",
+    "model": "google-bert/bert-base-uncased",
+    "license": "Apache-2.0",
+    "modifications": "Fine-tuned 150-class checkpoints for CLINC150, including the separate smoke diagnostic."
+  },
+  "upstream_license_urls": {
+    "BERT_MODEL_CARD.md": "https://huggingface.co/google-bert/bert-base-uncased/raw/main/README.md",
+    "BERT_APACHE_2_0.txt": "https://raw.githubusercontent.com/google-research/bert/master/LICENSE"
+  },
+  "coursework": "Course materials supplied by the user; included as group reference files, not assigned a project open-source license."
+}

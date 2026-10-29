@@ -1,0 +1,408 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>BERT 相对 TF-IDF 的收益分析 · 2026-10-19</title>
+<style>body{font-family:"Microsoft YaHei",system-ui,sans-serif;line-height:1.8;background:#f3f5f7;color:#182c3a;margin:0}main{max-width:1100px;margin:30px auto;background:white;padding:40px 48px;border-radius:12px}h1{font-size:30px;line-height:1.4}h2{font-size:21px;margin-top:38px;border-top:1px solid #dfe6ec;padding-top:24px}p,li{font-size:15px}.muted{color:#657480;font-size:13px}.callout{background:#edf6f5;border-left:4px solid #237e73;padding:16px 22px;margin:20px 0}.caution{background:#fff6e7;border-left-color:#ba7b22}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px;margin:16px 0}th,td{border-bottom:1px solid #dfe6ec;padding:10px 12px;text-align:left;vertical-align:top}th{background:#edf2f6}tr:nth-child(even){background:#fafbfd}a{color:#126b91}code{background:#edf2f6;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}.metrics{display:flex;gap:16px;flex-wrap:wrap}.metric{flex:1;min-width:180px;background:#edf6f5;padding:18px;border-radius:8px}.number{font-size:30px;font-weight:700;color:#17675d}@media(max-width:700px){main{padding:22px;margin:0;border-radius:0}h1{font-size:25px}}@media print{body{background:white}main{margin:0;padding:0;max-width:none}h2,table{break-inside:avoid}.table-scroll{overflow:visible}}</style></head><body><main>
+<p class="muted">MFE310TC · 学习与实验审查材料 · 2026-10-19 · 基于已保存预测的事后分析</p>
+<h1>BERT 相对 TF-IDF：收益成立，适用边界也明确</h1>
+<p>固定现有数据、模型和评价规则，BERT 在干净文本分类与既有拒识系统上均优于 TF-IDF。改善覆盖多数意图，并非只由少数例子造成；在较强拼写噪声和少数语义边界上仍有退步。本分析不训练模型、不选择新阈值、不新增拒识机制，原交接包保持不变。</p>
+<div class="metrics"><div class="metric"><div class="number">+4.36 pp</div>正常意图 Macro-F1</div><div class="metric"><div class="number">−46.1%</div>分类错误数相对减少</div><div class="metric"><div class="number">228 / 33</div>三个 BERT 一致纠正 / 一致新增错误</div></div>
+<h2>1. 比较对象与证据口径</h2>
+<p>TF-IDF 使用 word unigram/bigram 与逻辑回归；BERT 使用 bert-base-uncased，固定配置下 seeds 42/43/44。两者使用同一 15,000 条已知意图训练文本、同一官方划分和标签。分类评价只用 4,500 条已知意图测试文本；系统评价再加入 1,000 条 OOS。BERT 额外使用预训练知识，因此结果是完整方法比较，不能把收益孤立归因于 attention、深度或某一网络组件。</p>
+<p>本轮逐行核对 12 份预测文件的 row_id、原文、gold label、模型预测和相同扰动输入，并独立重算指标，与保存的分类汇总一致。BERT 均值是三次模型评价的平均，不是投票集成。</p>
+<h2>2. 分类收益及其稳定性</h2>
+<p>正常意图 Accuracy 从 90.62% 升至 94.95%（SD 0.17 个百分点）。4,500 条文本的错误数从 422 条降至平均 227.33 条，相当于平均多分对 194.67 条。Macro-F1 提升 4.36 个百分点，配对条件 95% 区间为 [3.63, 5.09]。</p>
+<div class="table-scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>输入条件</th>
+      <th>TF-IDF Macro-F1 (%)</th>
+      <th>BERT Macro-F1，均值 ± SD (%)</th>
+      <th>差值 (百分点)</th>
+      <th>配对条件 95% 区间</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>原始文本</td>
+      <td>90.56</td>
+      <td>94.92 ± 0.17</td>
+      <td>4.36</td>
+      <td>[3.63, 5.09]</td>
+    </tr>
+    <tr>
+      <td>轻度拼写扰动</td>
+      <td>78.90</td>
+      <td>80.13 ± 0.78</td>
+      <td>1.23</td>
+      <td>[0.14, 2.27]</td>
+    </tr>
+    <tr>
+      <td>中度拼写扰动</td>
+      <td>67.35</td>
+      <td>64.81 ± 1.14</td>
+      <td>-2.54</td>
+      <td>[-3.84, -1.41]</td>
+    </tr>
+  </tbody>
+</table></div>
+<p class="muted">SD 描述三个训练种子的波动。区间通过 2,000 次按意图分层的配对文本重采样得到，同一原文的三个模型预测一起重采样；固定模型和阈值，不涵盖重新训练、模型选择或新分布的不确定性。类别均有 30 个测试正例；每次重采样保留这个结构。不是把 13,500 次预测当作独立文本。</p>
+<div class="table-scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>BERT seed</th>
+      <th>两者都对</th>
+      <th>纠正 TF-IDF 错误</th>
+      <th>新增错误</th>
+      <th>两者都错</th>
+      <th>净多分对</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>42</td>
+      <td>4017</td>
+      <td>258</td>
+      <td>61</td>
+      <td>164</td>
+      <td>197</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>4003</td>
+      <td>261</td>
+      <td>75</td>
+      <td>161</td>
+      <td>186</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>4006</td>
+      <td>273</td>
+      <td>72</td>
+      <td>149</td>
+      <td>201</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>三个 BERT 一致纠正了 228 条 TF-IDF 错误，占 baseline 422 个错误的 54.03%；一致新增 33 个错误。另有 122 条全部模型都错，157 条在三个 BERT seed 间出现正确与错误并存。这个 157 统计的是对错状态，三个模型都错但错误标签不同的文本不计入该数。这两个方向的案例均完整导出，尚未由学生人工确认。</p>
+<h2>3. 哪些领域和意图获益</h2>
+<p>150 个意图中，平均 F1 改善 117 类、退步 28 类、持平 5 类；其中 94 类在三个 seed 上均改善，12 类均退步。这是描述性分组，不是 150 次经过多重检验校正的显著性声明。</p>
+<div class="table-scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>领域（各 450 条测试文本）</th>
+      <th>TF-IDF Macro-F1 (%)</th>
+      <th>BERT Macro-F1 均值 (%)</th>
+      <th>差值 (百分点)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>home</td>
+      <td>84.29</td>
+      <td>93.05</td>
+      <td>8.77</td>
+    </tr>
+    <tr>
+      <td>kitchen_and_dining</td>
+      <td>87.26</td>
+      <td>94.29</td>
+      <td>7.03</td>
+    </tr>
+    <tr>
+      <td>travel</td>
+      <td>93.06</td>
+      <td>98.59</td>
+      <td>5.53</td>
+    </tr>
+    <tr>
+      <td>auto_and_commute</td>
+      <td>91.86</td>
+      <td>97.05</td>
+      <td>5.19</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td>88.67</td>
+      <td>92.83</td>
+      <td>4.16</td>
+    </tr>
+    <tr>
+      <td>work</td>
+      <td>92.01</td>
+      <td>95.73</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>utility</td>
+      <td>93.09</td>
+      <td>96.74</td>
+      <td>3.65</td>
+    </tr>
+    <tr>
+      <td>small_talk</td>
+      <td>92.69</td>
+      <td>96.34</td>
+      <td>3.65</td>
+    </tr>
+    <tr>
+      <td>credit_cards</td>
+      <td>90.94</td>
+      <td>93.43</td>
+      <td>2.49</td>
+    </tr>
+    <tr>
+      <td>banking</td>
+      <td>91.76</td>
+      <td>91.17</td>
+      <td>-0.59</td>
+    </tr>
+  </tbody>
+</table></div>
+<p class="muted">领域 Macro-F1 是该领域 15 个意图在全部 4,500 条 IS 测试数据上计算的 F1 的平均；来自其他领域的假阳性仍计入，因此不能只从领域内正确率推断其 F1。</p>
+<div class="table-scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>意图（各 30 条正例）</th>
+      <th>TF-IDF F1 (%)</th>
+      <th>BERT F1 均值 (%)</th>
+      <th>差值 (百分点)</th>
+      <th>改善的 seeds 数</th>
+      <th>退步的 seeds 数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>distance</td>
+      <td>74.07</td>
+      <td>95.48</td>
+      <td>21.40</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>67.92</td>
+      <td>89.01</td>
+      <td>21.09</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>restaurant_reviews</td>
+      <td>78.57</td>
+      <td>96.55</td>
+      <td>17.98</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>shopping_list</td>
+      <td>67.92</td>
+      <td>84.80</td>
+      <td>16.88</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>todo_list</td>
+      <td>78.12</td>
+      <td>94.76</td>
+      <td>16.63</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>maybe</td>
+      <td>78.79</td>
+      <td>95.01</td>
+      <td>16.22</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>freeze_account</td>
+      <td>98.36</td>
+      <td>90.59</td>
+      <td>-7.77</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>min_payment</td>
+      <td>98.31</td>
+      <td>91.43</td>
+      <td>-6.87</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>pto_balance</td>
+      <td>96.77</td>
+      <td>91.43</td>
+      <td>-5.35</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>report_fraud</td>
+      <td>87.72</td>
+      <td>82.41</td>
+      <td>-5.31</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>change_ai_name</td>
+      <td>82.54</td>
+      <td>77.90</td>
+      <td>-4.64</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>card_declined</td>
+      <td>94.74</td>
+      <td>90.45</td>
+      <td>-4.28</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table></div>
+<div class="callout caution"><strong>一个反直觉的退步：</strong>freeze_account 的 30 条正例在四个模型下全部识别正确，但其他类误报为它的数量从 TF-IDF 的 1 条增至 BERT 的 5 / 10 / 4 条，所以 F1 下降来自 precision，而不是 recall。这些数字已由预测复算；“动作或业务状态边界混淆”则属于需要人工核对的解释。</div>
+<p>下面各选三个稳定改善和退步例子，所有文本与标签均来自原始测试行。选择为了帮助解释，不代表错误类型的总体比例，也不能从中推断具体 attention 权重或因果机制。</p>
+<div class="table-scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>row_id</th>
+      <th>方向</th>
+      <th>原句</th>
+      <th>Gold</th>
+      <th>TF-IDF</th>
+      <th>解释假设（待人工复核）</th>
+      <th>BERT 三次预测</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4</td>
+      <td>稳定改善</td>
+      <td>what's the word for trees in norway</td>
+      <td>translate</td>
+      <td>definition</td>
+      <td>表达的是跨语言转换；与单纯解释词义有区别。</td>
+      <td>translate</td>
+    </tr>
+    <tr>
+      <td>274</td>
+      <td>稳定改善</td>
+      <td>how can i up my credit score</td>
+      <td>improve_credit_score</td>
+      <td>credit_score</td>
+      <td>up 表达改善信用分的动作，不能仅识别 credit score 主题。</td>
+      <td>improve_credit_score</td>
+    </tr>
+    <tr>
+      <td>606</td>
+      <td>稳定改善</td>
+      <td>put milk on my shopping list</td>
+      <td>shopping_list_update</td>
+      <td>shopping_list</td>
+      <td>put milk 表达添加操作，区别于查询购物清单。</td>
+      <td>shopping_list_update</td>
+    </tr>
+    <tr>
+      <td>542</td>
+      <td>稳定退步</td>
+      <td>change my name to bob</td>
+      <td>change_user_name</td>
+      <td>change_user_name</td>
+      <td>用户名字与助手名字的所属关系仍会混淆。</td>
+      <td>change_ai_name</td>
+    </tr>
+    <tr>
+      <td>2921</td>
+      <td>稳定退步</td>
+      <td>how can i unfreeze my bank account</td>
+      <td>account_blocked</td>
+      <td>account_blocked</td>
+      <td>unfreeze 与 freeze 的相反动作及账户状态边界仍会混淆。</td>
+      <td>freeze_account</td>
+    </tr>
+    <tr>
+      <td>2150</td>
+      <td>稳定退步</td>
+      <td>if i use applesauce instead of oil, will that mess it up</td>
+      <td>ingredient_substitution</td>
+      <td>ingredient_substitution</td>
+      <td>oil 在烹饪与汽车领域之间存在词义歧义，BERT 的三个运行均跨领域分错。</td>
+      <td>oil_change_how / oil_change_how / oil_change_when</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>4. 原有拒识系统是否真正受益</h2>
+<p>这里只复核既有 raw MSP（最高类别概率）与验证集 max-OOS-F1 规则，不比较或新增其他拒识方法。各模型各自使用已经冻结的验证阈值。正确处理定义为：已知请求“分类正确且被接受”，未知请求“被拒绝”。</p>
+<div class="table-scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>模型</th>
+      <th>正常请求正确且接受</th>
+      <th>正常请求接受但分错</th>
+      <th>正常请求误拒</th>
+      <th>未知请求正确拒绝</th>
+      <th>未知请求漏接</th>
+      <th>混合测试集系统准确率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tfidf_lr</td>
+      <td>4021</td>
+      <td>322</td>
+      <td>157</td>
+      <td>464</td>
+      <td>536</td>
+      <td>81.55%</td>
+    </tr>
+    <tr>
+      <td>seed42</td>
+      <td>4258</td>
+      <td>187</td>
+      <td>55</td>
+      <td>522</td>
+      <td>478</td>
+      <td>86.91%</td>
+    </tr>
+    <tr>
+      <td>seed43</td>
+      <td>4251</td>
+      <td>194</td>
+      <td>55</td>
+      <td>535</td>
+      <td>465</td>
+      <td>87.02%</td>
+    </tr>
+    <tr>
+      <td>seed44</td>
+      <td>4258</td>
+      <td>175</td>
+      <td>67</td>
+      <td>572</td>
+      <td>428</td>
+      <td>87.82%</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>平均每 4,500 条正常请求，正确且被接受从 4021 增至 4255.67；误拒从 157 降至 59.00。每 1,000 条未知请求，漏接从 536 降至 457.00。该固定混合测试集上的系统准确率从 81.55% 升至 87.25%。此比例依赖测试集 18.18% 的 OOS 占比，不能当作真实部署成功率。</p>
+<p class="muted">统一 CSV 管线的 TF-IDF OOS 真阳性为 464；历史 baseline 报告因验证阈值端点约定不同为 465。这里全程使用统一管线，避免混合 57.25% 与 57.34% 两种 OOS F1 口径。</p>
+<h2>5. 收益的边界与成本</h2>
+<p><strong>噪声：</strong>干净文本优势 +4.36 pp 在轻度拼写扰动下降至约 +1.23 pp，中度扰动转为约 −2.54 pp。该压力测试继承原始标签，尚不等于人工确认的语义保持测试，也不能代表所有真实打字错误。后续研究拒识机制时应保留这一观察。</p>
+<p>中度扰动下，既有 MSP 系统准确率的 BERT−TF-IDF 差值为 0.22 个百分点，配对条件 95% 区间 [-0.98, 1.35] 跨过 0。因此这里也没有足够证据声称稳定的系统总体优势；分类指标与拒识后的系统指标需要分别解释。</p>
+<p><strong>重复样本：</strong>已有固定模型敏感性结果显示，排除两条跨 split 重叠测试文本后，BERT Macro-F1 从 94.9228% 变为 94.9430%。该微小变化不足以解释整体收益；另外三组 train–validation 重叠仍然存在，不能称作彻底去泄漏重训。</p>
+<p><strong>计算成本：</strong>三个历史 BERT 运行计时为 331.0, 368.7, 367.8 秒，均值 355.8 秒，合计约 17.8 分钟。计时包括数据处理、训练、评估和预测导出，不是单句推理延迟，也未覆盖安装与模型下载。没有同口径 TF-IDF 计时，暂不能声称速度倍数或总体性价比。</p>
+<p><strong>归因：</strong>TF-IDF 与 BERT 同时改变表示、分类器和预训练知识；当前实验能支持完整 BERT 方案的收益，不能单独证明 attention 的贡献。温度校准的负结果属于另一项修改，不能据此否定原始 BERT 收益。测试集已用于阶段性分析，本文为事后审查。</p>
+<h2>6. 与课程概念的连接及个人复核</h2>
+<p>Lecture 4 的词面统计与词序局限 → Lecture 8 的上下文表示和分类头 → Lab 9 的 accuracy、Macro-F1、混淆与概率解释 → Lecture 10 的固定数据划分和种子波动。这里最适合学生亲自完成的是：复核一组稳定改善与稳定退步文本，检查动作、所属关系、实体和服务边界；区分观察到的预测与对模型机制的推测。</p>
+<p>建议人工从两方向各选 3–4 例，同时核对 false positive 与 false negative。完整案例 CSV 的 human_reviewed 均为 false。本报告和脚本为 AI 辅助分析材料，不代表组员已完成这些工作，也不替代本人撰写、解释和披露。</p>
+<h2>7. 可复算证据</h2><ul><li><a href="classification_by_model.csv">12 组分类结果</a></li><li><a href="clean_paired_transitions.csv">逐 seed 配对纠错与新增错误</a></li><li><a href="paired_conditional_intervals.csv">配对 bootstrap 条件区间</a></li><li><a href="per_intent_benefit.csv">150 个意图的完整收益与退步</a></li><li><a href="domain_benefit.csv">10 个领域的收益</a></li><li><a href="existing_msp_system_by_model.csv">原有 MSP 系统行为</a></li><li><a href="stable_gain_and_regression_cases.csv">全部 228 个稳定改善与 33 个稳定退步案例</a></li><li><a href="selected_examples_to_review.csv">六个双向示例及待复核解释</a></li><li><a href="protocol.json">分析协议和限制</a></li><li><a href="input_manifest.json">源文件 SHA256</a></li><li><a href="analyze_bert_benefit.py">可复算分析脚本</a></li></ul>
+<p>在本文件夹执行 <code>python analyze_bert_benefit.py</code> 可重新生成分析；依赖 Python、NumPy、pandas。输入为相邻的 <code>CLINC150_Team_20261019</code> 快照。脚本只读取快照并校验其输入哈希，所有新增结果写入本分析文件夹。</p>
+</main></body></html>

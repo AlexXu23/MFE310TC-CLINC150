@@ -1,0 +1,16 @@
+{
+  "seed": 43,
+  "split": "train",
+  "rows": 15000,
+  "feature_shape": [
+    15000,
+    768
+  ],
+  "text_sha256": "92aea999187985957b494927e5aa9866ba9983c7a33748562381e83bc0f0b489",
+  "protocol_sha256": "3c020930e0833255b39b56632d9fe1d3921b521c9747919140313a1002aa0b87",
+  "feature_sha256": "2e77a75401d056ca9e77a440c5d711aee5a93ea9a9841430284ace1b4b2c1f21",
+  "logit_sha256": "9aa4506fd01c41695a4b7f5646a8b79c66707c8d96ec2a14be7b863af6080db0",
+  "elapsed_seconds": 8.93699999999808,
+  "peak_allocated_gpu_bytes": 560165888,
+  "completed_at": "2026-10-19T18:31:00.777164+08:00"
+}

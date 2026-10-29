@@ -1,0 +1,52 @@
+{
+  "mahalanobis/aligned_is_acceptance_90": {
+    "threshold": 1640.8259295408725,
+    "target_acceptance": 0.9,
+    "target_accepted": 2700,
+    "actual_accepted": 2700,
+    "validation_is_rows": 3000,
+    "in_scope_acceptance": 0.9,
+    "selection": "IS-only common attainable count,smallest candidate",
+    "validation_predictions_sha256": "98dac7a5b4e69b14aaec0fcfca74eed55ab0a66be120c848953d1f7f3acf7523"
+  },
+  "mahalanobis/aligned_is_acceptance_92p5": {
+    "threshold": 1864.8313946405328,
+    "target_acceptance": 0.925,
+    "target_accepted": 2775,
+    "actual_accepted": 2775,
+    "validation_is_rows": 3000,
+    "in_scope_acceptance": 0.925,
+    "selection": "IS-only common attainable count,smallest candidate",
+    "validation_predictions_sha256": "98dac7a5b4e69b14aaec0fcfca74eed55ab0a66be120c848953d1f7f3acf7523"
+  },
+  "mahalanobis/aligned_is_acceptance_95": {
+    "threshold": 2257.383818974196,
+    "target_acceptance": 0.95,
+    "target_accepted": 2850,
+    "actual_accepted": 2850,
+    "validation_is_rows": 3000,
+    "in_scope_acceptance": 0.95,
+    "selection": "IS-only common attainable count,smallest candidate",
+    "validation_predictions_sha256": "98dac7a5b4e69b14aaec0fcfca74eed55ab0a66be120c848953d1f7f3acf7523"
+  },
+  "mahalanobis/aligned_is_acceptance_97p5": {
+    "threshold": 3314.0374577629736,
+    "target_acceptance": 0.975,
+    "target_accepted": 2925,
+    "actual_accepted": 2925,
+    "validation_is_rows": 3000,
+    "in_scope_acceptance": 0.975,
+    "selection": "IS-only common attainable count,smallest candidate",
+    "validation_predictions_sha256": "98dac7a5b4e69b14aaec0fcfca74eed55ab0a66be120c848953d1f7f3acf7523"
+  },
+  "mahalanobis/aligned_is_acceptance_99": {
+    "threshold": 4664.5367014528265,
+    "target_acceptance": 0.99,
+    "target_accepted": 2970,
+    "actual_accepted": 2970,
+    "validation_is_rows": 3000,
+    "in_scope_acceptance": 0.99,
+    "selection": "IS-only common attainable count,smallest candidate",
+    "validation_predictions_sha256": "98dac7a5b4e69b14aaec0fcfca74eed55ab0a66be120c848953d1f7f3acf7523"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "inputs_frozen_sha256": "7385730e4217260ae7153df01bc30331498b4466d54820837567642165d32e07",
+  "input_csv_sha256": "1075ac7793208d8dcd9b96a245b710bc816b01f6229f09550aec4ec5e36651a9",
+  "runtime": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "torch": "2.5.1+cu121",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "4.57.6",
+    "numpy": "2.2.4",
+    "sklearn": "1.8.0",
+    "protocol_inference": {
+      "precision": "float32 for features AND logits in all new comparison arms",
+      "autocast": false,
+      "tf32": false,
+      "attention_implementation": "eager",
+      "batch_size": 32,
+      "max_length": 64,
+      "padding": "dynamic to multiple of 8",
+      "device": "cuda",
+      "eval_mode": true
+    }
+  },
+  "seed": 42,
+  "condition": "typo_medium",
+  "feature_sha256": "e5d5b8a1a4537aababebd47b35cc349a68ac19fabaf79fdb81ba7475b0203d07",
+  "logit_sha256": "c0d29cc60cf45bf87b88e5a68a4bf4f6fa26fcce07b7bcb1e012bf799bfb841d",
+  "elapsed_seconds": 3.813000000001921,
+  "peak_allocated_gpu_bytes": 572912640,
+  "completed_at": "2026-10-19T18:44:12.386656+08:00"
+}

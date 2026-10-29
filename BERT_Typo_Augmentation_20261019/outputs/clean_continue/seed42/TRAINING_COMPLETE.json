@@ -1,0 +1,23 @@
+{
+  "arm": "clean_continue",
+  "seed": 42,
+  "epochs": 1,
+  "presentations": 15000,
+  "optimizer_updates": 938,
+  "train_precision": "bfloat16 autocast, float32 parameters",
+  "inputs_frozen_sha256": "8700a1fafe4ed73e1cec59e0f363008eb635fc031310c2403a8a9f13dda1d282",
+  "mean_batch_loss": 0.4807823848114339,
+  "elapsed_seconds": 73.68699999999808,
+  "peak_allocated_gpu_bytes": 2220186112,
+  "completed_at": "2026-10-19T18:58:56.824173+08:00",
+  "output_hashes": {
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/config.json": "f3f35899c8a299efd58e52f1919390525b9208d2db35dbe73cbf12ee2325f89c",
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/model.safetensors": "86b37e6a0e4aa0cfed31b28c145b7fa5d44fc3e94ed7c57c39b34437f20b009d",
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/special_tokens_map.json": "5aa43c2f985a25296d5a5ce621c2f77376ca8091a47993c492fd5460b895b140",
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/tokenizer_config.json": "fd20f11a150c8c2e5a7460f4b6d6d0f0b91e19023b5a19723981a699f42911fd",
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/training_order.csv": "6662974a99e29ee6ce2e5ac894a496ca2814ea81a6e6a01f0458b1d31b6feee4",
+    "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/training_steps.csv": "23cb0a6242ea7c5b1b17f45d2fce9b0ffee5f3b3ce1e8e4596abe4e50bffb677"
+  }
+}

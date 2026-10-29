@@ -1,0 +1,14 @@
+{
+  "snapshot_date": "2026-10-29",
+  "status": "Prepared locally; publication and checkpoint access pending",
+  "repository_url": null,
+  "commit_sha": null,
+  "checkpoint_release_url": null,
+  "local_gpu_exception": "User-confirmed in original project documentation; current report states supervisor-confirmed exception.",
+  "remaining": [
+    "Choose GitHub repository and marker access/visibility",
+    "Publish indexed assets or an agreed minimum inference bundle",
+    "Insert actual repository URL and assessed commit into final report appendix",
+    "Freeze matching repository/ZIP after final checks"
+  ]
+}

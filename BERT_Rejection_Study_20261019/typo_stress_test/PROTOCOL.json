@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-19",
+  "kind": "frozen_system_synthetic_typo_stress_test",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "scores": [
+    "msp",
+    "entropy",
+    "mahalanobis"
+  ],
+  "policies": [
+    "max_oos_f1",
+    "is_acceptance_95"
+  ],
+  "question": "Do normal requests become falsely rejected under existing light/medium spelling noise?",
+  "frozen": "All BERT weights, class means, shared covariance, inference settings and all 18 clean-validation thresholds remain unchanged.",
+  "no_fit_or_selection": true,
+  "inference": {
+    "precision": "float32 for features AND logits in all new comparison arms",
+    "autocast": false,
+    "tf32": false,
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "max_length": 64,
+    "padding": "dynamic to multiple of 8",
+    "device": "cuda",
+    "eval_mode": true
+  },
+  "clean_reference": "Reuse the already frozen FP32 clean features/logits. Verify reconstructed decisions against original clean predictions.",
+  "perturbations": "Reuse seed2026 CSVs exactly. ASCII alphabetic tokens length>=5; internal deletion or adjacent internal swap; first/last characters preserved; light<=1 token; medium<=2 and contains light mutation.",
+  "labels": "Inherited original labels; this is synthetic character stress, not human-verified semantic equivalence.",
+  "focus": {
+    "policy": "is_acceptance_95",
+    "outcomes": [
+      "IS false rejection rate",
+      "new rejection among clean-accepted IS",
+      "loss of clean correct-and-accepted requests"
+    ]
+  },
+  "comparisons": "Report both noise levels and all methods/policies; preserve original clean experiment primary endpoint. No winner or new operating point selected from noisy test.",
+  "normal_denominator": "4500 IS requests primary; also report same fixed changed subset and conditional denominators explicitly.",
+  "classification": "Each condition uses original classifier-head argmax, shared by all three rejection methods. Decompose accepted_correct, accepted_wrong, rejected_correct, rejected_wrong.",
+  "transition": "Pair by original row_id. New rejection and recovered acceptance are distinct; net false-rejection change=new rejection minus recovered acceptance.",
+  "bootstrap": "2000 paired draws of 30 rows per IS intent, same weights across conditions/seeds/methods. Fixed-model/threshold uncertainty only, not new spelling variants, training or validation uncertainty.",
+  "limits": "95% acceptance was constrained only on clean validation. Original clean and typo classification results were inspected earlier; exploratory robustness evaluation, not fresh confirmatory data."
+}

@@ -1,0 +1,14 @@
+{
+  "completed_at": "2026-10-19T19:47:35.898228+08:00",
+  "arm": "ratio_25",
+  "seed": 42,
+  "inputs_frozen_sha256": "6a2b346fd5eabe86dc6f7916af312b27fcc4c6258724cb381467758f16e2efa1",
+  "detector_path": "BERT_Rejection_Ratio_20261019/outputs/ratio_25/seed42/distance_model.npz",
+  "detector_sha256": "b0e190c4f20a343d6d513e1d569323a8989810412430e2ef28746afb079182a5",
+  "output_hashes": {
+    "BERT_Rejection_Alignment_20261019/outputs/ratio_25/seed42/frozen_thresholds.json": "055de6d95397e8f26a7ca7466a16e6a8a2e858b4e1de12dc79b3f918b721250a",
+    "BERT_Rejection_Alignment_20261019/outputs/ratio_25/seed42/validation_is_threshold_candidates.csv": "edae1ad5750b53d13c16600d04b533977d88411d690e02638c4fd1aadbc4c221",
+    "BERT_Rejection_Alignment_20261019/outputs/ratio_25/seed42/validation_metrics.csv": "cc6eac98f34821c21f1c6d91c2e1957c00eeff467fc293865862ec49c2aea270",
+    "BERT_Rejection_Alignment_20261019/outputs/ratio_25/seed42/validation_predictions.csv": "306cb1ce1f4bff816446c091228a013e13ab8cb5ba5c29e85b1a1823b71a4034"
+  }
+}

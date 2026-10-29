@@ -1,0 +1,27 @@
+{
+  "source_rows": 15000,
+  "noise_seed": 31020261020,
+  "policy_counts": {
+    "typo_light": 7500,
+    "typo_medium": 7500
+  },
+  "actual_changed_rows": 13879,
+  "noisy_view_changed_fraction": 0.9252666666666667,
+  "mixed_pool_changed_fraction": 0.46263333333333334,
+  "modified_token_counts": {
+    "0": 1121,
+    "1": 8596,
+    "2": 5283
+  },
+  "planned_mixed_pool_counts": {
+    "clean": 15000,
+    "typo_light": 7500,
+    "typo_medium": 7500
+  },
+  "actual_mixed_pool_unchanged_rows": 16121,
+  "fit_rows": {
+    "clean_only": 15000,
+    "clean_duplicate": 30000,
+    "clean_plus_typo": 30000
+  }
+}

@@ -1,0 +1,722 @@
+[
+  {
+    "case_id":"accepted_intent_error:903",
+    "original_text":"what's the mileage to get the the taj mahal in atlantic city",
+    "text":"what's the mileage to get the the taj mahal in atlantic city",
+    "true_label":"distance",
+    "predicted_label":"mpg",
+    "baseline_prediction":"mpg",
+    "raw_confidence":0.4796497155,
+    "temperature_scaled_confidence":0.9793851995
+  },
+  {
+    "case_id":"accepted_intent_error:562",
+    "original_text":"please switch my name",
+    "text":"please switch my name",
+    "true_label":"change_user_name",
+    "predicted_label":"change_ai_name",
+    "baseline_prediction":"user_name",
+    "raw_confidence":0.2408549456,
+    "temperature_scaled_confidence":0.5127193772
+  },
+  {
+    "case_id":"accepted_intent_error:1474",
+    "original_text":"cross off grocery shopping from todo list",
+    "text":"cross off grocery shopping from todo list",
+    "true_label":"todo_list_update",
+    "predicted_label":"shopping_list_update",
+    "baseline_prediction":"todo_list_update",
+    "raw_confidence":0.2122615041,
+    "temperature_scaled_confidence":0.5836029942
+  },
+  {
+    "case_id":"accepted_intent_error:4381",
+    "original_text":"place my order alexa",
+    "text":"place my order alexa",
+    "true_label":"order",
+    "predicted_label":"order_status",
+    "baseline_prediction":"order_status",
+    "raw_confidence":0.4499368723,
+    "temperature_scaled_confidence":0.9619303858
+  },
+  {
+    "case_id":"accepted_intent_error:295",
+    "original_text":"i have a revolving store card and defaulted so will my fico score be affected",
+    "text":"i have a revolving store card and defaulted so will my fico score be affected",
+    "true_label":"improve_credit_score",
+    "predicted_label":"damaged_card",
+    "baseline_prediction":"replacement_card_duration",
+    "raw_confidence":0.3756719126,
+    "temperature_scaled_confidence":0.8934868292
+  },
+  {
+    "case_id":"accepted_intent_error:1709",
+    "original_text":"you have yo go to school on calendar",
+    "text":"you have yo go to school on calendar",
+    "true_label":"calendar",
+    "predicted_label":"calendar_update",
+    "baseline_prediction":"calendar_update",
+    "raw_confidence":0.4574943128,
+    "temperature_scaled_confidence":0.8973403892
+  },
+  {
+    "case_id":"accepted_intent_error:3853",
+    "original_text":"i think all my bills are paid, but can you double check",
+    "text":"i think all my bills are paid, but can you double check",
+    "true_label":"bill_balance",
+    "predicted_label":"pay_bill",
+    "baseline_prediction":"bill_balance",
+    "raw_confidence":0.3192663887,
+    "temperature_scaled_confidence":0.7769587723
+  },
+  {
+    "case_id":"accepted_intent_error:938",
+    "original_text":"what's your designation",
+    "text":"what's your designation",
+    "true_label":"user_name",
+    "predicted_label":"what_is_your_name",
+    "baseline_prediction":"what_is_your_name",
+    "raw_confidence":0.2724833065,
+    "temperature_scaled_confidence":0.7051277533
+  },
+  {
+    "case_id":"accepted_intent_error:1706",
+    "original_text":"retrieve events on my calendar",
+    "text":"retrieve events on my calendar",
+    "true_label":"calendar",
+    "predicted_label":"calendar_update",
+    "baseline_prediction":"calendar_update",
+    "raw_confidence":0.3617833887,
+    "temperature_scaled_confidence":0.5135256485
+  },
+  {
+    "case_id":"accepted_intent_error:2226",
+    "original_text":"have i told you to add washing dishes to my todo list",
+    "text":"have i told you to add washing dishes to my todo list",
+    "true_label":"todo_list",
+    "predicted_label":"todo_list_update",
+    "baseline_prediction":"todo_list_update",
+    "raw_confidence":0.4842230137,
+    "temperature_scaled_confidence":0.9234911344
+  },
+  {
+    "case_id":"accepted_intent_error:4378",
+    "original_text":"what is my payment going to be",
+    "text":"what is my payment going to be",
+    "true_label":"income",
+    "predicted_label":"min_payment",
+    "baseline_prediction":"income",
+    "raw_confidence":0.2430779804,
+    "temperature_scaled_confidence":0.5836307623
+  },
+  {
+    "case_id":"accepted_intent_error:2071",
+    "original_text":"don't forget to tell me to call my mother",
+    "text":"don't forget to tell me to call my mother",
+    "true_label":"reminder_update",
+    "predicted_label":"make_call",
+    "baseline_prediction":"make_call",
+    "raw_confidence":0.6876552728,
+    "temperature_scaled_confidence":0.9969105813
+  },
+  {
+    "case_id":"accepted_intent_error:1842",
+    "original_text":"how much pto is gone",
+    "text":"how much pto is gone",
+    "true_label":"pto_used",
+    "predicted_label":"pto_balance",
+    "baseline_prediction":"pto_used",
+    "raw_confidence":0.4452157009,
+    "temperature_scaled_confidence":0.7346720326
+  },
+  {
+    "case_id":"accepted_intent_error:1694",
+    "original_text":"i can't remember if i added the fun run to my calendar yet; did i",
+    "text":"i can't remember if i added the fun run to my calendar yet; did i",
+    "true_label":"calendar",
+    "predicted_label":"calendar_update",
+    "baseline_prediction":"calendar_update",
+    "raw_confidence":0.4274298699,
+    "temperature_scaled_confidence":0.8930821067
+  },
+  {
+    "case_id":"accepted_intent_error:1804",
+    "original_text":"can i bring perfume on the plane or what is the size limit",
+    "text":"can i bring perfume on the plane or what is the size limit",
+    "true_label":"carry_on",
+    "predicted_label":"credit_limit",
+    "baseline_prediction":"credit_limit",
+    "raw_confidence":0.211205328,
+    "temperature_scaled_confidence":0.5983196969
+  },
+  {
+    "case_id":"accepted_intent_error:3801",
+    "original_text":"is garlic on my grocery list",
+    "text":"is garlic on my grocery list",
+    "true_label":"shopping_list",
+    "predicted_label":"shopping_list_update",
+    "baseline_prediction":"todo_list",
+    "raw_confidence":0.2293641983,
+    "temperature_scaled_confidence":0.5448312772
+  },
+  {
+    "case_id":"accepted_intent_error:2780",
+    "original_text":"is mr joes pizza available for a seating",
+    "text":"is mr joes pizza available for a seating",
+    "true_label":"how_busy",
+    "predicted_label":"restaurant_reservation",
+    "baseline_prediction":"meal_suggestion",
+    "raw_confidence":0.2302264372,
+    "temperature_scaled_confidence":0.6475527599
+  },
+  {
+    "case_id":"accepted_intent_error:3864",
+    "original_text":"how much do i have to pay this month",
+    "text":"how much do i have to pay this month",
+    "true_label":"bill_balance",
+    "predicted_label":"income",
+    "baseline_prediction":"bill_balance",
+    "raw_confidence":0.2039285364,
+    "temperature_scaled_confidence":0.53174699
+  },
+  {
+    "case_id":"accepted_intent_error:3785",
+    "original_text":"do i have twinkies on the grocery list",
+    "text":"do i have twinkies on the grocery list",
+    "true_label":"shopping_list",
+    "predicted_label":"shopping_list_update",
+    "baseline_prediction":"todo_list",
+    "raw_confidence":0.2228731129,
+    "temperature_scaled_confidence":0.4701132749
+  },
+  {
+    "case_id":"accepted_intent_error:3935",
+    "original_text":"get me my slow sounds",
+    "text":"get me my slow sounds",
+    "true_label":"play_music",
+    "predicted_label":"change_volume",
+    "baseline_prediction":"change_speed",
+    "raw_confidence":0.1526835593,
+    "temperature_scaled_confidence":0.4260889509
+  },
+  {
+    "case_id":"false_oos:2846",
+    "original_text":"can you tell me where my item is",
+    "text":"can you tell me where my item is",
+    "true_label":"order_status",
+    "predicted_label":"order_status",
+    "baseline_prediction":"w2",
+    "raw_confidence":0.0822236273,
+    "temperature_scaled_confidence":0.3281245222
+  },
+  {
+    "case_id":"false_oos:3952",
+    "original_text":"bump some jams",
+    "text":"bump some jams",
+    "true_label":"play_music",
+    "predicted_label":"change_volume",
+    "baseline_prediction":"travel_suggestion",
+    "raw_confidence":0.1024729224,
+    "temperature_scaled_confidence":0.2960142176
+  },
+  {
+    "case_id":"false_oos:4308",
+    "original_text":"what kind of indian would you recommend",
+    "text":"what kind of indian would you recommend",
+    "true_label":"meal_suggestion",
+    "predicted_label":"translate",
+    "baseline_prediction":"what_can_i_ask_you",
+    "raw_confidence":0.1282907922,
+    "temperature_scaled_confidence":0.4827444932
+  },
+  {
+    "case_id":"false_oos:1158",
+    "original_text":"do i overspend when it comes to fast food",
+    "text":"do i overspend when it comes to fast food",
+    "true_label":"spending_history",
+    "predicted_label":"spending_history",
+    "baseline_prediction":"change_speed",
+    "raw_confidence":0.1166407,
+    "temperature_scaled_confidence":0.4630906356
+  },
+  {
+    "case_id":"false_oos:1404",
+    "original_text":"can we please",
+    "text":"can we please",
+    "true_label":"yes",
+    "predicted_label":"maybe",
+    "baseline_prediction":"change_language",
+    "raw_confidence":0.0598874059,
+    "temperature_scaled_confidence":0.1863387144
+  },
+  {
+    "case_id":"false_oos:172",
+    "original_text":"how do i sign up for a new allstatedplan",
+    "text":"how do i sign up for a new allstatedplan",
+    "true_label":"insurance_change",
+    "predicted_label":"application_status",
+    "baseline_prediction":"new_card",
+    "raw_confidence":0.1113162298,
+    "temperature_scaled_confidence":0.3813982007
+  },
+  {
+    "case_id":"false_oos:4494",
+    "original_text":"how come i got declined",
+    "text":"how come i got declined",
+    "true_label":"card_declined",
+    "predicted_label":"card_declined",
+    "baseline_prediction":"card_declined",
+    "raw_confidence":0.1182676226,
+    "temperature_scaled_confidence":0.4418855918
+  },
+  {
+    "case_id":"false_oos:3817",
+    "original_text":"tell fred that i don't have his guitar",
+    "text":"tell fred that i don't have his guitar",
+    "true_label":"text",
+    "predicted_label":"share_location",
+    "baseline_prediction":"maybe",
+    "raw_confidence":0.0451750993,
+    "temperature_scaled_confidence":0.1537743797
+  },
+  {
+    "case_id":"false_oos:1165",
+    "original_text":"did i stick to my dinner budget",
+    "text":"did i stick to my dinner budget",
+    "true_label":"spending_history",
+    "predicted_label":"spending_history",
+    "baseline_prediction":"meal_suggestion",
+    "raw_confidence":0.0904807041,
+    "temperature_scaled_confidence":0.283310088
+  },
+  {
+    "case_id":"false_oos:2409",
+    "original_text":"yum, pulled pork tacos at the buffet",
+    "text":"yum, pulled pork tacos at the buffet",
+    "true_label":"restaurant_reviews",
+    "predicted_label":"restaurant_reviews",
+    "baseline_prediction":"restaurant_reservation",
+    "raw_confidence":0.1086108009,
+    "temperature_scaled_confidence":0.3632905454
+  },
+  {
+    "case_id":"false_oos:4489",
+    "original_text":"i could not buy food using my card when i was in vietnam",
+    "text":"i could not buy food using my card when i was in vietnam",
+    "true_label":"card_declined",
+    "predicted_label":"card_declined",
+    "baseline_prediction":"card_declined",
+    "raw_confidence":0.1347118999,
+    "temperature_scaled_confidence":0.3954098497
+  },
+  {
+    "case_id":"false_oos:3100",
+    "original_text":"this charge is bs",
+    "text":"this charge is bs",
+    "true_label":"report_fraud",
+    "predicted_label":"report_fraud",
+    "baseline_prediction":"report_fraud",
+    "raw_confidence":0.1354496514,
+    "temperature_scaled_confidence":0.4886696587
+  },
+  {
+    "case_id":"false_oos:2337",
+    "original_text":"i need to know the next billing date of my american express card",
+    "text":"i need to know the next billing date of my american express card",
+    "true_label":"bill_due",
+    "predicted_label":"replacement_card_duration",
+    "baseline_prediction":"expiration_date",
+    "raw_confidence":0.1021984724,
+    "temperature_scaled_confidence":0.3292097171
+  },
+  {
+    "case_id":"false_oos:4360",
+    "original_text":"what do i bring in over a year",
+    "text":"what do i bring in over a year",
+    "true_label":"income",
+    "predicted_label":"what_can_i_ask_you",
+    "baseline_prediction":"income",
+    "raw_confidence":0.0610420483,
+    "temperature_scaled_confidence":0.258916436
+  },
+  {
+    "case_id":"false_oos:4353",
+    "original_text":"what do i take home",
+    "text":"what do i take home",
+    "true_label":"income",
+    "predicted_label":"order",
+    "baseline_prediction":"income",
+    "raw_confidence":0.036753364,
+    "temperature_scaled_confidence":0.0993399424
+  },
+  {
+    "case_id":"false_oos:1310",
+    "original_text":"i didn't understand you",
+    "text":"i didn't understand you",
+    "true_label":"repeat",
+    "predicted_label":"maybe",
+    "baseline_prediction":"repeat",
+    "raw_confidence":0.1315575168,
+    "temperature_scaled_confidence":0.4486364688
+  },
+  {
+    "case_id":"false_oos:2855",
+    "original_text":"i would like to change the name on my checking account",
+    "text":"i would like to change the name on my checking account",
+    "true_label":"pin_change",
+    "predicted_label":"change_ai_name",
+    "baseline_prediction":"change_ai_name",
+    "raw_confidence":0.0928018348,
+    "temperature_scaled_confidence":0.4097090749
+  },
+  {
+    "case_id":"false_oos:391",
+    "original_text":"can credit card companies expedite delivery of reissued credit cards",
+    "text":"can credit card companies expedite delivery of reissued credit cards",
+    "true_label":"replacement_card_duration",
+    "predicted_label":"new_card",
+    "baseline_prediction":"new_card",
+    "raw_confidence":0.1347353883,
+    "temperature_scaled_confidence":0.3110981632
+  },
+  {
+    "case_id":"false_oos:3987",
+    "original_text":"what can i do to get rid of this event",
+    "text":"what can i do to get rid of this event",
+    "true_label":"calendar_update",
+    "predicted_label":"calendar_update",
+    "baseline_prediction":"calendar_update",
+    "raw_confidence":0.0925101256,
+    "temperature_scaled_confidence":0.3900206963
+  },
+  {
+    "case_id":"false_oos:2418",
+    "original_text":"do people say per se is any good or not",
+    "text":"do people say per se is any good or not",
+    "true_label":"restaurant_reviews",
+    "predicted_label":"no",
+    "baseline_prediction":"restaurant_reviews",
+    "raw_confidence":0.1290686402,
+    "temperature_scaled_confidence":0.4073131087
+  },
+  {
+    "case_id":"missed_oos:5208",
+    "original_text":"what's the amusement park like",
+    "text":"what's the amusement park like",
+    "true_label":"oos",
+    "predicted_label":"travel_suggestion",
+    "baseline_prediction":"weather",
+    "raw_confidence":0.4254174964,
+    "temperature_scaled_confidence":0.9773086832
+  },
+  {
+    "case_id":"missed_oos:5274",
+    "original_text":"what should you do if your laundry machine is making a high pitched whine",
+    "text":"what should you do if your laundry machine is making a high pitched whine",
+    "true_label":"oos",
+    "predicted_label":"smart_home",
+    "baseline_prediction":"what_are_your_hobbies",
+    "raw_confidence":0.3613354353,
+    "temperature_scaled_confidence":0.9441689921
+  },
+  {
+    "case_id":"missed_oos:4895",
+    "original_text":"when will the government file another antitrust suit against microsoft",
+    "text":"when will the government file another antitrust suit against microsoft",
+    "true_label":"oos",
+    "predicted_label":"report_fraud",
+    "baseline_prediction":"payday",
+    "raw_confidence":0.1685493567,
+    "temperature_scaled_confidence":0.7230259302
+  },
+  {
+    "case_id":"missed_oos:5332",
+    "original_text":"rent the tuxedo the day before",
+    "text":"rent the tuxedo the day before",
+    "true_label":"oos",
+    "predicted_label":"car_rental",
+    "baseline_prediction":"date",
+    "raw_confidence":0.3493755661,
+    "temperature_scaled_confidence":0.9541040135
+  },
+  {
+    "case_id":"missed_oos:5082",
+    "original_text":"does cutting down the rain forest really add to global warming",
+    "text":"does cutting down the rain forest really add to global warming",
+    "true_label":"oos",
+    "predicted_label":"weather",
+    "baseline_prediction":"weather",
+    "raw_confidence":0.5920146804,
+    "temperature_scaled_confidence":0.9936482093
+  },
+  {
+    "case_id":"missed_oos:5185",
+    "original_text":"what kind of foods are border collies allergic to",
+    "text":"what kind of foods are border collies allergic to",
+    "true_label":"oos",
+    "predicted_label":"nutrition_info",
+    "baseline_prediction":"plug_type",
+    "raw_confidence":0.3239949382,
+    "temperature_scaled_confidence":0.8379608159
+  },
+  {
+    "case_id":"missed_oos:5238",
+    "original_text":"deny incoming phone call",
+    "text":"deny incoming phone call",
+    "true_label":"oos",
+    "predicted_label":"make_call",
+    "baseline_prediction":"make_call",
+    "raw_confidence":0.3638073125,
+    "temperature_scaled_confidence":0.9274122441
+  },
+  {
+    "case_id":"missed_oos:4567",
+    "original_text":"where does jelly come from",
+    "text":"where does jelly come from",
+    "true_label":"oos",
+    "predicted_label":"ingredients_list",
+    "baseline_prediction":"where_are_you_from",
+    "raw_confidence":0.2116334756,
+    "temperature_scaled_confidence":0.6778362619
+  },
+  {
+    "case_id":"missed_oos:5380",
+    "original_text":"ignore call",
+    "text":"ignore call",
+    "true_label":"oos",
+    "predicted_label":"make_call",
+    "baseline_prediction":"make_call",
+    "raw_confidence":0.3235257166,
+    "temperature_scaled_confidence":0.9096129309
+  },
+  {
+    "case_id":"missed_oos:5237",
+    "original_text":"accept incoming phone call",
+    "text":"accept incoming phone call",
+    "true_label":"oos",
+    "predicted_label":"make_call",
+    "baseline_prediction":"make_call",
+    "raw_confidence":0.589490806,
+    "temperature_scaled_confidence":0.9871654666
+  },
+  {
+    "case_id":"missed_oos:5293",
+    "original_text":"what's a good stretch to do to limber up",
+    "text":"what's a good stretch to do to limber up",
+    "true_label":"oos",
+    "predicted_label":"travel_suggestion",
+    "baseline_prediction":"travel_suggestion",
+    "raw_confidence":0.1535502087,
+    "temperature_scaled_confidence":0.5140083979
+  },
+  {
+    "case_id":"missed_oos:5036",
+    "original_text":"create a for-while loop that continues 10 times",
+    "text":"create a for-while loop that continues 10 times",
+    "true_label":"oos",
+    "predicted_label":"timer",
+    "baseline_prediction":"calculator",
+    "raw_confidence":0.1528582404,
+    "temperature_scaled_confidence":0.5622450698
+  },
+  {
+    "case_id":"missed_oos:4904",
+    "original_text":"tell me who aphrodite is",
+    "text":"tell me who aphrodite is",
+    "true_label":"oos",
+    "predicted_label":"who_made_you",
+    "baseline_prediction":"who_made_you",
+    "raw_confidence":0.1948408287,
+    "temperature_scaled_confidence":0.6444574413
+  },
+  {
+    "case_id":"missed_oos:4966",
+    "original_text":"tell me something about linkin park",
+    "text":"tell me something about linkin park",
+    "true_label":"oos",
+    "predicted_label":"fun_fact",
+    "baseline_prediction":"fun_fact",
+    "raw_confidence":0.3059280855,
+    "temperature_scaled_confidence":0.9287013891
+  },
+  {
+    "case_id":"missed_oos:5281",
+    "original_text":"please clean the car windows",
+    "text":"please clean the car windows",
+    "true_label":"oos",
+    "predicted_label":"schedule_maintenance",
+    "baseline_prediction":"smart_home",
+    "raw_confidence":0.2520129122,
+    "temperature_scaled_confidence":0.6958825176
+  },
+  {
+    "case_id":"missed_oos:5432",
+    "original_text":"print out the photos i took today",
+    "text":"print out the photos i took today",
+    "true_label":"oos",
+    "predicted_label":"vaccines",
+    "baseline_prediction":"meeting_schedule",
+    "raw_confidence":0.1728401028,
+    "temperature_scaled_confidence":0.8235496869
+  },
+  {
+    "case_id":"missed_oos:4747",
+    "original_text":"disconnect from wifi immediately please",
+    "text":"disconnect from wifi immediately please",
+    "true_label":"oos",
+    "predicted_label":"sync_device",
+    "baseline_prediction":"sync_device",
+    "raw_confidence":0.4634038122,
+    "temperature_scaled_confidence":0.9649572982
+  },
+  {
+    "case_id":"missed_oos:4744",
+    "original_text":"check the status of my amazon orders for me",
+    "text":"check the status of my amazon orders for me",
+    "true_label":"oos",
+    "predicted_label":"order_status",
+    "baseline_prediction":"order_status",
+    "raw_confidence":0.5432767468,
+    "temperature_scaled_confidence":0.9873872549
+  },
+  {
+    "case_id":"missed_oos:5481",
+    "original_text":"search information on how to apply foundation",
+    "text":"search information on how to apply foundation",
+    "true_label":"oos",
+    "predicted_label":"new_card",
+    "baseline_prediction":"new_card",
+    "raw_confidence":0.1658192276,
+    "temperature_scaled_confidence":0.4574360375
+  },
+  {
+    "case_id":"missed_oos:5310",
+    "original_text":"can you check to see which parking garages are open downtown",
+    "text":"can you check to see which parking garages are open downtown",
+    "true_label":"oos",
+    "predicted_label":"directions",
+    "baseline_prediction":"transactions",
+    "raw_confidence":0.1837168353,
+    "temperature_scaled_confidence":0.6862090477
+  },
+  {
+    "case_id":"typo_induced:806",
+    "original_text":"confirm my reservation for joe at hoss's",
+    "text":"cofirm my rservation for joe at hoss's",
+    "true_label":"confirm_reservation",
+    "predicted_label":"restaurant_reviews",
+    "baseline_prediction":"restaurant_reservation",
+    "raw_confidence":0.2397894843,
+    "temperature_scaled_confidence":0.8616898289
+  },
+  {
+    "case_id":"typo_induced:3927",
+    "original_text":"how do i cash in my amex reward points",
+    "text":"how do i cash in my amex rewrad poits",
+    "true_label":"redeem_rewards",
+    "predicted_label":"direct_deposit",
+    "baseline_prediction":"redeem_rewards",
+    "raw_confidence":0.1356373319,
+    "temperature_scaled_confidence":0.4673113897
+  },
+  {
+    "case_id":"typo_induced:1105",
+    "original_text":"how many points do i have on my visa",
+    "text":"how many poitns do i have on my visa",
+    "true_label":"rewards_balance",
+    "predicted_label":"apr",
+    "baseline_prediction":"rewards_balance",
+    "raw_confidence":0.228296881,
+    "temperature_scaled_confidence":0.5688632552
+  },
+  {
+    "case_id":"typo_induced:3905",
+    "original_text":"how do i use my card reward points for my next flight",
+    "text":"how do i use my card reward pints for my next flgiht",
+    "true_label":"redeem_rewards",
+    "predicted_label":"rewards_balance",
+    "baseline_prediction":"redeem_rewards",
+    "raw_confidence":0.3662901912,
+    "temperature_scaled_confidence":0.6257000098
+  },
+  {
+    "case_id":"typo_induced:3246",
+    "original_text":"let's take a look at the weather",
+    "text":"let's take a look at the wetaher",
+    "true_label":"weather",
+    "predicted_label":"restaurant_reviews",
+    "baseline_prediction":"restaurant_reservation",
+    "raw_confidence":0.1794699345,
+    "temperature_scaled_confidence":0.7705309279
+  },
+  {
+    "case_id":"typo_induced:830",
+    "original_text":"put a freeze on my account",
+    "text":"put a freze on my acocunt",
+    "true_label":"freeze_account",
+    "predicted_label":"schedule_maintenance",
+    "baseline_prediction":"freeze_account",
+    "raw_confidence":0.0770456291,
+    "temperature_scaled_confidence":0.3136934531
+  },
+  {
+    "case_id":"typo_induced:3781",
+    "original_text":"can you check to see if my shopping list already has milk",
+    "text":"can you chck to see if my sopping list already has milk",
+    "true_label":"shopping_list",
+    "predicted_label":"todo_list",
+    "baseline_prediction":"order_status",
+    "raw_confidence":0.2761539699,
+    "temperature_scaled_confidence":0.6673536751
+  },
+  {
+    "case_id":"typo_induced:3443",
+    "original_text":"do i need a vaccine for the congo",
+    "text":"do i need a vacine for the cogo",
+    "true_label":"vaccines",
+    "predicted_label":"ingredient_substitution",
+    "baseline_prediction":"vaccines",
+    "raw_confidence":0.1866374498,
+    "temperature_scaled_confidence":0.6027543038
+  },
+  {
+    "case_id":"typo_induced:1155",
+    "original_text":"have i gone over my entertainment budget",
+    "text":"have i gone over my enertainment budgt",
+    "true_label":"spending_history",
+    "predicted_label":"transactions",
+    "baseline_prediction":"rollover_401k",
+    "raw_confidence":0.0887153422,
+    "temperature_scaled_confidence":0.3123173846
+  },
+  {
+    "case_id":"typo_induced:1464",
+    "original_text":"what are the benefits associated with my insurance",
+    "text":"what are the beneifts associated with my insuarnce",
+    "true_label":"insurance",
+    "predicted_label":"meaning_of_life",
+    "baseline_prediction":"restaurant_reviews",
+    "raw_confidence":0.0568413019,
+    "temperature_scaled_confidence":0.2295875051
+  },
+  {
+    "case_id":"typo_induced:4383",
+    "original_text":"alexa, buy my grocery list",
+    "text":"alxea, buy my groecry list",
+    "true_label":"order",
+    "predicted_label":"todo_list_update",
+    "baseline_prediction":"order",
+    "raw_confidence":0.2084429004,
+    "temperature_scaled_confidence":0.615513198
+  },
+  {
+    "case_id":"typo_induced:2348",
+    "original_text":"how many calories are in a burger",
+    "text":"how many claories are in a bruger",
+    "true_label":"calories",
+    "predicted_label":"ingredients_list",
+    "baseline_prediction":"measurement_conversion",
+    "raw_confidence":0.2198581565,
+    "temperature_scaled_confidence":0.649092393
+  }
+]

@@ -1,0 +1,14 @@
+PASS BERT_Mixed_Rejection_20261019: 54 settings
+PASS BERT_Rejection_Alignment_20261019: 90 settings
+PASS BERT_Rejection_Operating_Points_20261019: 225 settings
+PASS BERT_Rejection_Ratio_20261019: 90 settings
+PASS BERT_Rejection_Study_20261019: 36 settings
+PASS BERT_Typo_Augmentation_20261019: 162 settings
+{
+  "status": "PASS",
+  "rejection_settings": 657,
+  "prediction_file_visits": 195,
+  "aggregate_metric_checks": 3930,
+  "historical_classification_groups": 6,
+  "scope": "Saved CSV decisions, point metrics and seed aggregates. No training/inference or uncertainty re-estimation."
+}

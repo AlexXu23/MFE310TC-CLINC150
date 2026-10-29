@@ -1,0 +1,162 @@
+{
+  "source_seed": 42,
+  "temperature_fit": {
+    "temperature": 0.4930255465144521,
+    "objective": "in_scope_validation_NLL",
+    "fit_examples": 3000,
+    "bounds": [
+      0.05,
+      20.0
+    ],
+    "raw_fit_nll": 0.6363952627775626,
+    "fitted_nll": 0.20642998607915586,
+    "optimizer_success": true,
+    "function_evaluations": 13
+  },
+  "primary_test_results": [
+    {
+      "calibration": "raw",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "temperature": 1.0,
+      "threshold": 0.8636635595548141,
+      "validation_oos_precision": 0.5894736842105263,
+      "validation_oos_recall": 0.56,
+      "validation_oos_f1": 0.5743589743589743,
+      "validation_in_scope_acceptance": 0.987,
+      "oos_precision": 0.9046793760831889,
+      "oos_recall": 0.522,
+      "oos_f1": 0.6620164870006341,
+      "oos_auroc": 0.9467733333333334,
+      "oos_aupr_average_precision": 0.8440722916477166,
+      "in_scope_acceptance": 0.9877777777777778,
+      "in_scope_false_rejection_rate": 0.012222222222222223,
+      "in_scope_correct_and_accepted_rate": 0.9462222222222222,
+      "accepted_in_scope_accuracy": 0.9579302587176602,
+      "combined_151_accuracy": 0.8690909090909091,
+      "combined_151_macro_f1": 0.9049443648614388,
+      "oos_true_positive": 522,
+      "in_scope_false_rejections": 55,
+      "oos_missed": 478
+    },
+    {
+      "calibration": "temperature_scaled",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "temperature": 0.4930255465144521,
+      "threshold": 0.496779135481338,
+      "validation_oos_precision": 0.4830508474576271,
+      "validation_oos_recall": 0.57,
+      "validation_oos_f1": 0.5229357798165137,
+      "validation_in_scope_acceptance": 0.9796666666666667,
+      "oos_precision": 0.8489932885906041,
+      "oos_recall": 0.506,
+      "oos_f1": 0.6340852130325815,
+      "oos_auroc": 0.9238762222222221,
+      "oos_aupr_average_precision": 0.7775267190515143,
+      "in_scope_acceptance": 0.98,
+      "in_scope_false_rejection_rate": 0.02,
+      "in_scope_correct_and_accepted_rate": 0.9428888888888889,
+      "accepted_in_scope_accuracy": 0.9621315192743765,
+      "combined_151_accuracy": 0.8634545454545455,
+      "combined_151_macro_f1": 0.9037958783164115,
+      "oos_true_positive": 506,
+      "in_scope_false_rejections": 90,
+      "oos_missed": 494
+    }
+  ],
+  "calibration_metrics": [
+    {
+      "split": "validation",
+      "calibration": "raw",
+      "temperature": 1.0,
+      "accuracy": 0.9526666666666667,
+      "macro_f1": 0.9522774135092547,
+      "nll": 0.6363952627775626,
+      "ece_15_bins": 0.3574200127000428,
+      "brier_sum_over_classes": 0.21297366574238677,
+      "mean_confidence": 0.595403423862523,
+      "n": 3000
+    },
+    {
+      "split": "validation",
+      "calibration": "temperature_scaled",
+      "temperature": 0.4930255465144521,
+      "accuracy": 0.9526666666666667,
+      "macro_f1": 0.9522774135092547,
+      "nll": 0.20642998607915586,
+      "ece_15_bins": 0.009456897710110445,
+      "brier_sum_over_classes": 0.07173282510428088,
+      "mean_confidence": 0.9481849399601794,
+      "n": 3000
+    },
+    {
+      "split": "test",
+      "calibration": "raw",
+      "temperature": 1.0,
+      "accuracy": 0.95,
+      "macro_f1": 0.9498114654877308,
+      "nll": 0.6425740454868406,
+      "ece_15_bins": 0.3552024703621065,
+      "brier_sum_over_classes": 0.21680392124582512,
+      "mean_confidence": 0.594969869520515,
+      "n": 4500
+    },
+    {
+      "split": "test",
+      "calibration": "temperature_scaled",
+      "temperature": 0.4930255465144521,
+      "accuracy": 0.95,
+      "macro_f1": 0.9498114654877308,
+      "nll": 0.21671131747893987,
+      "ece_15_bins": 0.00609502616597144,
+      "brier_sum_over_classes": 0.07841971022220243,
+      "mean_confidence": 0.9492709820958543,
+      "n": 4500
+    }
+  ],
+  "paired_bootstrap": {
+    "comparison": "temperature_scaled_minus_raw_MSP_max_oos_f1",
+    "repeats": 2000,
+    "seed": 2026,
+    "scope_counts_fixed": true,
+    "limitations": "Conditional on one trained checkpoint and frozen validation choices; excludes training and validation-selection uncertainty.",
+    "delta_95_percentile_CI": {
+      "oos_f1": [
+        -0.0446440235890884,
+        -0.010682583252189376
+      ],
+      "oos_recall": [
+        -0.03500000000000003,
+        0.0030249999999998663
+      ],
+      "in_scope_acceptance": [
+        -0.010666666666666713,
+        -0.005111111111111177
+      ]
+    }
+  },
+  "test_argmax_unchanged": true,
+  "limitations": [
+    "Single BERT training seed; multi-seed verification remains outstanding.",
+    "Validation NLL/ECE after fitting are in-sample; test metrics are held out for temperature fitting.",
+    "95% validation acceptance does not guarantee 95% test acceptance.",
+    "OOS precision and F1 depend on scope prevalence; validation and test OOS ratios differ.",
+    "Existing test errors must not be used for subsequent hyperparameter tuning."
+  ],
+  "input_sha256": {
+    "validation_logits.npy": "1c053035312495839e4be7ec9bbf10e5cc3d8c5b946709f8b3199326ae4a2a69",
+    "test_logits.npy": "eb19973bc5352c7d50e4db6cbc60e18b7464aa263775433c1e21a56a3078185e",
+    "validation_targets.npz": "2ba070c1e219d98aefeba1c6aa0dfcbd17488e46c53af1f9d0f41e5d6e9a9cb0",
+    "test_targets.npz": "2dc4f77c30d3c2a142dd697065ed58c1efbff86586cad697a575e12876de0ad9",
+    "label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "sklearn": "1.9.1",
+    "matplotlib": "3.11.2"
+  }
+}

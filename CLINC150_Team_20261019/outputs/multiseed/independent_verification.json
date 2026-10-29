@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "typo_rows_replayed": 16500,
+  "nested_light_medium": true,
+  "logit_arrays_verified": 12,
+  "classification_rows_verified": 21,
+  "rejection_rows_verified": 126,
+  "fixed_clean_validation_thresholds": true,
+  "sample_sd_ddof": 1
+}

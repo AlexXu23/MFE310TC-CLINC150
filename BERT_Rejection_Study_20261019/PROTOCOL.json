@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-19",
+  "kind": "post_hoc_followup_experiment",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "question": "Does train-fitted representation distance improve OOS detection over MSP and entropy for the same frozen BERT?",
+  "feature": "outputs.hidden_states[-1][:,0,:], 768-dimensional final CLS, no L2 normalization or PCA",
+  "statistics": "Per-seed class means and shared LedoitWolf(assume_centered=True) on float64 train class-centered residuals",
+  "score": "minimum squared Mahalanobis distance over all 150 training class means; larger means OOS",
+  "training_rows": 15000,
+  "oos_train_used": false,
+  "classification": "Original classifier head argmax from current forward; nearest centroid never substitutes the classifier",
+  "inference": {
+    "precision": "float32 for features AND logits in all new comparison arms",
+    "autocast": false,
+    "tf32": false,
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "max_length": 64,
+    "padding": "dynamic to multiple of 8",
+    "device": "cuda",
+    "eval_mode": true
+  },
+  "primary": {
+    "comparison": "mahalanobis minus msp",
+    "threshold_policy": "max_oos_f1",
+    "metric": "oos_f1"
+  },
+  "secondary": {
+    "comparisons": [
+      "mahalanobis minus entropy"
+    ],
+    "policies": [
+      "max_oos_f1",
+      "is_acceptance_95"
+    ],
+    "metrics": [
+      "oos_auroc",
+      "oos_recall",
+      "in_scope_acceptance",
+      "combined_151_accuracy"
+    ]
+  },
+  "threshold": "reject score>=threshold; exact unique validation scores plus nextafter(max,+inf)",
+  "tie_breaks": {
+    "max_oos_f1": [
+      "oos_f1",
+      "in_scope_acceptance",
+      "threshold"
+    ],
+    "is_acceptance_95": [
+      "filter validation IS acceptance>=.95-1e-12",
+      "oos_recall",
+      "oos_f1",
+      "in_scope_acceptance",
+      "threshold"
+    ]
+  },
+  "test_gate": "All three seeds' statistics and validation thresholds frozen and hashed before test-stage inference",
+  "model_search": "One feature, one covariance estimator, one distance; no test-guided retuning",
+  "comparability": "All three new arms share same current FP32 forward. Old FP16 logits are historical references; report drift separately.",
+  "limits": "Original test has been inspected previously; exploratory followup, not a new untouched confirmation set. 95% acceptance only constrains validation.",
+  "bootstrap": "2000 paired stratified draws by 150 IS intents plus OOS; fixed three model/threshold pairs; excludes training and validation-fitting uncertainty",
+  "reference": "https://arxiv.org/abs/2101.03778 (distance formulation); Ledoit-Wolf is a pre-specified estimator choice, not a claim of exact paper reproduction"
+}

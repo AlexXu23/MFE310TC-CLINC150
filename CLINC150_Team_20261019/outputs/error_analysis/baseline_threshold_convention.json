@@ -1,0 +1,13 @@
+{
+  "historical_reject_rule": "MSP < tau at an observed validation probability",
+  "historical_tau": 0.0803188101367258,
+  "historical_test_oos_f1": 0.5733662145499383,
+  "unified_reject_rule": "1-MSP >= anomaly threshold at an observed validation anomaly",
+  "unified_anomaly_threshold": 0.9199050111638356,
+  "validation_decision_disagreements": 0,
+  "test_decision_disagreements": 1,
+  "changed_test_row_ids": [
+    5252
+  ],
+  "explanation": "Different endpoints of an equivalent validation decision interval; a test score can fall inside the interval. Neither threshold uses test labels. Current error/sensitivity tables use the frozen unified robustness convention; historical baseline artifacts remain unchanged."
+}

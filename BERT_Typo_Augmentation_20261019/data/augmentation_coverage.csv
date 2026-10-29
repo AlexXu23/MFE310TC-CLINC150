@@ -1,0 +1,4 @@
+policy,rows,changed,modified_tokens,two_tokens_changed
+clean,7500,0,0,0
+typo_light,3750,3476,3476,0
+typo_medium,3750,3479,6150,2671

@@ -1,0 +1,14 @@
+review_pool,category,n
+accepted_intent_error,annotation_boundary,2
+accepted_intent_error,lexical_cue_ambiguity,2
+accepted_intent_error,semantic_overlap,12
+accepted_intent_error,surface_form,1
+accepted_intent_error,underspecified,3
+false_oos,annotation_boundary,2
+false_oos,semantic_overlap,6
+false_oos,surface_form,8
+false_oos,underspecified,4
+missed_oos,scope_boundary,2
+missed_oos,unsupported_action,10
+missed_oos,unsupported_topic,8
+typo_induced,typo_surface,12

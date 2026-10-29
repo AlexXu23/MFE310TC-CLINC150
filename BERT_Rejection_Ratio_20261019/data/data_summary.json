@@ -1,0 +1,81 @@
+{
+  "allocation_seed": 31020261021,
+  "arms": {
+    "clean_reference": {
+      "fit_rows": 15000,
+      "independent_source_rows": 15000,
+      "planned_noisy_ratio": 0.0,
+      "selected_noisy_views": 0,
+      "selected_light": 0,
+      "selected_medium": 0,
+      "actual_changed_rows": 0,
+      "actual_changed_pool_fraction": 0.0,
+      "unchanged_pool_rows": 15000,
+      "selected_modified_token_counts": {}
+    },
+    "ratio_00": {
+      "fit_rows": 30000,
+      "independent_source_rows": 15000,
+      "planned_noisy_ratio": 0.0,
+      "selected_noisy_views": 0,
+      "selected_light": 0,
+      "selected_medium": 0,
+      "actual_changed_rows": 0,
+      "actual_changed_pool_fraction": 0.0,
+      "unchanged_pool_rows": 30000,
+      "selected_modified_token_counts": {}
+    },
+    "ratio_10": {
+      "fit_rows": 30000,
+      "independent_source_rows": 15000,
+      "planned_noisy_ratio": 0.1,
+      "selected_noisy_views": 3000,
+      "selected_light": 1500,
+      "selected_medium": 1500,
+      "actual_changed_rows": 2768,
+      "actual_changed_pool_fraction": 0.09226666666666666,
+      "unchanged_pool_rows": 27232,
+      "selected_modified_token_counts": {
+        "0": 232,
+        "1": 1709,
+        "2": 1059
+      }
+    },
+    "ratio_25": {
+      "fit_rows": 30000,
+      "independent_source_rows": 15000,
+      "planned_noisy_ratio": 0.25,
+      "selected_noisy_views": 7500,
+      "selected_light": 3750,
+      "selected_medium": 3750,
+      "actual_changed_rows": 6932,
+      "actual_changed_pool_fraction": 0.23106666666666667,
+      "unchanged_pool_rows": 23068,
+      "selected_modified_token_counts": {
+        "0": 568,
+        "1": 4297,
+        "2": 2635
+      }
+    },
+    "ratio_50": {
+      "fit_rows": 30000,
+      "independent_source_rows": 15000,
+      "planned_noisy_ratio": 0.5,
+      "selected_noisy_views": 15000,
+      "selected_light": 7500,
+      "selected_medium": 7500,
+      "actual_changed_rows": 13879,
+      "actual_changed_pool_fraction": 0.46263333333333334,
+      "unchanged_pool_rows": 16121,
+      "selected_modified_token_counts": {
+        "0": 1121,
+        "1": 8596,
+        "2": 5283
+      }
+    }
+  },
+  "nested_10_in_25_in_50": true,
+  "one_shared_selection_across_model_seeds": true,
+  "source_noise_seed": 31020261020,
+  "source_noise_file_sha256": "7054639735dd3e9e36618582afe940ed4a41f997d914ea1680f1edd2f1e047ef"
+}

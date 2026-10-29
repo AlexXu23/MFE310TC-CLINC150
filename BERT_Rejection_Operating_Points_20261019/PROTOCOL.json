@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-19",
+  "kind": "exploratory_fixed_score_common_operating_point_sweep",
+  "arms": [
+    "clean_reference",
+    "ratio_00",
+    "ratio_10",
+    "ratio_25",
+    "ratio_50"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "targets": [
+    {
+      "policy": "aligned_is_acceptance_90",
+      "target_acceptance": 0.9,
+      "target_accepted": 2700
+    },
+    {
+      "policy": "aligned_is_acceptance_92p5",
+      "target_acceptance": 0.925,
+      "target_accepted": 2775
+    },
+    {
+      "policy": "aligned_is_acceptance_95",
+      "target_acceptance": 0.95,
+      "target_accepted": 2850
+    },
+    {
+      "policy": "aligned_is_acceptance_97p5",
+      "target_acceptance": 0.975,
+      "target_accepted": 2925
+    },
+    {
+      "policy": "aligned_is_acceptance_99",
+      "target_acceptance": 0.99,
+      "target_accepted": 2970
+    }
+  ],
+  "frozen": "All3 BERT checkpoints, all15 detector distributions, training/evaluation features, scores and classifier predictions remain fixed. No inference or fitting.",
+  "primary_comparisons": "ratio_25 minus ratio_00 and ratio_50 at every target; ratio_10 comparisons supplementary; show entire grid without test-selected winner",
+  "historical_reference": "clean_reference uses15000 training views; ratio_00/10/25/50 all30000 views and unchanged nested noise subsets",
+  "selection": {
+    "data": "Only3000 clean validation IS scores per detector;100 OOS validation rows only evaluated after all cutoffs selected",
+    "candidates": "Unique IS scores plus nextafter(max_IS,+inf); accept score<threshold, reject score>=threshold",
+    "common_count": "Intersect attainable counts of all15 detectors, independently choose smallest common count >= each requested target count",
+    "cutoff": "Smallest candidate threshold achieving the chosen common count for each detector",
+    "ties": "No randomized tie splitting; disclose requested and attained counts if any target requires moving upward",
+    "anchor": "95% cutoffs and decisions must exactly reproduce BERT_Rejection_Alignment_20261019",
+    "freeze": "All75 cutoffs frozen before any new test rethresholding"
+  },
+  "metrics": [
+    "normal false rejection",
+    "normal correct and accepted",
+    "normal wrong-head and accepted",
+    "OOS false acceptance",
+    "OOS F1",
+    "OOS recall",
+    "normal acceptance",
+    "combined accuracy"
+  ],
+  "stability": {
+    "direction": "For each noisy condition disclose whether25% lies between0% and50% in FR, known wrong-head acceptance and OOS false acceptance at all5 targets; also show per-seed signs",
+    "magnitude": "Report candidate-reference gaps at every target and gap(target)-gap(95%); shared paired sampling across targets",
+    "uncertainty": "2000 paired text-stratified draws for primary25% contrasts, pointwise95% conditional intervals. CI crossing zero is not equivalence; direction stability is not constant magnitude.",
+    "clean": "Evaluate clean test IS acceptance and OOS F1/recall versus both0%/50% at every target; no posthoc noninferiority tolerance",
+    "no_utility": "No costs or utility weights specified; no universally best ratio or target claimed"
+  },
+  "bootstrap": {
+    "repeats": 2000,
+    "seed": 20261023,
+    "strata": "150 IS intents x30 samples with replacement plus1000 OOS; same source-text draws across ratios,targets,seeds,conditions",
+    "seeds": "3 fixed model scores averaged; do not treat them as independent test texts",
+    "changes": "Compute paired target-minus95 gap changes within each draw; not by subtracting CI endpoints"
+  },
+  "sensitivity": "Exclude inherited train-test original row_ids599/938 identically from all225 settings; report gap and gap-change sensitivity, not a cure for historical exposure",
+  "limitations": [
+    "95% results and previous tests motivated this exploratory sweep; targets fixed for this turn but test set is reused",
+    "Acceptance alignment holds on validation, not as a clean/noisy test guarantee",
+    "Pointwise intervals condition on fitted models,distributions,noise realization and selected thresholds; omit refitting/validation calibration uncertainty and multiplicity correction",
+    "99% cutoff uses only30 rejected validation IS per model and can be sensitive to the validation tail; no guarantee outside these5 points",
+    "One nested training-noise realization and matched synthetic spelling family; natural noise and semantic preservation not independently validated",
+    "3 inherited train-validation and2 train-test overlaps remain; exclusion sensitivity does not undo exposure"
+  ]
+}

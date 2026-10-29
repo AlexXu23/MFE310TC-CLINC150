@@ -1,0 +1,222 @@
+{
+  "audit_completed_at": "2026-10-19T18:45:19.359599+08:00",
+  "audit_kind": "read-only input identity, exact perturbation reproduction, and tokenizer audit",
+  "source_project": "CLINC150_Team_20261019",
+  "audit_environment": {
+    "python": "3.11.9",
+    "transformers": "4.57.6"
+  },
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "rows_per_condition": 5500,
+  "total_rows_checked": 16500,
+  "perturbation_seed": 2026,
+  "input_sha256": {
+    "CLINC150_Team_20261019/data/raw/data_full.json": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/summary.json": "e2c5caf1a88435d12f9dd1b3355bf9c00c4781ab397ee1b1bba3a62ed2d8c11f",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/coverage.csv": "81010e3bed09ee8b63fbce55b2e7de1e69f9c87f2d63a3ed65561d41c0794aa1",
+    "CLINC150_Team_20261019/src/typo_data.py": "81a54e5cdc8cfd4f2d6aca5aca2793f1f0eceeda05561895d503ef4d3ce21d49",
+    "CLINC150_Team_20261019/src/robustness.py": "904554b8110faa5143e096e0847dc6fcc94ab57378c895c6ec3e62a0126529bf",
+    "CLINC150_Team_20261019/outputs/bert/seed42/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc",
+    "CLINC150_Team_20261019/outputs/bert/seed43/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc",
+    "CLINC150_Team_20261019/outputs/bert/seed44/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/clean.csv": "61b4e58e6714944593b164431b21a3788cce516af7bab2f92530a6ea14876520",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/typo_light.csv": "0547f3f4f980aa178b12b2b758bb83c87e86bcfcbd179d788e0ce12343dac65d",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/typo_medium.csv": "1075ac7793208d8dcd9b96a245b710bc816b01f6229f09550aec4ec5e36651a9",
+    "CLINC150_Team_20261019/outputs/bert/seed42/best_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "CLINC150_Team_20261019/outputs/bert/seed42/best_model/tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+    "CLINC150_Team_20261019/outputs/bert/seed42/best_model/special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+    "CLINC150_Team_20261019/outputs/bert/seed42/best_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "CLINC150_Team_20261019/outputs/bert/seed43/best_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "CLINC150_Team_20261019/outputs/bert/seed43/best_model/tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+    "CLINC150_Team_20261019/outputs/bert/seed43/best_model/special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+    "CLINC150_Team_20261019/outputs/bert/seed43/best_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "CLINC150_Team_20261019/outputs/bert/seed44/best_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "CLINC150_Team_20261019/outputs/bert/seed44/best_model/tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+    "CLINC150_Team_20261019/outputs/bert/seed44/best_model/special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+    "CLINC150_Team_20261019/outputs/bert/seed44/best_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "verified": {
+    "all_csv_hashes_match_existing_manifest": true,
+    "data_hash_matches_existing_manifest": true,
+    "all_original_text_and_label_pairs_match_official_test_rows": true,
+    "row_ids_consecutive_and_aligned": true,
+    "scope_flags_and_source_split_match_original_rows": true,
+    "label_ids_match_all_three_checkpoint_mappings": true,
+    "all_text_changes_and_mutation_metadata_exactly_reproduced": true,
+    "first_and_last_characters_preserved_for_all_mutations": true,
+    "tokenizer_file_hashes_identical_across_seeds": true
+  },
+  "coverage": [
+    {
+      "condition": "clean",
+      "scope": "in_scope",
+      "n": 4500,
+      "changed": 0,
+      "zero_modified_tokens": 4500,
+      "one_modified_token": 0,
+      "two_modified_tokens": 0,
+      "mean_modified_tokens": 0.0
+    },
+    {
+      "condition": "clean",
+      "scope": "oos",
+      "n": 1000,
+      "changed": 0,
+      "zero_modified_tokens": 1000,
+      "one_modified_token": 0,
+      "two_modified_tokens": 0,
+      "mean_modified_tokens": 0.0
+    },
+    {
+      "condition": "typo_light",
+      "scope": "in_scope",
+      "n": 4500,
+      "changed": 4144,
+      "zero_modified_tokens": 356,
+      "one_modified_token": 4144,
+      "two_modified_tokens": 0,
+      "mean_modified_tokens": 0.9208888888888889
+    },
+    {
+      "condition": "typo_light",
+      "scope": "oos",
+      "n": 1000,
+      "changed": 984,
+      "zero_modified_tokens": 16,
+      "one_modified_token": 984,
+      "two_modified_tokens": 0,
+      "mean_modified_tokens": 0.984
+    },
+    {
+      "condition": "typo_medium",
+      "scope": "in_scope",
+      "n": 4500,
+      "changed": 4144,
+      "zero_modified_tokens": 356,
+      "one_modified_token": 1070,
+      "two_modified_tokens": 3074,
+      "mean_modified_tokens": 1.604
+    },
+    {
+      "condition": "typo_medium",
+      "scope": "oos",
+      "n": 1000,
+      "changed": 984,
+      "zero_modified_tokens": 16,
+      "one_modified_token": 139,
+      "two_modified_tokens": 845,
+      "mean_modified_tokens": 1.829
+    }
+  ],
+  "operation_counts": [
+    {
+      "condition": "clean",
+      "scope": "in_scope",
+      "delete": 0,
+      "swap": 0
+    },
+    {
+      "condition": "clean",
+      "scope": "oos",
+      "delete": 0,
+      "swap": 0
+    },
+    {
+      "condition": "typo_light",
+      "scope": "in_scope",
+      "delete": 2150,
+      "swap": 1994
+    },
+    {
+      "condition": "typo_light",
+      "scope": "oos",
+      "delete": 513,
+      "swap": 471
+    },
+    {
+      "condition": "typo_medium",
+      "scope": "in_scope",
+      "delete": 3619,
+      "swap": 3599
+    },
+    {
+      "condition": "typo_medium",
+      "scope": "oos",
+      "delete": 917,
+      "swap": 912
+    }
+  ],
+  "nested_conditions": {
+    "all_rows_light_mutations_prefix_of_medium": true,
+    "same_changed_rows": true,
+    "in_scope_medium_identical_to_light": 1426,
+    "oos_medium_identical_to_light": 155
+  },
+  "tokenizer_audit": {
+    "loaded_seed": 42,
+    "identical_tokenizer_file_hashes": {
+      "42": {
+        "tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+        "tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+        "special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "43": {
+        "tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+        "tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+        "special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "44": {
+        "tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+        "tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+        "special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    },
+    "truncation_disabled_during_audit": true,
+    "padding_disabled_during_audit": true,
+    "statistics": [
+      {
+        "condition": "clean",
+        "rows": 5500,
+        "includes_cls_and_sep": true,
+        "max_wordpiece_length": 30,
+        "rows_over_max_length_64": 0,
+        "unk_token_occurrences": 0,
+        "rows_with_unk": 0
+      },
+      {
+        "condition": "typo_light",
+        "rows": 5500,
+        "includes_cls_and_sep": true,
+        "max_wordpiece_length": 32,
+        "rows_over_max_length_64": 0,
+        "unk_token_occurrences": 0,
+        "rows_with_unk": 0
+      },
+      {
+        "condition": "typo_medium",
+        "rows": 5500,
+        "includes_cls_and_sep": true,
+        "max_wordpiece_length": 35,
+        "rows_over_max_length_64": 0,
+        "unk_token_occurrences": 0,
+        "rows_with_unk": 0
+      }
+    ]
+  },
+  "limits": [
+    "Labels are inherited from the original dataset, not independently human-verified semantic equivalence.",
+    "Eligible tokens are regex-matched ASCII alphabetic strings of length at least five, not BERT WordPiece tokens.",
+    "Medium adds a second eligible-token mutation only when available; it is nested in light rather than independently sampled.",
+    "OOS inputs have greater perturbation coverage and more average changed tokens than IS inputs.",
+    "This audit establishes data identity and reproducibility, not real-world typo representativeness or performance.",
+    "Normal false-rejection results should distinguish all 4500 IS rows, fixed 4144 changed IS rows, and clean-accepted conditional denominators.",
+    "No BERT inference, statistical model fitting, threshold selection, or source-file editing was performed by this audit."
+  ]
+}

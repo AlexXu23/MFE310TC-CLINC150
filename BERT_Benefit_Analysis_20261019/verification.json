@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_rows_checked": 66000,
+  "checks": [
+    "12 files have 5500 aligned official rows",
+    "model labels agree with class indices",
+    "common typo inputs across all models",
+    "closed correctness flags recomputed",
+    "accuracy and Macro-F1 match saved summaries at 1e-12",
+    "system outcome counts sum to denominators",
+    "source input hashes unchanged"
+  ],
+  "source_files": 20
+}

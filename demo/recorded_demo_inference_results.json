@@ -1,0 +1,62 @@
+{
+  "kind": "actual_model_inference",
+  "seed": 42,
+  "device": "cuda",
+  "precision": "FP32",
+  "training_performed": false,
+  "threshold_refit": false,
+  "matches_saved_predictions": true,
+  "cases_are_postselected": true,
+  "results": {
+    "clean_continue": {
+      "predictions": [
+        {
+          "row_id": 180,
+          "text": "can you help me find my pone, pease",
+          "true_label": "find_phone",
+          "prediction": "do_you_have_pets",
+          "rejected": true,
+          "distance": 11993.794267188876,
+          "threshold": 4259.277467099221,
+          "matches_frozen_prediction": true
+        },
+        {
+          "row_id": 4883,
+          "text": "what is a normal rseting hart rate",
+          "true_label": "oos",
+          "prediction": "interest_rate",
+          "rejected": true,
+          "distance": 5397.043309375353,
+          "threshold": 4259.277467099221,
+          "matches_frozen_prediction": true
+        }
+      ],
+      "load_seconds": 1.5910668000005899
+    },
+    "typo_mix": {
+      "predictions": [
+        {
+          "row_id": 180,
+          "text": "can you help me find my pone, pease",
+          "true_label": "find_phone",
+          "prediction": "find_phone",
+          "rejected": false,
+          "distance": 3152.9804290513503,
+          "threshold": 3574.1670015409263,
+          "matches_frozen_prediction": true
+        },
+        {
+          "row_id": 4883,
+          "text": "what is a normal rseting hart rate",
+          "true_label": "oos",
+          "prediction": "interest_rate",
+          "rejected": false,
+          "distance": 2917.356927320183,
+          "threshold": 3574.1670015409263,
+          "matches_frozen_prediction": true
+        }
+      ],
+      "load_seconds": 1.3474114000000554
+    }
+  }
+}

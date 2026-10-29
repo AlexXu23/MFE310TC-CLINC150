@@ -1,0 +1,10 @@
+{
+  "training_complete_sha256": "3acfbafd7ad50e25f689edabedfb22a5e39681511666644672b8d891e9a7eaea",
+  "inputs_frozen_sha256": "8700a1fafe4ed73e1cec59e0f363008eb635fc031310c2403a8a9f13dda1d282",
+  "text_sha256": "c5373d2fc2cb9d574df8054a3ed8d2b5fb978edc4faafcef0104c1bacc8a9875",
+  "rows": 3100,
+  "features_sha256": "4c3b519c0141a3bbfcc00b510c87d6063073e886acfadb76d4a008f42ab75ce7",
+  "logits_sha256": "45a8a0d96ddc3645f5fc254cf17fdd8707727460c5fdac19a525a6368a9eb68f",
+  "elapsed_seconds": 1.9840000000040163,
+  "completed_at": "2026-10-19T19:03:32.157728+08:00"
+}

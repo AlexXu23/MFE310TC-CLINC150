@@ -1,0 +1,81 @@
+source_split,source_row,split,scope,text,label,normalized_text,words,characters,has_digit,has_non_ascii,has_question_mark,email_like,wordpieces_with_special_tokens,unk_tokens,truncated_at_64,domain,nearest_train_row,cosine_similarity,nearest_train_text,nearest_train_label
+val,226,val,in_scope,please change your language setting to spanish now,change_language,please change your language setting to spanish now,8,50,False,False,False,False,10,0,False,meta,1197,0.9783999482989434,please change your language setting to spanish,change_language
+val,392,val,in_scope,where are you from oroginally,where_are_you_from,where are you from oroginally,5,29,False,False,False,False,9,0,False,small_talk,1975,1.0,where are you from,where_are_you_from
+val,1011,val,in_scope,what is on my to do list,reminder,what is on my to do list,7,24,False,False,False,False,9,0,False,home,7424,1.0,what is on my to do list,todo_list
+val,1066,val,in_scope,thats a negative,no,thats a negative,3,16,False,False,False,False,6,0,False,meta,5387,1.0,negative,no
+val,1077,val,in_scope,"no, that's wrong",no,"no, that's wrong",3,16,False,False,False,False,8,0,False,meta,5362,1.0,no that's wrong,no
+val,1169,val,in_scope,what is the square root of 888,calculator,what is the square root of 888,7,30,True,False,False,False,10,0,False,utility,5869,1.0,what is the square root of 5,calculator
+val,1171,val,in_scope,what is the square root of 8814,calculator,what is the square root of 8814,7,31,True,False,False,False,10,0,False,utility,5869,1.0,what is the square root of 5,calculator
+val,1184,val,in_scope,"in 4 days, what date will it be",date,"in 4 days, what date will it be",8,31,True,False,False,False,11,0,False,utility,5943,1.0,"in 2 days, what date will it be",date
+val,1301,val,in_scope,thanks for helping me,thank_you,thanks for helping me,4,21,False,False,False,False,6,0,False,small_talk,6534,1.0,thanks for helping me!,thank_you
+val,1309,val,in_scope,i owe you one,thank_you,i owe you one,4,13,False,False,False,False,6,0,False,small_talk,6598,1.0,i owe you one!,thank_you
+val,1323,val,in_scope,please roll a dice,roll_dice,please roll a dice,4,18,False,False,False,False,6,0,False,utility,6646,1.0,please roll dice,roll_dice
+val,1329,val,in_scope,roll a 6 sided dice,roll_dice,roll a 6 sided dice,5,19,True,False,False,False,7,0,False,utility,6619,1.0,roll a 7 sided dice,roll_dice
+val,1367,val,in_scope,how long should i cook steak for,cook_time,how long should i cook steak for,7,32,False,False,False,False,9,0,False,kitchen_and_dining,6898,1.0,how long should i cook a steak for,cook_time
+val,1408,val,in_scope,"i lost my card, how do i report it",report_lost_card,"i lost my card, how do i report it",9,34,False,False,False,False,12,0,False,credit_cards,7092,1.0,i lost my card how do i report it,report_lost_card
+val,1517,val,in_scope,please use a male voice,change_accent,please use a male voice,5,23,False,False,False,False,7,0,False,meta,7579,1.0,please use male voice,change_accent
+val,1686,val,in_scope,can you tell me what kind of gas this car uses,gas_type,can you tell me what kind of gas this car uses,11,46,False,False,False,False,13,0,False,auto_and_commute,8408,0.9563405414394162,tell me what kind of gas this car uses,gas_type
+val,1794,val,in_scope,turn up your volume,change_volume,turn up your volume,4,19,False,False,False,False,6,0,False,meta,11130,1.0,turn up your volume,whisper_mode
+val,1920,val,in_scope,see ya!,goodbye,see ya!,2,7,False,False,False,False,5,0,False,small_talk,9625,1.0,see ya,goodbye
+val,1922,val,in_scope,until next time,goodbye,until next time,3,15,False,False,False,False,5,0,False,small_talk,9679,1.0,until next time!,goodbye
+val,1926,val,in_scope,peace out!,goodbye,peace out!,2,10,False,False,False,False,5,0,False,small_talk,9692,1.0,peace out,goodbye
+val,1937,val,in_scope,farewell,goodbye,farewell,1,8,False,False,False,False,3,0,False,small_talk,9680,1.0,farewell!,goodbye
+val,1965,val,in_scope,what’s the name of this song,what_song,what’s the name of this song,6,28,False,True,False,False,10,0,False,home,9803,1.0,what's the name of this song,what_song
+val,1979,val,in_scope,what song am i hearing,what_song,what song am i hearing,5,22,False,False,False,False,7,0,False,home,9811,1.0,what's song am i hearing,what_song
+val,2071,val,in_scope,i want to report fraudulent activity on my quicksilver card,report_fraud,i want to report fraudulent activity on my quicksilver card,10,59,False,False,False,False,14,0,False,banking,10381,0.9725611359916378,i want to report fraudulent activity on my card,report_fraud
+val,2074,val,in_scope,i want to report fraudulent activity on my visa,report_fraud,i want to report fraudulent activity on my visa,9,47,False,False,False,False,11,0,False,banking,10390,0.9510498426370846,i want to report fraudulent activity on my visa card,report_fraud
+val,2232,val,in_scope,make a switch to whisper mode,whisper_mode,make a switch to whisper mode,6,29,False,False,False,False,8,0,False,meta,11174,0.9606243352904343,switch to whisper mode,whisper_mode
+val,2369,val,in_scope,hey what's up,greeting,hey what's up,3,13,False,False,False,False,7,0,False,small_talk,11896,1.0,hey what's up,greeting
+val,2370,val,in_scope,hey how's it going,greeting,hey how's it going,4,18,False,False,False,False,8,0,False,small_talk,11892,1.0,"hey, how's it going",greeting
+val,2371,val,in_scope,"hi, ai",greeting,"hi, ai",2,6,False,False,False,False,5,0,False,small_talk,11862,1.0,hi ai,greeting
+val,2376,val,in_scope,hiya,greeting,hiya,1,4,False,False,False,False,4,0,False,small_talk,11815,1.0,hiya!,greeting
+val,2818,val,in_scope,how old are you ai,how_old_are_you,how old are you ai,5,18,False,False,False,False,7,0,False,small_talk,14084,1.0,"how old are you, ai",how_old_are_you
+test,73,test,in_scope,make a 10 minute timer,timer,make a 10 minute timer,5,22,True,False,False,False,7,0,False,utility,264,0.9590546565412799,10 minute timer,timer
+test,145,test,in_scope,is there meaning to life,meaning_of_life,is there meaning to life,5,24,False,False,False,False,7,0,False,small_talk,468,1.0,is there a meaning to life,meaning_of_life
+test,146,test,in_scope,is there meaning in life,meaning_of_life,is there meaning in life,5,24,False,False,False,False,7,0,False,small_talk,490,1.0,is there a meaning in life,meaning_of_life
+test,202,test,in_scope,where's my phone,find_phone,where's my phone,3,16,False,False,False,False,7,0,False,utility,625,1.0,where my phone,find_phone
+test,587,test,in_scope,where is your home planet,where_are_you_from,where is your home planet,5,25,False,False,False,False,7,0,False,small_talk,1971,1.0,where is your home,where_are_you_from
+test,599,test,in_scope,where did you grow up,where_are_you_from,where did you grow up,5,21,False,False,False,False,7,0,False,small_talk,14018,1.0,where did you grow up,how_old_are_you
+test,677,test,in_scope,i am really not sure,maybe,i am really not sure,5,20,False,False,False,False,7,0,False,meta,2271,0.9613345111263245,i'm really not sure,maybe
+test,679,test,in_scope,not sure,maybe,not sure,2,8,False,False,False,False,4,0,False,meta,2249,1.0,i'm not sure,maybe
+test,686,test,in_scope,"um, i'm not sure",maybe,"um, i'm not sure",4,16,False,False,False,False,9,0,False,meta,2249,1.0,i'm not sure,maybe
+test,689,test,in_scope,unsure,maybe,unsure,1,6,False,False,False,False,3,0,False,meta,2201,1.0,i'm unsure,maybe
+test,814,test,in_scope,i need my account frozen!,freeze_account,i need my account frozen!,5,25,False,False,False,False,8,0,False,banking,2733,1.0,i need my account frozen,freeze_account
+test,938,test,in_scope,what's your designation,user_name,what's your designation,3,23,False,False,False,False,7,0,False,meta,12066,1.0,what's your designation,what_is_your_name
+test,1203,test,in_scope,how is my credit score numberwise,credit_score,how is my credit score numberwise,6,33,False,False,False,False,9,0,False,credit_cards,4099,1.0,how is my credit score,credit_score
+test,1298,test,in_scope,"pardon, i didn't hear you",repeat,"pardon, i didn't hear you",5,25,False,False,False,False,10,0,False,meta,4365,1.0,i didn't hear you,repeat
+test,1305,test,in_scope,i need you to repeat that please,repeat,i need you to repeat that please,7,32,False,False,False,False,9,0,False,meta,4334,1.0,"i need you to repeat that, please",repeat
+test,1331,test,in_scope,what is the highway mpg on this car like,mpg,what is the highway mpg on this car like,9,40,False,False,False,False,12,0,False,auto_and_commute,4475,0.9818259954696874,what is the highway mpg on this car,mpg
+test,1399,test,in_scope,absolutely,yes,absolutely,1,10,False,False,False,False,3,0,False,meta,4644,1.0,absolutely!,yes
+test,1591,test,in_scope,that's incorrect,no,that's incorrect,2,16,False,False,False,False,6,0,False,meta,5391,1.0,that’s incorrect,no
+test,1594,test,in_scope,that's not correct,no,that's not correct,3,18,False,False,False,False,7,0,False,meta,5390,1.0,that’s not correct,no
+test,1598,test,in_scope,"no, that is wrong",no,"no, that is wrong",4,17,False,False,False,False,7,0,False,meta,5385,1.0,no that is wrong,no
+test,1621,test,in_scope,now tell me my credit card's apr,apr,now tell me my credit card's apr,7,32,False,False,False,False,11,0,False,credit_cards,5485,0.9503565813676023,tell me my credit card apr,apr
+test,1858,test,in_scope,how many vacation days i have used,pto_used,how many vacation days i have used,7,34,False,False,False,False,9,0,False,work,6165,1.0,how many vacation days have i used,pto_used
+test,1974,test,in_scope,thanks so much,thank_you,thanks so much,3,14,False,False,False,False,5,0,False,small_talk,6510,1.0,thanks so much!,thank_you
+test,1988,test,in_scope,roll a 9 sided dice,roll_dice,roll a 9 sided dice,5,19,True,False,False,False,7,0,False,utility,6619,1.0,roll a 7 sided dice,roll_dice
+test,2000,test,in_scope,roll a die please,roll_dice,roll a die please,4,17,False,False,False,False,6,0,False,utility,6626,0.9639199701839232,roll die,roll_dice
+test,2101,test,in_scope,"i lost my card, what do i do next",report_lost_card,"i lost my card, what do i do next",9,33,False,False,False,False,12,0,False,credit_cards,7045,0.9636492867175727,"i lost my card, what do i do",report_lost_card
+test,2203,test,in_scope,i need an alarm set now,alarm,i need an alarm set now,6,23,False,False,False,False,8,0,False,utility,7323,0.9521205079037148,i need an alarm set,alarm
+test,2236,test,in_scope,what is on my to-do list,todo_list,what is on my to-do list,6,24,False,False,False,False,10,0,False,home,7424,1.0,what is on my to do list,todo_list
+test,2310,test,in_scope,when is my electric bill due by,bill_due,when is my electric bill due by,7,31,False,False,False,False,9,0,False,banking,7795,0.9636262133222842,when is my electric bill due,bill_due
+test,2728,test,in_scope,what's your boss's name,who_do_you_work_for,what's your boss's name,4,23,False,False,False,False,10,0,False,small_talk,9021,1.0,what's your boss' name,who_do_you_work_for
+test,2887,test,in_scope,bye,goodbye,bye,1,3,False,False,False,False,3,0,False,small_talk,9676,1.0,bye!,goodbye
+test,2891,test,in_scope,later,goodbye,later,1,5,False,False,False,False,3,0,False,small_talk,9677,1.0,later!,goodbye
+test,2892,test,in_scope,goodbye,goodbye,goodbye,1,7,False,False,False,False,3,0,False,small_talk,9674,1.0,goodbye!,goodbye
+test,2893,test,in_scope,see you later,goodbye,see you later,3,13,False,False,False,False,5,0,False,small_talk,9699,1.0,see you later!,goodbye
+test,3176,test,in_scope,please set the temperature to 70 f,smart_home,please set the temperature to 70 f,7,34,True,False,False,False,9,0,False,home,10517,1.0,please set the temperature to 70,smart_home
+test,3550,test,in_scope,"hey, what's up",greeting,"hey, what's up",3,14,False,False,False,False,8,0,False,small_talk,11896,1.0,hey what's up,greeting
+test,3552,test,in_scope,"hi, how are you",greeting,"hi, how are you",4,15,False,False,False,False,7,0,False,small_talk,11844,1.0,hi how are you,greeting
+test,3555,test,in_scope,hey there,greeting,hey there,2,9,False,False,False,False,4,0,False,small_talk,11807,1.0,hey there!,greeting
+test,3559,test,in_scope,hello there,greeting,hello there,2,11,False,False,False,False,4,0,False,small_talk,11812,1.0,hello there!,greeting
+test,3569,test,in_scope,hola!,greeting,hola!,1,5,False,False,False,False,5,0,False,small_talk,11852,1.0,hola,greeting
+test,3592,test,in_scope,please return to default settings,reset_settings,please return to default settings,5,33,False,False,False,False,7,0,False,meta,11942,0.9845366081596219,return to default settings,reset_settings
+test,3637,test,in_scope,how do i set up a direct deposit for my paycheck,direct_deposit,how do i set up a direct deposit for my paycheck,11,48,False,False,False,False,15,0,False,work,12108,1.0,how do i set up direct deposit for my paycheck,direct_deposit
+test,3643,test,in_scope,set up direct deposit,direct_deposit,set up direct deposit,4,21,False,False,False,False,6,0,False,work,12115,1.0,set up a direct deposit,direct_deposit
+test,3656,test,in_scope,can you tell me how to set up direct deposit,direct_deposit,can you tell me how to set up direct deposit,10,44,False,False,False,False,12,0,False,work,12142,1.0,can you tell me how to set up a direct deposit,direct_deposit
+test,3796,test,in_scope,tell me what's is on my shopping list,shopping_list,tell me what's is on my shopping list,8,37,False,False,False,False,12,0,False,home,12683,1.0,tell me what is on my shopping list,shopping_list
+test,4007,test,in_scope,are you human,are_you_a_bot,are you human,3,13,False,False,False,False,5,0,False,small_talk,13330,1.0,are you a human,are_you_a_bot
+test,4229,test,in_scope,how old are you turning,how_old_are_you,how old are you turning,5,23,False,False,False,False,7,0,False,small_talk,14057,1.0,how old are you,how_old_are_you
+oos_val,42,val,oos,what is naval engineering,oos,what is naval engineering,4,25,False,False,False,False,6,0,False,oos,5877,1.0,what is 2/3 x 1/9,calculator
+oos_test,925,test,oos,what is global warming,oos,what is global warming,4,22,False,False,False,False,6,0,False,oos,5877,1.0,what is 2/3 x 1/9,calculator

@@ -1,0 +1,21 @@
+{
+  "analysis_date": "2026-10-19",
+  "kind": "post_hoc_benefit_audit",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "classification_rows": "4500 official in-scope test rows; no rejection",
+  "system_rows": "4500 in-scope + 1000 OOS, using saved raw MSP max-validation-OOS-F1 decisions",
+  "baseline_convention": "Unified prediction CSV: TP=464, FP=157; historical baseline used TP=465",
+  "bootstrap": "Paired text resampling within each of 150 intents; OOS stratum separately resampled for system metrics; 2000 draws; fixed checkpoints and thresholds; same sampled rows across models and conditions",
+  "scope_limit": "Intervals do not include training, checkpoint selection, threshold fitting, new-population or multiple-comparison uncertainty; mean of three fixed models is not an ensemble prediction",
+  "qualitative_examples": "All 228 stable gains and 33 stable regressions exported, not manually confirmed; any selected examples are illustrative",
+  "future": "New rejection mechanisms and new BERT training are outside this analysis",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  }
+}

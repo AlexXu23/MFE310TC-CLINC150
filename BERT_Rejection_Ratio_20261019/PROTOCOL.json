@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-19",
+  "kind": "exploratory_prespecified_detector_noise_ratio_comparison",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "arms": [
+    "clean_reference",
+    "ratio_00",
+    "ratio_10",
+    "ratio_25",
+    "ratio_50"
+  ],
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "planned_noisy_pool_ratios": {
+    "clean_reference": 0.0,
+    "ratio_00": 0.0,
+    "ratio_10": 0.1,
+    "ratio_25": 0.25,
+    "ratio_50": 0.5
+  },
+  "reference_map": {
+    "clean_reference": "clean_only",
+    "ratio_00": "clean_duplicate",
+    "ratio_50": "clean_plus_typo"
+  },
+  "frozen_model": "Same augmented BERT42/43/44 and all cached clean/noisy training, validation and test CLS/logits. No model forward or optimization.",
+  "fit_views": "All ratio_ arms:30000 rows; every source exactly twice. First15000 clean, second15000 clean except selected source positions replaced by the existing noisy CLS. clean_reference15000 is historical, not fixed-count comparator.",
+  "allocation": {
+    "seed": 31020261021,
+    "policy_indices": {
+      "typo_light": 0,
+      "typo_medium": 1
+    },
+    "method": "For each (label_id,policy), ascending source rows permuted once by default_rng(seed+label_id*2+policy_index); select rank<10/25/50 for ratio_10/25/50",
+    "nested": true,
+    "per_class_noisy_counts": {
+      "ratio_00": 0,
+      "ratio_10": 20,
+      "ratio_25": 50,
+      "ratio_50": 100
+    },
+    "unchanged_fallbacks": "Retained; no filtering on changed/eligible tokens or evaluation collisions",
+    "shared_across_model_seeds": true
+  },
+  "estimator": "Same 768D final CLS; per-class means; LedoitWolf(assume_centered=True) of class-centered residuals; no L2/PCA",
+  "feature_origin": "Clean train and all eval: BERT_Typo_Augmentation_20261019/outputs/typo_mix/seedN; noisy train: BERT_Mixed_Rejection_20261019/features/seedN",
+  "thresholds": "Original clean3000 IS+100 OOS validation, original two policies/tie rules, reject score>=threshold. Three reference arms reuse exact saved detectors/thresholds. Six new detectors selected on validation. All15 detectors/30 thresholds freeze before new test scoring.",
+  "primary_policy": "is_acceptance_95",
+  "secondary_policy": "max_oos_f1",
+  "primary_comparisons": "Each of ratio_10 and ratio_25 versus ratio_00 and ratio_50; full grid disclosed, no test-picked winning ratio",
+  "metrics": {
+    "noisy": [
+      "in_scope_false_rejection_rate",
+      "in_scope_correct_and_accepted_rate",
+      "in_scope_wrong_and_accepted_rate",
+      "oos_recall",
+      "oos_f1"
+    ],
+    "clean": [
+      "oos_f1",
+      "oos_recall",
+      "in_scope_acceptance"
+    ],
+    "invariant": "All classifier predictions, accuracy and Macro-F1 exactly equal across arms"
+  },
+  "interpretation": "Descriptive per-metric comparison, not statistical noninferiority. Report whether each lower ratio retains noisy FR benefit versus ratio_00, reduces wrong-head acceptance and OOS false acceptance versus ratio_50, and improves each clean guardrail versus ratio_50. Strict clean preservation separately requires all3 clean means>=ratio_00 and separately>=clean_reference; no posthoc tolerance.",
+  "benefit_retention": "100*(mean_FR_ratio00-mean_FR_candidate)/(mean_FR_ratio00-mean_FR_ratio50), each condition; only defined when denominator positive; not percent accuracy",
+  "bootstrap": "2000 paired stratified original-text draws,150 IS intents+OOS, same resampled rows across arms/seeds/conditions; fixed features/detectors/thresholds",
+  "limitations": [
+    "Ratio candidates are predeclared for this turn, but previous test results motivated it; exploratory repeated-test followup, not a new untouched holdout",
+    "One nested source subset realization and matched synthetic typo family; no claim about all subsets/natural noise",
+    "30000 views contain only15000 independent source requests; fixed n removes pure fit-count changes, not data-dependent shrinkage changes",
+    "Means,covariance,LedoitWolf shrinkage and validation thresholds change together",
+    "Inherited3 train-val and2 train-test exact overlaps persist; exclude599/938 sensitivity does not remove historical exposure",
+    "Paired intervals omit validation/refitting,subset-selection,new-noise uncertainty; comparisons not multiplicity-adjusted"
+  ]
+}

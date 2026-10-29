@@ -1,0 +1,9 @@
+model,seed,condition,in_scope_n,clean_correct_to_wrong,clean_wrong_to_correct,unchanged_wrong,unchanged_correct
+bert,42,typo_light,4500,672,26,199,3603
+bert,42,typo_medium,4500,1328,32,193,2947
+bert,43,typo_light,4500,730,40,196,3534
+bert,43,typo_medium,4500,1413,39,197,2851
+bert,44,typo_light,4500,684,27,194,3595
+bert,44,typo_medium,4500,1353,26,195,2926
+tfidf_lr,42,typo_light,4500,561,38,384,3517
+tfidf_lr,42,typo_medium,4500,1072,37,385,3006

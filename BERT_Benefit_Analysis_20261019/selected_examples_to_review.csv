@@ -1,0 +1,7 @@
+﻿row_id,kind,text,gold,tfidf_prediction,seed42_prediction,seed43_prediction,seed44_prediction,human_reviewed,interpretation_to_review
+4,all_bert_corrected,what's the word for trees in norway,translate,definition,translate,translate,translate,False,表达的是跨语言转换；与单纯解释词义有区别。
+274,all_bert_corrected,how can i up my credit score,improve_credit_score,credit_score,improve_credit_score,improve_credit_score,improve_credit_score,False,up 表达改善信用分的动作，不能仅识别 credit score 主题。
+606,all_bert_corrected,put milk on my shopping list,shopping_list_update,shopping_list,shopping_list_update,shopping_list_update,shopping_list_update,False,put milk 表达添加操作，区别于查询购物清单。
+542,all_bert_regressed,change my name to bob,change_user_name,change_user_name,change_ai_name,change_ai_name,change_ai_name,False,用户名字与助手名字的所属关系仍会混淆。
+2921,all_bert_regressed,how can i unfreeze my bank account,account_blocked,account_blocked,freeze_account,freeze_account,freeze_account,False,unfreeze 与 freeze 的相反动作及账户状态边界仍会混淆。
+2150,all_bert_regressed,"if i use applesauce instead of oil, will that mess it up",ingredient_substitution,ingredient_substitution,oil_change_how,oil_change_how,oil_change_when,False,oil 在烹饪与汽车领域之间存在词义歧义，BERT 的三个运行均跨领域分错。

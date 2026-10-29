@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-19",
+  "kind": "exploratory_frozen_encoder_detector_distribution",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "arms": [
+    "clean_only",
+    "clean_duplicate",
+    "clean_plus_typo"
+  ],
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "model": "Fixed augmented BERT final_model for seeds42/43/44; eval+requires_grad(False)+inference_mode; no optimizer",
+  "arms_definition": {
+    "clean_only": "Copy the existing 15000-clean-row detector and exact Mahalanobis thresholds of the same augmented BERT",
+    "clean_duplicate": "Fit on original clean training CLS repeated twice (30000 rows); controls LedoitWolf sample-count sensitivity",
+    "clean_plus_typo": "Fit on original clean15000 plus one train-only noisy view per source row15000; planned pool50%clean25%light25%medium"
+  },
+  "augmentation": {
+    "seed": 31020261020,
+    "allocation": "Within each label_id: default_rng(seed+label_id).permutation(source indices); first50 light, last50 medium",
+    "operation": "Original internal-character deletion/swap generator; new seed; all unchanged fallbacks retained",
+    "source": "Official 15000 in-scope train rows only; every source contributes one clean and one allocated noisy view; no OOS train",
+    "policy_counts": {
+      "typo_light": 7500,
+      "typo_medium": 7500
+    },
+    "independent_of_model_seed": true
+  },
+  "inference": {
+    "precision": "float32 for features AND logits in all new comparison arms",
+    "autocast": false,
+    "tf32": false,
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "max_length": 64,
+    "padding": "dynamic to multiple of 8",
+    "device": "cuda",
+    "eval_mode": true
+  },
+  "features": "Reuse original augmented-model clean train, validation and test CLS/logits; only noisy train views require new FP32 inference",
+  "estimator": "Same 768D final CLS; per-class means; LedoitWolf(assume_centered=True) of class-centered residuals; no L2/PCA",
+  "threshold": "For new detectors use original clean3000 IS +100 OOS validation only; same two original policies and tie rules; reject score>=threshold; freeze all18 thresholds before test scoring",
+  "classifier": "Identical cached original classifier head argmax in all arms; nearest centroid is diagnostic only",
+  "primary_comparison": "clean_plus_typo minus clean_only, mahalanobis/is_acceptance_95",
+  "count_control": "clean_plus_typo minus clean_duplicate; equal fit-row counts do not create independent source examples",
+  "clean_guardrails": [
+    "oos_f1",
+    "oos_recall",
+    "in_scope_acceptance"
+  ],
+  "interpretation": "Strict descriptive retention requires no negative mean change in any clean guardrail versus clean_only; closed-set classification must be exactly identical. No posthoc tolerance or statistical noninferiority claim.",
+  "bootstrap": "2000 paired stratified original-text resamples, 150 IS intents plus OOS, fixed three model/detector/threshold pairs",
+  "limitations": [
+    "Existing tests informed this experiment; exploratory, not untouched confirmation",
+    "Same synthetic noise family, separate training sources and random seed; not established natural/unseen typo robustness",
+    "Inherited synthetic labels are not human-verified",
+    "Existing3 train-val and2 train-test text overlaps persist; sensitivity excludes test599,938 in every arm without curing historical leakage",
+    "Both class means and covariance change, plus validation recalibration; this design does not isolate those components",
+    "Paired bootstrap excludes retraining, validation selection, new noise realization and detector-refitting uncertainty"
+  ]
+}

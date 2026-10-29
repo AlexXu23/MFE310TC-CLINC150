@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s src -p test_*.py -v",
+      "exit_code": 0,
+      "log": "environment/transfer_check_1.log"
+    },
+    {
+      "command": "python src/verify_analysis.py",
+      "exit_code": 0,
+      "log": "environment/transfer_check_2.log"
+    },
+    {
+      "command": "python src/verify_robustness.py --project . --robustness outputs/robustness/multiseed --summary outputs/multiseed --typo-data outputs/robustness/typo_data",
+      "exit_code": 0,
+      "log": "environment/transfer_check_3.log"
+    },
+    {
+      "command": "python src/verify_oos_results.py --run outputs/bert/seed42 --output outputs/oos/seed42 --data data/raw/data_full.json",
+      "exit_code": 0,
+      "log": "environment/transfer_check_4.log"
+    },
+    {
+      "command": "python src/verify_oos_results.py --run outputs/bert/seed43 --output outputs/oos/seed43 --data data/raw/data_full.json",
+      "exit_code": 0,
+      "log": "environment/transfer_check_5.log"
+    },
+    {
+      "command": "python src/verify_oos_results.py --run outputs/bert/seed44 --output outputs/oos/seed44 --data data/raw/data_full.json",
+      "exit_code": 0,
+      "log": "environment/transfer_check_6.log"
+    }
+  ]
+}

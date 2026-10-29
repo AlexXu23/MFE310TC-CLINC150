@@ -1,0 +1,21 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "torch": "2.5.1+cu121",
+  "cuda_runtime": "12.1",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "transformers": "4.57.6",
+  "numpy": "2.2.4",
+  "sklearn": "1.8.0",
+  "protocol_inference": {
+    "precision": "float32 for features AND logits in all new comparison arms",
+    "autocast": false,
+    "tf32": false,
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "max_length": 64,
+    "padding": "dynamic to multiple of 8",
+    "device": "cuda",
+    "eval_mode": true
+  }
+}

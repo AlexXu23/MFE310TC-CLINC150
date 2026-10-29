@@ -1,0 +1,27 @@
+{
+  "source_run": "outputs/bert/seed44",
+  "scores": [
+    "msp",
+    "entropy",
+    "margin"
+  ],
+  "primary_comparison": "raw_MSP_vs_temperature_scaled_MSP_at_validation_max_OOS_F1",
+  "temperature_fit": "all_3000_in_scope_validation_examples_only",
+  "calibration_validation_scores_are_in_sample": true,
+  "threshold_tuning": "all_3100_validation_examples_including_100_OOS",
+  "policies": {
+    "max_oos_f1": "maximize validation OOS F1, tie: higher IS acceptance, higher threshold",
+    "is_acceptance_95": "maximize validation OOS recall with IS acceptance >= 0.95, tie: F1, acceptance, threshold"
+  },
+  "anomaly_direction": "larger_means_more_OOS",
+  "reject_rule": "anomaly_score >= threshold",
+  "score_formulas": {
+    "msp": "1-max(p)",
+    "entropy": "-sum(p*log(p))",
+    "margin": "1-(p_top1-p_top2)"
+  },
+  "test_use": "frozen evaluation only; no test-based threshold, temperature or method selection",
+  "existing_test_exposure": "In-scope test metrics were already evaluated in the previous training stage.",
+  "ece_bins": "15 equal-width bins on [0,1]",
+  "bootstrap": "2000 paired, stratified by test scope; seed=2026"
+}

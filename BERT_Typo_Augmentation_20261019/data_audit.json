@@ -1,0 +1,789 @@
+{
+  "audited_at": "2026-10-19T18:58:42.236313+08:00",
+  "kind": "independent_training_mix_reproduction_and_read_only_collision_audit",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.2.4"
+  },
+  "augmentation_seed": 31020261019,
+  "test_perturbation_seed": 2026,
+  "source_rows": 15000,
+  "checked_training_rows": 30000,
+  "classes": 150,
+  "checks": {
+    "each_source_row_exactly_once_per_arm": true,
+    "same_source_row_order_in_data_files": true,
+    "all_labels_match_original_train": true,
+    "exact_per_class_policy_allocation_reproduced": true,
+    "all_generated_text_and_mutations_reproduced_without_importing_generator": true,
+    "original_clean_rows_unchanged": true,
+    "published_coverage_and_summary_match": true,
+    "all_inputs_unchanged_during_audit": true
+  },
+  "input_sha256": {
+    "BERT_Typo_Augmentation_20261019/audit_training_data.py": "9029f84547b03ba9168fb0f3aabdfe7e7f315370b74fe91e9e88efcd82e779f0",
+    "BERT_Typo_Augmentation_20261019/PROTOCOL.json": "e80d3b296d94d67dd63e275c57a4a7c76dfca2c047a9244f3eecf3bade1b8b7f",
+    "BERT_Typo_Augmentation_20261019/data/train_clean.csv": "070efdc702c63d32eff893c1c907d3f23369380b8a135a586d9e214bfe30958d",
+    "BERT_Typo_Augmentation_20261019/data/train_mix.csv": "7c63cbd92eb8d50b180e0fb494c04034b3526a3c1e9a21f95325a74e5ab9957a",
+    "BERT_Typo_Augmentation_20261019/data/data_summary.json": "f5df49b91dd24a9109b0dd0072d61d1f70dc96fa295bde1fca2d099ead278576",
+    "BERT_Typo_Augmentation_20261019/data/augmentation_coverage.csv": "7a4537783aa876ea8476c29b921334d3ab499ee8a3257cfb561cbee14fe112d5",
+    "CLINC150_Team_20261019/data/raw/data_full.json": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+    "CLINC150_Team_20261019/outputs/bert/seed42/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc",
+    "BERT_Typo_Augmentation_20261019/run_augmentation.py": "92ff7c552daa06b8eb64e6e5f09a5ffa4212fd5125d364df6cfcb5ccc359d3b0",
+    "CLINC150_Team_20261019/src/typo_data.py": "81a54e5cdc8cfd4f2d6aca5aca2793f1f0eceeda05561895d503ef4d3ce21d49",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/summary.json": "e2c5caf1a88435d12f9dd1b3355bf9c00c4781ab397ee1b1bba3a62ed2d8c11f",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/clean.csv": "61b4e58e6714944593b164431b21a3788cce516af7bab2f92530a6ea14876520",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/typo_light.csv": "0547f3f4f980aa178b12b2b758bb83c87e86bcfcbd179d788e0ce12343dac65d",
+    "CLINC150_Team_20261019/outputs/robustness/typo_data/typo_medium.csv": "1075ac7793208d8dcd9b96a245b710bc816b01f6229f09550aec4ec5e36651a9"
+  },
+  "actual_policy_coverage": [
+    {
+      "policy": "clean",
+      "rows": 7500,
+      "changed": 0,
+      "modified_tokens": 0,
+      "two_tokens_changed": 0,
+      "unchanged_allocated_rows": 7500,
+      "operation_counts": {}
+    },
+    {
+      "policy": "typo_light",
+      "rows": 3750,
+      "changed": 3476,
+      "modified_tokens": 3476,
+      "two_tokens_changed": 0,
+      "unchanged_allocated_rows": 274,
+      "operation_counts": {
+        "delete": 1760,
+        "swap": 1716
+      }
+    },
+    {
+      "policy": "typo_medium",
+      "rows": 3750,
+      "changed": 3479,
+      "modified_tokens": 6150,
+      "two_tokens_changed": 2671,
+      "unchanged_allocated_rows": 271,
+      "operation_counts": {
+        "swap": 3096,
+        "delete": 3054
+      }
+    }
+  ],
+  "modified_token_counts": {
+    "0": 8045,
+    "1": 4284,
+    "2": 2671
+  },
+  "internal_duplicates": {
+    "exact": {
+      "original_training": {
+        "duplicate_text_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "excess_rows": 0,
+        "conflicting_label_groups": 0,
+        "groups": []
+      },
+      "mixed_training": {
+        "duplicate_text_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "excess_rows": 0,
+        "conflicting_label_groups": 0,
+        "groups": []
+      }
+    },
+    "normalized": {
+      "original_training": {
+        "duplicate_text_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "excess_rows": 0,
+        "conflicting_label_groups": 0,
+        "groups": []
+      },
+      "mixed_training": {
+        "duplicate_text_groups": 0,
+        "rows_in_duplicate_groups": 0,
+        "excess_rows": 0,
+        "conflicting_label_groups": 0,
+        "groups": []
+      }
+    }
+  },
+  "evaluation_collisions": {
+    "exact": {
+      "official_val": {
+        "original_training": {
+          "row_pairs": 3,
+          "unique_training_sources": 3,
+          "unique_evaluation_rows": 3,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 7424,
+              "evaluation_row": 1011,
+              "train_text": "what is on my to do list",
+              "evaluation_text": "what is on my to do list",
+              "train_label": "todo_list",
+              "evaluation_label": "reminder",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11130,
+              "evaluation_row": 1794,
+              "train_text": "turn up your volume",
+              "evaluation_text": "turn up your volume",
+              "train_label": "whisper_mode",
+              "evaluation_label": "change_volume",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11896,
+              "evaluation_row": 2369,
+              "train_text": "hey what's up",
+              "evaluation_text": "hey what's up",
+              "train_label": "greeting",
+              "evaluation_label": "greeting",
+              "label_conflict": false
+            }
+          ]
+        },
+        "mixed_training": {
+          "row_pairs": 3,
+          "unique_training_sources": 3,
+          "unique_evaluation_rows": 3,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 7424,
+              "evaluation_row": 1011,
+              "train_text": "what is on my to do list",
+              "evaluation_text": "what is on my to do list",
+              "train_label": "todo_list",
+              "evaluation_label": "reminder",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11130,
+              "evaluation_row": 1794,
+              "train_text": "turn up your volume",
+              "evaluation_text": "turn up your volume",
+              "train_label": "whisper_mode",
+              "evaluation_label": "change_volume",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11896,
+              "evaluation_row": 2369,
+              "train_text": "hey what's up",
+              "evaluation_text": "hey what's up",
+              "train_label": "greeting",
+              "evaluation_label": "greeting",
+              "label_conflict": false
+            }
+          ]
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "official_oos_val": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "official_test": {
+        "original_training": {
+          "row_pairs": 2,
+          "unique_training_sources": 2,
+          "unique_evaluation_rows": 2,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 12066,
+              "evaluation_row": 938,
+              "train_text": "what's your designation",
+              "evaluation_text": "what's your designation",
+              "train_label": "what_is_your_name",
+              "evaluation_label": "user_name",
+              "label_conflict": true
+            },
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "mixed_training": {
+          "row_pairs": 1,
+          "unique_training_sources": 1,
+          "unique_evaluation_rows": 1,
+          "conflicting_label_pairs": 1,
+          "pairs": [
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "official_oos_test": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "existing_test_clean": {
+        "original_training": {
+          "row_pairs": 2,
+          "unique_training_sources": 2,
+          "unique_evaluation_rows": 2,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 12066,
+              "evaluation_row": 938,
+              "train_text": "what's your designation",
+              "evaluation_text": "what's your designation",
+              "train_label": "what_is_your_name",
+              "evaluation_label": "user_name",
+              "label_conflict": true
+            },
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "mixed_training": {
+          "row_pairs": 1,
+          "unique_training_sources": 1,
+          "unique_evaluation_rows": 1,
+          "conflicting_label_pairs": 1,
+          "pairs": [
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "existing_test_typo_light": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "existing_test_typo_medium": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "changed_variants_vs_original_train": {
+        "row_pairs": 0,
+        "unique_training_sources": 0,
+        "unique_evaluation_rows": 0,
+        "conflicting_label_pairs": 0,
+        "pairs": []
+      }
+    },
+    "normalized": {
+      "official_val": {
+        "original_training": {
+          "row_pairs": 3,
+          "unique_training_sources": 3,
+          "unique_evaluation_rows": 3,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 7424,
+              "evaluation_row": 1011,
+              "train_text": "what is on my to do list",
+              "evaluation_text": "what is on my to do list",
+              "train_label": "todo_list",
+              "evaluation_label": "reminder",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11130,
+              "evaluation_row": 1794,
+              "train_text": "turn up your volume",
+              "evaluation_text": "turn up your volume",
+              "train_label": "whisper_mode",
+              "evaluation_label": "change_volume",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11896,
+              "evaluation_row": 2369,
+              "train_text": "hey what's up",
+              "evaluation_text": "hey what's up",
+              "train_label": "greeting",
+              "evaluation_label": "greeting",
+              "label_conflict": false
+            }
+          ]
+        },
+        "mixed_training": {
+          "row_pairs": 3,
+          "unique_training_sources": 3,
+          "unique_evaluation_rows": 3,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 7424,
+              "evaluation_row": 1011,
+              "train_text": "what is on my to do list",
+              "evaluation_text": "what is on my to do list",
+              "train_label": "todo_list",
+              "evaluation_label": "reminder",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11130,
+              "evaluation_row": 1794,
+              "train_text": "turn up your volume",
+              "evaluation_text": "turn up your volume",
+              "train_label": "whisper_mode",
+              "evaluation_label": "change_volume",
+              "label_conflict": true
+            },
+            {
+              "source_row": 11896,
+              "evaluation_row": 2369,
+              "train_text": "hey what's up",
+              "evaluation_text": "hey what's up",
+              "train_label": "greeting",
+              "evaluation_label": "greeting",
+              "label_conflict": false
+            }
+          ]
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "official_oos_val": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "official_test": {
+        "original_training": {
+          "row_pairs": 2,
+          "unique_training_sources": 2,
+          "unique_evaluation_rows": 2,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 12066,
+              "evaluation_row": 938,
+              "train_text": "what's your designation",
+              "evaluation_text": "what's your designation",
+              "train_label": "what_is_your_name",
+              "evaluation_label": "user_name",
+              "label_conflict": true
+            },
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "mixed_training": {
+          "row_pairs": 1,
+          "unique_training_sources": 1,
+          "unique_evaluation_rows": 1,
+          "conflicting_label_pairs": 1,
+          "pairs": [
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "official_oos_test": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "existing_test_clean": {
+        "original_training": {
+          "row_pairs": 2,
+          "unique_training_sources": 2,
+          "unique_evaluation_rows": 2,
+          "conflicting_label_pairs": 2,
+          "pairs": [
+            {
+              "source_row": 12066,
+              "evaluation_row": 938,
+              "train_text": "what's your designation",
+              "evaluation_text": "what's your designation",
+              "train_label": "what_is_your_name",
+              "evaluation_label": "user_name",
+              "label_conflict": true
+            },
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "mixed_training": {
+          "row_pairs": 1,
+          "unique_training_sources": 1,
+          "unique_evaluation_rows": 1,
+          "conflicting_label_pairs": 1,
+          "pairs": [
+            {
+              "source_row": 14018,
+              "evaluation_row": 599,
+              "train_text": "where did you grow up",
+              "evaluation_text": "where did you grow up",
+              "train_label": "how_old_are_you",
+              "evaluation_label": "where_are_you_from",
+              "label_conflict": true
+            }
+          ]
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "existing_test_typo_light": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "existing_test_typo_medium": {
+        "original_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "mixed_training": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "added_source_eval_pairs": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        },
+        "changed_training_variants_only": {
+          "row_pairs": 0,
+          "unique_training_sources": 0,
+          "unique_evaluation_rows": 0,
+          "conflicting_label_pairs": 0,
+          "pairs": []
+        }
+      },
+      "changed_variants_vs_original_train": {
+        "row_pairs": 0,
+        "unique_training_sources": 0,
+        "unique_evaluation_rows": 0,
+        "conflicting_label_pairs": 0,
+        "pairs": []
+      }
+    }
+  },
+  "limits": [
+    "Policy assignment 50/25/25 does not guarantee those fractions actually change; short or ineligible texts stay unchanged.",
+    "Exact/normalized collisions do not exhaust semantic duplicates, paraphrases, or model pretraining contamination.",
+    "Normalization is NFKC plus casefold and whitespace collapse; punctuation is preserved.",
+    "Evaluation text was inspected for collision accounting only; no training row, seed, allocation or model is changed by the audit.",
+    "Inherited labels for synthetic variants have not received independent human semantic review.",
+    "Preserving an inherited overlap or observing no new exact collision is not a guarantee of a pristine unseen test."
+  ]
+}

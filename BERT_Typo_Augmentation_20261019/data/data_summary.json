@@ -1,0 +1,16 @@
+{
+  "train_rows": 15000,
+  "augmentation_seed": 31020261019,
+  "policy_counts": {
+    "clean": 7500,
+    "typo_medium": 3750,
+    "typo_light": 3750
+  },
+  "changed_rows": 6955,
+  "modified_token_counts": {
+    "0": 8045,
+    "1": 4284,
+    "2": 2671
+  },
+  "train_mix_sha256": "7c63cbd92eb8d50b180e0fb494c04034b3526a3c1e9a21f95325a74e5ab9957a"
+}

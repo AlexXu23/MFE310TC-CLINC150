@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-19",
+  "kind": "exploratory_matched_continuation_training",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "arms": [
+    "clean_continue",
+    "typo_mix"
+  ],
+  "conditions": [
+    "clean",
+    "typo_light",
+    "typo_medium"
+  ],
+  "initialization": "Each arm starts from its seed's identical original fine-tuned BERT checkpoint; fresh identical AdamW and LR schedule.",
+  "train": {
+    "epochs": 1,
+    "examples": 15000,
+    "batch_size": 16,
+    "optimizer_updates": 938,
+    "last_batch_size": 8,
+    "learning_rate": 1e-05,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip_norm": 1.0,
+    "precision": "CUDA autocast bfloat16 with FP32 parameters; no GradScaler skips",
+    "row_order": "numpy.default_rng(model_seed).permutation(15000), same order across paired arms",
+    "padding": "dynamic to multiple of 8; equal presentations/updates, not equal FLOPs",
+    "checkpoint": "Fixed end of epoch 1; no checkpoint selection"
+  },
+  "augmentation": {
+    "seed": 31020261019,
+    "source": "Official 15000 IS train rows only; no OOS train",
+    "per_class_policy_counts": {
+      "clean": 50,
+      "typo_light": 25,
+      "typo_medium": 25
+    },
+    "allocation": "numpy.default_rng(augmentation_seed+label_id).permutation(class source rows)",
+    "operation": "Reuse internal character deletion/swap generator; every source row once per arm; some allocated noisy rows cannot change",
+    "same_frozen_data_across_model_seeds": true
+  },
+  "inference": {
+    "precision": "float32 for features AND logits in all new comparison arms",
+    "autocast": false,
+    "tf32": false,
+    "attention_implementation": "eager",
+    "batch_size": 32,
+    "max_length": 64,
+    "padding": "dynamic to multiple of 8",
+    "device": "cuda",
+    "eval_mode": true
+  },
+  "detector": "Each new model: final hidden CLS; original clean 15000 train rows only; per-class means and class-residual LedoitWolf covariance; no L2/PCA",
+  "thresholds": "Re-estimate for each new model using the same original clean validation rows and original two policies, exact >= rule. Old numeric cutoffs are not transferred to a new representation.",
+  "causal_comparison": "typo_mix minus clean_continue; augmentation plus identical post-training reconstruction of detector and thresholds",
+  "historical_comparison": "typo_mix minus original; includes additional optimization, so not isolated augmentation effect",
+  "focus": {
+    "score": "mahalanobis",
+    "policy": "is_acceptance_95",
+    "noise_metrics": [
+      "IS false rejection rate",
+      "rejected despite correct classifier",
+      "IS correct and accepted rate"
+    ],
+    "clean_metrics": [
+      "oos_f1",
+      "oos_recall",
+      "in_scope_acceptance",
+      "closed_set_accuracy"
+    ]
+  },
+  "interpretation": "Report signed changes for both noisy levels and all four clean guardrails. Strict descriptive retention means no mean decrease in any clean guardrail vs original; any decrease is a tradeoff, not hidden by noisy improvement. This is not a statistical non-inferiority claim.",
+  "gate": "All six models, clean-train distance statistics and 36 validation thresholds frozen before new-model test inference",
+  "bootstrap": "2000 paired stratified draws, same original texts across arms/seeds/conditions; 150 IS intents plus OOS; fixed trained models and thresholds",
+  "limitations": [
+    "Existing test outcomes informed this follow-up; exploratory, not a new untouched test",
+    "Train/test noise shares a generator family but uses separate source rows and seeds; does not establish robustness to natural/unseen noise",
+    "Original train-val/test exact duplicates are inherited; report exclusion sensitivity without changing official training data",
+    "Labels inherited for synthetic spelling variants; semantic equivalence not human-verified"
+  ],
+  "method_context": "https://aclanthology.org/2020.acl-main.138/ supports clean/noisy mixture as a training idea in sequence labeling; this intent/OOS experiment is not an exact replication"
+}

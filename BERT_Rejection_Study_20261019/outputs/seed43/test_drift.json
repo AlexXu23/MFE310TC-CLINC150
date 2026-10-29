@@ -1,0 +1,14 @@
+{
+  "reference": "Archived original FP16 forward",
+  "current": "Unified FP32 eager forward",
+  "rows": 5500,
+  "changed_top1_count": 4,
+  "changed_top1_row_ids": [
+    552,
+    4679,
+    4700,
+    5490
+  ],
+  "max_abs_logit_difference": 0.007826805114746094,
+  "mean_abs_logit_difference": 0.000371945052861931
+}

@@ -1,0 +1,7 @@
+condition,scope,n,changed,changed_fraction,mean_modified_tokens,two_tokens_changed
+clean,in_scope,4500,0,0.0,0.0,0
+clean,oos,1000,0,0.0,0.0,0
+typo_light,in_scope,4500,4144,0.9208888888888889,0.9208888888888889,0
+typo_light,oos,1000,984,0.984,0.984,0
+typo_medium,in_scope,4500,4144,0.9208888888888889,1.604,3074
+typo_medium,oos,1000,984,0.984,1.829,845

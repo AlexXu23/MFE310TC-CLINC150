@@ -1,0 +1,51 @@
+{
+  "frozen_at": "2026-10-19T18:31:18.770098+08:00",
+  "source_hashes": {
+    "data/raw/data_full.json": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+    "src/evaluate_oos.py": "6f1a9589fe698d42a725dd2bb8ffbeaa5906c79b01e66b482cc8eb51a36a0931",
+    "outputs/bert/seed42/best_model/config.json": "f3f35899c8a299efd58e52f1919390525b9208d2db35dbe73cbf12ee2325f89c",
+    "outputs/bert/seed42/best_model/model.safetensors": "9906bcf58ddd53220332ecfe4d9341340f7fe8c5d840307474f39a4b5bb1542a",
+    "outputs/bert/seed42/best_model/special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+    "outputs/bert/seed42/best_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "outputs/bert/seed42/best_model/tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+    "outputs/bert/seed42/best_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "outputs/bert/seed43/best_model/config.json": "f3f35899c8a299efd58e52f1919390525b9208d2db35dbe73cbf12ee2325f89c",
+    "outputs/bert/seed43/best_model/model.safetensors": "d05cda19826ce037180eef93d2cd70f6efe2bb323c3e2c80721cecaf83949c02",
+    "outputs/bert/seed43/best_model/special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+    "outputs/bert/seed43/best_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "outputs/bert/seed43/best_model/tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+    "outputs/bert/seed43/best_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "outputs/bert/seed44/best_model/config.json": "f3f35899c8a299efd58e52f1919390525b9208d2db35dbe73cbf12ee2325f89c",
+    "outputs/bert/seed44/best_model/model.safetensors": "613d2d49a532d162842304bb68fa51ae90f9aa4d21564733bd32ae73b13ae856",
+    "outputs/bert/seed44/best_model/special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+    "outputs/bert/seed44/best_model/tokenizer.json": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416",
+    "outputs/bert/seed44/best_model/tokenizer_config.json": "87ad1b9152a48db68810172cbd14ab6983a177e4393fb567c0dd189ad4af5dfe",
+    "outputs/bert/seed44/best_model/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "outputs/bert/seed42/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc",
+    "outputs/bert/seed43/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc",
+    "outputs/bert/seed44/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc"
+  },
+  "code_hashes": {
+    "run_rejection_study.py": "65449dd7f5d1973a2eed504ee4c11b8f3f66cb6d76a015ca70b8df2f58f835eb",
+    "distance_model.py": "baae8d45e6eaba58597edbba079704b0a7ab893293aa8710c90b1de0c60ec14b",
+    "PROTOCOL.json": "3c020930e0833255b39b56632d9fe1d3921b521c9747919140313a1002aa0b87"
+  },
+  "development_hashes": {
+    "seed42/distance_model.npz": "92cf2ac235134a673d98f5f5493b71a24b1c8461d28c1887c76c4e57caabb1ab",
+    "seed42/frozen_thresholds.json": "9635da851bbd213c7cfc4903fdd51c8cd4b922e1b00fb03c09923652c0dd4d7e",
+    "seed42/development_summary.json": "e5386181ae97170a63d9dd58949b06f6f2126867412b1fafae330d641c9941e4",
+    "seed42/train_extraction.json": "8f27284aea932d625dde9f5d87a38a49ec62c634432bee763d7e0fd4b61c78fb",
+    "seed42/validation_extraction.json": "2d6d634b2357abb5b9b92b383451f9afb3a7e2896ff3355d24649b4fc1a6fed8",
+    "seed43/distance_model.npz": "3b2b756d0aee017d52df4c6ad00f233cea93c598c431cb6718498044ee7810a9",
+    "seed43/frozen_thresholds.json": "9c349e8a5822671515323e45f7332d896c036b0feeafc52013e051444a3a7c48",
+    "seed43/development_summary.json": "be228eed83188d09e3f978143c8993416f4acc7b3787dd81f1647fd8fb0d9ba9",
+    "seed43/train_extraction.json": "853fdf6ee5456098a43f98b151bfa2c7494bc9cb36fa4508a1c1c23c7236354e",
+    "seed43/validation_extraction.json": "8ff1c9ebe75499dca2e9293c99754ee5cd2c5e244f4eb51fbb3412c8d0b40bad",
+    "seed44/distance_model.npz": "c8e200ee8ee2245d9b38769cd04423a27b91d4a5508da65972d44e58f4859c28",
+    "seed44/frozen_thresholds.json": "55d71015d0600b143fa84a697f7a42944e3732562132dc423d488d72942ddf44",
+    "seed44/development_summary.json": "0f9f4deaf2e88efbd5568f07d16eb8867d50db2365590d339028c30dc64a11aa",
+    "seed44/train_extraction.json": "ad96c0ebe529b4060188d757bfd621dc60979a0c1ca23b55b78613286c12305b",
+    "seed44/validation_extraction.json": "5f571a31cac090e9d026f672a582701a3ee9fb12864d2997c85ec7caba66a88d"
+  },
+  "status": "All 18 validation thresholds and three train-only distance models frozen before test-stage inference"
+}

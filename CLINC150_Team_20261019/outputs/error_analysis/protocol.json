@@ -1,0 +1,23 @@
+{
+  "primary_diagnostic_policy": "raw_msp_max_oos_f1_reject",
+  "secondary_diagnostic_policy": "raw_entropy_is_acceptance_95_reject",
+  "case_sampling": "Seed 42 fixed before linguistic review; SHA256 ordering with key 20261019 within 3 disjoint system-error pools, 20 cases each; 12 additional clean-correct/medium-wrong cases.",
+  "scope": "All 12 model/condition prediction files analyzed; qualitative sample is not a prevalence estimate.",
+  "human_review_status": "Pending; do not claim independent human annotation, agreement statistics or student authorship of AI draft interpretations.",
+  "sensitivity": "Evaluation-only exclusions of test text already present in train OR validation (including OOS); no source edits, retraining, recalibration or threshold reselection.",
+  "interpretation_limits": "Associations and plausible linguistic explanations are not causal proof or attribution. No data/model changes may be selected using these test errors.",
+  "input_sha256": {
+    "outputs/robustness/multiseed/seed42/clean_predictions.csv": "04b2603c9ab7df10bff6536e44d2a685061093382725bdd97332237071e9fa80",
+    "outputs/robustness/multiseed/seed42/typo_light_predictions.csv": "f13d8c7df2860363925d4cee07a053181ed5531eaa5b0efbf19f89ad3bcee45a",
+    "outputs/robustness/multiseed/seed42/typo_medium_predictions.csv": "fdf0d3f38b2fd2eb5095f03b27df45fa0e78b13344cde21147b67d6d4c90d2bb",
+    "outputs/robustness/multiseed/seed43/clean_predictions.csv": "4b19d137a80e951379c0044b473e4692e03dace0f093a37f827a0d079e6af680",
+    "outputs/robustness/multiseed/seed43/typo_light_predictions.csv": "30e3e6087926a10d31853080a2d9ffb73bb58cddc3c8c19a8ac97fb2336a4077",
+    "outputs/robustness/multiseed/seed43/typo_medium_predictions.csv": "79562b5ec24d5742f4652b8c613c848649e4ee373970c3679a4a507666ef1158",
+    "outputs/robustness/multiseed/seed44/clean_predictions.csv": "a2db9ca78da0183ff895fc3dd0d85c3437cd8c4bdeadcce43bf24dd53552082d",
+    "outputs/robustness/multiseed/seed44/typo_light_predictions.csv": "21808f3abc9354cc0dc5f73c20a1ad0f2e19a977a531101940abfb3c175fb261",
+    "outputs/robustness/multiseed/seed44/typo_medium_predictions.csv": "639da1799a03b6f7b1ba2f03e51f55cb93df53d721b3430c38c99c45adbe767f",
+    "outputs/robustness/multiseed/tfidf_lr/clean_predictions.csv": "46aa7319930248ca5f7de9582d65e60b2c8340bffbc301a44fe87b30f03a7c1f",
+    "outputs/robustness/multiseed/tfidf_lr/typo_light_predictions.csv": "4c76e09db8a9ab39d274f20ec895e8573e421b34cb6bc68a7c383496f7dbaaef",
+    "outputs/robustness/multiseed/tfidf_lr/typo_medium_predictions.csv": "e4702eeaa7a51b53a64017ebe8b3c81bf755a4b3faf1284192abc260a12c3055"
+  }
+}

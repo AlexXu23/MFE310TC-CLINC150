@@ -1,0 +1,28 @@
+{
+  "scope": "Saved predictions only; original BERT vs TF-IDF; no new rejection mechanism or training",
+  "n_is": 4500,
+  "n_oos": 1000,
+  "stable_transitions": {
+    "both_all_correct": 3960,
+    "all_bert_fix_tfidf_error": 228,
+    "all_bert_break_tfidf_correct": 33,
+    "both_all_wrong": 122,
+    "bert_correctness_disagreement": 157
+  },
+  "accuracy_gain_pp": 4.325925925925922,
+  "macro_f1_gain_pp": 4.361847820463605,
+  "baseline_errors": 422,
+  "bert_errors_mean": 227.33333333333334,
+  "relative_error_reduction": 0.46129541864139023,
+  "intents_improved": 117,
+  "intents_regressed": 28,
+  "intents_tied": 5,
+  "all_seeds_improved_intents": 94,
+  "all_seeds_worse_intents": 12,
+  "historical_run_seconds": [
+    331.01599526405334,
+    368.6891589164734,
+    367.81544494628906
+  ],
+  "input_hashes_unchanged": true
+}

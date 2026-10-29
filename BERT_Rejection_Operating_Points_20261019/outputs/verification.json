@@ -1,0 +1,911 @@
+{
+  "verified_test_settings": 225,
+  "verified_validation_settings": 75,
+  "test_prediction_rows_checked": 247500,
+  "validation_prediction_rows_checked": 46500,
+  "cutoff_checks": {
+    "verified_cutoffs": 75,
+    "independent_is_candidate_count": 45015,
+    "common_attainable_counts": 3001,
+    "targets": [
+      {
+        "policy": "aligned_is_acceptance_90",
+        "target_acceptance": 0.9,
+        "target_accepted": 2700,
+        "actual_common_accepted": 2700,
+        "actual_common_acceptance": 0.9
+      },
+      {
+        "policy": "aligned_is_acceptance_92p5",
+        "target_acceptance": 0.925,
+        "target_accepted": 2775,
+        "actual_common_accepted": 2775,
+        "actual_common_acceptance": 0.925
+      },
+      {
+        "policy": "aligned_is_acceptance_95",
+        "target_acceptance": 0.95,
+        "target_accepted": 2850,
+        "actual_common_accepted": 2850,
+        "actual_common_acceptance": 0.95
+      },
+      {
+        "policy": "aligned_is_acceptance_97p5",
+        "target_acceptance": 0.975,
+        "target_accepted": 2925,
+        "actual_common_accepted": 2925,
+        "actual_common_acceptance": 0.975
+      },
+      {
+        "policy": "aligned_is_acceptance_99",
+        "target_acceptance": 0.99,
+        "target_accepted": 2970,
+        "actual_common_accepted": 2970,
+        "actual_common_acceptance": 0.99
+      }
+    ],
+    "anchor_95_thresholds_identical": true,
+    "all_five_requested_acceptances_exact": true
+  },
+  "every_original_column_exactly_unchanged": true,
+  "fixed_classifier_across_arms": true,
+  "anchor_95_decisions_and_metrics_exactly_reproduced": true,
+  "manual_confusion_and_wrong_acceptance_metrics_verified": true,
+  "acceptance_monotonicity_adjacent_pairs": 240,
+  "acceptance_monotonicity": [
+    {
+      "arm": "clean_reference",
+      "seed": 42,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 42,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4019,
+        4130,
+        4264,
+        4395,
+        4461
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 42,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3082,
+        3316,
+        3582,
+        3957,
+        4243
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 42,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2345,
+        2581,
+        2872,
+        3434,
+        3887
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 43,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 43,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4030,
+        4145,
+        4252,
+        4387,
+        4450
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 43,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3136,
+        3309,
+        3552,
+        3920,
+        4195
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 43,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2379,
+        2558,
+        2850,
+        3368,
+        3800
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 44,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 44,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4022,
+        4144,
+        4278,
+        4387,
+        4454
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 44,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3129,
+        3334,
+        3594,
+        3937,
+        4234
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "clean_reference",
+      "seed": 44,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2383,
+        2600,
+        2907,
+        3370,
+        3860
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 42,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 42,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4012,
+        4130,
+        4267,
+        4393,
+        4461
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 42,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3064,
+        3309,
+        3581,
+        3962,
+        4245
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 42,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2322,
+        2578,
+        2872,
+        3437,
+        3889
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 43,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 43,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4026,
+        4141,
+        4246,
+        4387,
+        4452
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 43,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3131,
+        3302,
+        3545,
+        3920,
+        4200
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 43,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2377,
+        2547,
+        2834,
+        3364,
+        3812
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 44,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 44,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4019,
+        4142,
+        4279,
+        4388,
+        4457
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 44,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3124,
+        3330,
+        3594,
+        3936,
+        4243
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_00",
+      "seed": 44,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2375,
+        2594,
+        2908,
+        3370,
+        3875
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 42,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 42,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4012,
+        4133,
+        4259,
+        4396,
+        4460
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 42,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3156,
+        3402,
+        3632,
+        4060,
+        4296
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 42,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2429,
+        2703,
+        2990,
+        3622,
+        4035
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 43,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 43,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4026,
+        4142,
+        4232,
+        4384,
+        4463
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 43,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3209,
+        3387,
+        3593,
+        4002,
+        4296
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 43,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2477,
+        2670,
+        2939,
+        3518,
+        4034
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 44,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 44,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4016,
+        4148,
+        4269,
+        4389,
+        4447
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 44,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3192,
+        3414,
+        3656,
+        4052,
+        4293
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_10",
+      "seed": 44,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2471,
+        2725,
+        3007,
+        3585,
+        4007
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 42,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 42,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4013,
+        4131,
+        4265,
+        4399,
+        4462
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 42,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3223,
+        3468,
+        3719,
+        4104,
+        4323
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 42,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2518,
+        2797,
+        3145,
+        3736,
+        4113
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 43,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 43,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4038,
+        4141,
+        4242,
+        4388,
+        4464
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 43,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3285,
+        3446,
+        3656,
+        4067,
+        4355
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 43,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2590,
+        2786,
+        3071,
+        3657,
+        4157
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 44,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 44,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4016,
+        4143,
+        4270,
+        4393,
+        4442
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 44,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3248,
+        3462,
+        3733,
+        4097,
+        4325
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_25",
+      "seed": 44,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2562,
+        2800,
+        3128,
+        3708,
+        4079
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 42,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 42,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4014,
+        4136,
+        4255,
+        4403,
+        4461
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 42,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3324,
+        3531,
+        3757,
+        4163,
+        4344
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 42,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2658,
+        2943,
+        3237,
+        3843,
+        4181
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 43,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 43,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4036,
+        4132,
+        4247,
+        4380,
+        4456
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 43,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3365,
+        3502,
+        3731,
+        4090,
+        4369
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 43,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2710,
+        2900,
+        3201,
+        3703,
+        4198
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 44,
+      "condition": "validation",
+      "is_accepted_counts": [
+        2700,
+        2775,
+        2850,
+        2925,
+        2970
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 44,
+      "condition": "clean",
+      "is_accepted_counts": [
+        4013,
+        4152,
+        4258,
+        4391,
+        4450
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 44,
+      "condition": "typo_light",
+      "is_accepted_counts": [
+        3316,
+        3560,
+        3783,
+        4142,
+        4349
+      ],
+      "all_accepted_sets_nested": true
+    },
+    {
+      "arm": "ratio_50",
+      "seed": 44,
+      "condition": "typo_medium",
+      "is_accepted_counts": [
+        2667,
+        2947,
+        3242,
+        3808,
+        4163
+      ],
+      "all_accepted_sets_nested": true
+    }
+  ],
+  "report_checks": {
+    "status": "PASS",
+    "checked": true,
+    "summary_groups": 75,
+    "per_seed_gaps": 1440,
+    "gap_summary_groups": 480,
+    "strict_clean_guardrails": 90,
+    "stability_records": 96,
+    "primary_intervals": 480,
+    "all_480_bootstrap_quantiles_independently_resampled": true,
+    "bootstrap_repeats": 2000,
+    "bootstrap_seed": 20261023,
+    "identically_zero_95_change_intervals": 48,
+    "ordering_checks": {
+      "status": "PASS",
+      "rows": 40,
+      "scalar_ordering_checks": 120,
+      "exceptions": [
+        {
+          "scope": "seed",
+          "seed": 44,
+          "condition": "typo_light",
+          "policy": "aligned_is_acceptance_99",
+          "metric": "oos_false_acceptance_rate",
+          "count_differences": [
+            -16,
+            -25
+          ]
+        },
+        {
+          "scope": "seed",
+          "seed": 43,
+          "condition": "typo_medium",
+          "policy": "aligned_is_acceptance_97p5",
+          "metric": "oos_false_acceptance_rate",
+          "count_differences": [
+            32,
+            1
+          ]
+        }
+      ]
+    },
+    "report_artifact_sha256": {
+      "summary_mean_sd.csv": "256027e0b173ec4db061f60907746a64bb3d17deec81098515a00acacfd79953",
+      "gap_by_seed.csv": "766d57286c5bd257becdad4a1af4ffd3b479d9cc90320f1fd606967fb05d73c9",
+      "gap_summary.csv": "57b9a259493369f280c521db1f5d60c215bac752ba6a61cc744498af119c118a",
+      "clean_guardrails.csv": "2291debeae423cda08516c9942119c862c74e6dda0f35ac8cd2cb9b043bfa9ff",
+      "stability_summary.csv": "2919ab93273ea2cda022b2eff18c38f50a99efec0c71fb3688c875472a4deee8",
+      "primary_paired_intervals.csv": "ba7a3446080ccdf659320ad86683da1b64e94b034a719e9ae14b902d112c59aa",
+      "ordering_checks.csv": "7c9bf0568cda1774d06c9c26326979df71023595a25955fb4b29a9ebf3739497"
+    }
+  },
+  "hash_inventory_counts": {
+    "inputs": 639,
+    "development": 78,
+    "test": 91
+  },
+  "inputs_manifest_sha256": "25f473954fa5bb822daa2ffb5f215d9e72ac13777f52d0cecb94008eccc5b233",
+  "development_manifest_sha256": "12d4aaf4ae6aa57c0e03d44c946ff8effd094180a31b98ef9ad3cd82a16ffcae",
+  "test_completion_sha256": "eb9fee660473f1f3d4cb125a871dd9c59b5989bbfbb1ee17a6a6bb73ccb55575",
+  "metrics_sha256": "b2e84bd863999afe2fc509c54d55181ea317c05bfec17dcbad3d1b9b4f985a81",
+  "limitations": [
+    "Saved scores/decisions and immutable source hashes are audited; no inference or refitting is performed.",
+    "Exact common acceptance holds on validation; test acceptances can differ across detector arms.",
+    "Accepted sets must expand with target acceptance; F1 and combined accuracy are not assumed monotone."
+  ],
+  "status": "PASS",
+  "independent_helper_sha256": {
+    "BERT_Rejection_Study_20261019/verify_rejection.py": "142ba3c2ddf49f4729170548336d1a87c7462726735cd9455d12d3f5f372b594",
+    "BERT_Mixed_Rejection_20261019/verify_mixed_rejection.py": "285ec0275d1af5dc8881f5e7e7b2258e470032e51a4dc401c31bce756c46d64c"
+  },
+  "verifier_sha256": "a3cda972c3842852461b7c59b412bca59a4c6eb4357f74b2bc3c4330c0257567",
+  "started_at_utc": "2026-10-19T12:12:15.757473+00:00",
+  "completed_at_utc": "2026-10-19T12:12:28.653091+00:00"
+}

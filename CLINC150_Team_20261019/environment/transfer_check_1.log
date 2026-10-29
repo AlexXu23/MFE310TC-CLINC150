@@ -1,0 +1,21 @@
+test_bootstrap_identity_gives_zero_interval (test_analysis.AnalysisTests.test_bootstrap_identity_gives_zero_interval) ... ok
+test_case_sampling_is_order_invariant (test_analysis.AnalysisTests.test_case_sampling_is_order_invariant) ... ok
+test_duplicates_distinguish_scope_from_official_split (test_analysis.AnalysisTests.test_duplicates_distinguish_scope_from_official_split) ... ok
+test_ece_boundary_confidence_one (test_analysis.AnalysisTests.test_ece_boundary_confidence_one) ... ok
+test_errors_form_disjoint_partition (test_analysis.AnalysisTests.test_errors_form_disjoint_partition) ... ok
+test_normalization_is_conservative (test_analysis.AnalysisTests.test_normalization_is_conservative) ... ok
+test_95_acceptance_respects_ties (test_oos_math.OOSMathTests.test_95_acceptance_respects_ties) ... ok
+test_equal_scores_do_not_permit_partial_tie_rejection (test_oos_math.OOSMathTests.test_equal_scores_do_not_permit_partial_tie_rejection) ... ok
+test_stable_softmax_and_argmax_invariance (test_oos_math.OOSMathTests.test_stable_softmax_and_argmax_invariance) ... ok
+test_temperature_fit_rejects_oos_labels (test_oos_math.OOSMathTests.test_temperature_fit_rejects_oos_labels) ... ok
+test_temperature_recovers_known_synthetic_scale (test_oos_math.OOSMathTests.test_temperature_recovers_known_synthetic_scale) ... ok
+test_tied_scores_match_sklearn_at_every_threshold (test_oos_math.OOSMathTests.test_tied_scores_match_sklearn_at_every_threshold) ... ok
+test_ineligible_inputs_unchanged (test_typo_data.TypoTests.test_ineligible_inputs_unchanged) ... ok
+test_one_eligible_token_same_light_and_medium (test_typo_data.TypoTests.test_one_eligible_token_same_light_and_medium) ... ok
+test_operations_preserve_endpoints_and_follow_definition (test_typo_data.TypoTests.test_operations_preserve_endpoints_and_follow_definition) ... ok
+test_reproducible_nested_variants (test_typo_data.TypoTests.test_reproducible_nested_variants) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.215s
+
+OK

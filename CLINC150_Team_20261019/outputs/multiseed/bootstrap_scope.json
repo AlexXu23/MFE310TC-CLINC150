@@ -1,0 +1,5 @@
+{
+  "description": "Paired bootstrap of 4500 in-scope test rows, averaging over the same fixed trained seeds. Resampling does not include model training or threshold-selection uncertainty.",
+  "repeats": 2000,
+  "seed": 2026
+}

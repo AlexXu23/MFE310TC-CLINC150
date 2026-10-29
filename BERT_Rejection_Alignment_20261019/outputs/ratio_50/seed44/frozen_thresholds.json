@@ -1,0 +1,20 @@
+{
+  "mahalanobis/is_acceptance_95": {
+    "threshold": 1853.5376285812454,
+    "true_oos_rejected": 92.0,
+    "in_scope_rejected": 145.0,
+    "oos_precision": 0.3881856540084388,
+    "oos_recall": 0.92,
+    "oos_f1": 0.5459940652818991,
+    "in_scope_acceptance": 0.9516666666666667
+  },
+  "mahalanobis/aligned_is_acceptance_95": {
+    "threshold": 1835.512372978122,
+    "target_accepted": 2850,
+    "actual_accepted": 2850,
+    "validation_is_rows": 3000,
+    "in_scope_acceptance": 0.95,
+    "selection": "IS-only common attainable count; smallest candidate at count",
+    "validation_predictions_sha256": "e3934f19c53caced7952844f3f472d1fefde9798881ac10342d0053195f7056a"
+  }
+}

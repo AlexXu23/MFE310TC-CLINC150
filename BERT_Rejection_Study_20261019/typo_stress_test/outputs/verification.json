@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "verified_settings": 54,
+  "frozen_input_rows_checked": 49500,
+  "original_text_and_inherited_labels_aligned": true,
+  "same_frozen_typo_inputs_across_seeds": true,
+  "same_classifier_head_for_all_scores": true,
+  "unchanged_original_validation_thresholds": true,
+  "clean_classifier_and_rejection_decisions_exactly_reused": true,
+  "clean_scores_numerically_equal_to_frozen_original": true,
+  "independent_manual_confusion_metrics": true,
+  "independent_auc_average_precision": true,
+  "distance_direct_solve_checks": [
+    {
+      "seed": 42,
+      "condition": "clean",
+      "row_ids": [
+        7,
+        1300,
+        3955,
+        4640,
+        4957,
+        5355
+      ],
+      "max_abs_distance_error": 1.4551915228366852e-11
+    },
+    {
+      "seed": 42,
+      "condition": "typo_light",
+      "row_ids": [
+        248,
+        1159,
+        2593,
+        4644,
+        5115,
+        5373
+      ],
+      "max_abs_distance_error": 2.1827872842550278e-11
+    },
+    {
+      "seed": 42,
+      "condition": "typo_medium",
+      "row_ids": [
+        532,
+        1848,
+        4316,
+        4986,
+        5047,
+        5147
+      ],
+      "max_abs_distance_error": 2.000888343900442e-11
+    },
+    {
+      "seed": 43,
+      "condition": "clean",
+      "row_ids": [
+        248,
+        1159,
+        2593,
+        4644,
+        5115,
+        5373
+      ],
+      "max_abs_distance_error": 1.2505552149377763e-11
+    },
+    {
+      "seed": 43,
+      "condition": "typo_light",
+      "row_ids": [
+        532,
+        1848,
+        4316,
+        4986,
+        5047,
+        5147
+      ],
+      "max_abs_distance_error": 2.546585164964199e-11
+    },
+    {
+      "seed": 43,
+      "condition": "typo_medium",
+      "row_ids": [
+        360,
+        2404,
+        2815,
+        4564,
+        5047,
+        5411
+      ],
+      "max_abs_distance_error": 1.9099388737231493e-11
+    },
+    {
+      "seed": 44,
+      "condition": "clean",
+      "row_ids": [
+        532,
+        1848,
+        4316,
+        4986,
+        5047,
+        5147
+      ],
+      "max_abs_distance_error": 1.8189894035458565e-11
+    },
+    {
+      "seed": 44,
+      "condition": "typo_light",
+      "row_ids": [
+        360,
+        2404,
+        2815,
+        4564,
+        5047,
+        5411
+      ],
+      "max_abs_distance_error": 1.6370904631912708e-11
+    },
+    {
+      "seed": 44,
+      "condition": "typo_medium",
+      "row_ids": [
+        1316,
+        1387,
+        2135,
+        4538,
+        5280,
+        5407
+      ],
+      "max_abs_distance_error": 1.4551915228366852e-11
+    }
+  ],
+  "original_hash_inventory_counts": {
+    "source_hashes": 23,
+    "code_hashes": 3,
+    "development_hashes": 15
+  },
+  "followup_hash_inventory_counts": {
+    "frozen_input_files": 68,
+    "completed_output_files": 29
+  },
+  "normal_request_transitions": {
+    "status": "PASS",
+    "checked": true,
+    "verified_rows": 54,
+    "four_current_condition_states_partition_4500_is": true,
+    "clean_correct_accepted_flows_verified": true,
+    "new_minus_recovered_equals_net_rejection_change": true,
+    "sha256": "cfdc964eb9a53f8d243343e7999d7e0063ef483e2ddf3d9e5f34388bdfdf5cb0"
+  },
+  "unchanged_text_checks": {
+    "status": "PASS",
+    "verified_rows": 6,
+    "records": [
+      {
+        "seed": 42,
+        "condition": "typo_light",
+        "unchanged_rows": 372,
+        "max_abs_logit_delta": 1.4901161193847656e-06,
+        "changed_argmax": 0
+      },
+      {
+        "seed": 42,
+        "condition": "typo_medium",
+        "unchanged_rows": 372,
+        "max_abs_logit_delta": 2.592802047729492e-06,
+        "changed_argmax": 0
+      },
+      {
+        "seed": 43,
+        "condition": "typo_light",
+        "unchanged_rows": 372,
+        "max_abs_logit_delta": 1.1920928955078125e-06,
+        "changed_argmax": 0
+      },
+      {
+        "seed": 43,
+        "condition": "typo_medium",
+        "unchanged_rows": 372,
+        "max_abs_logit_delta": 1.9073486328125e-06,
+        "changed_argmax": 0
+      },
+      {
+        "seed": 44,
+        "condition": "typo_light",
+        "unchanged_rows": 372,
+        "max_abs_logit_delta": 1.430511474609375e-06,
+        "changed_argmax": 0
+      },
+      {
+        "seed": 44,
+        "condition": "typo_medium",
+        "unchanged_rows": 372,
+        "max_abs_logit_delta": 1.430511474609375e-06,
+        "changed_argmax": 0
+      }
+    ],
+    "sha256": "0e016a1fab8bc3e1267cb43ca8da70534b96d5387529c61c5f95471f966c0093"
+  },
+  "verified_prediction_sha256": {
+    "seed42/clean_predictions.csv": "6de96e1104ffd005ef475d734f9157791bbaad6c80a994becc7aea87fd90472b",
+    "seed42/typo_light_predictions.csv": "8e7f55c9d93bcea9e8bb2a828cff34a3a09be1ede920e676f24909aa4338232e",
+    "seed42/typo_medium_predictions.csv": "e9fa8ac50b5997c6368b880971014ecd3754cba01407b5420beb25f189c08706",
+    "seed43/clean_predictions.csv": "b9a8677e478365e075a214c4639b6c44e15fd7eab8802fc52ab54e5d9c4bddb5",
+    "seed43/typo_light_predictions.csv": "38ad7dcb475bd8825d977c21432771a9034f3f24ba856a30c93c0b9f78c17343",
+    "seed43/typo_medium_predictions.csv": "267109c612ba2f88b47fa24ea9b5eeeb214caec5105c836b7f680e2ba7172605",
+    "seed44/clean_predictions.csv": "c9672634b5f1ff618b2c842e38fa6f98415747d554d323a8c8e79962f0d90ef3",
+    "seed44/typo_light_predictions.csv": "3acb3c538d33b3e445cbaeefd75ac56e0c6f7e7b3624109c07e64431dcbd8585",
+    "seed44/typo_medium_predictions.csv": "a1d58a84ef09058d47899f145ecca6a20393b3b4399684e3121b33141a4e6a5c"
+  },
+  "metrics_sha256": "85023d4b04c90056d8333f33fafdb88ea9ec4c897ea540e7c695f2e13b2d50b7",
+  "verifier_sha256": "13675540409c8727fa534e9633deee381cdcd297f805440349ce13b5c4378afd",
+  "limitations": [
+    "Saved features/logits are verified; no BERT inference is rerun.",
+    "Inherited labels are checked against the frozen dataset, not manually judged for semantic preservation.",
+    "Direct covariance solves sample six rows per seed/condition, comparing all 150 class centers."
+  ],
+  "started_at_utc": "2026-10-19T10:46:41.277319+00:00",
+  "completed_at_utc": "2026-10-19T10:46:47.933845+00:00"
+}

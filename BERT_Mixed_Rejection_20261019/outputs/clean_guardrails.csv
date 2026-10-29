@@ -1,0 +1,4 @@
+reference,target,condition,score,policy,metric,reference_mean,target_mean,delta,delta_pp,mean_non_decline,all_three_pass,rule
+clean_only,clean_plus_typo,clean,mahalanobis,is_acceptance_95,oos_f1,0.8492257549495671,0.8476985765950661,-0.001527178354501002,-0.1527178354501002,False,False,all three target means >= reference means; no tolerance margin; descriptive only
+clean_only,clean_plus_typo,clean,mahalanobis,is_acceptance_95,oos_recall,0.8969999999999999,0.895,-0.0019999999999998908,-0.19999999999998908,False,False,all three target means >= reference means; no tolerance margin; descriptive only
+clean_only,clean_plus_typo,clean,mahalanobis,is_acceptance_95,in_scope_acceptance,0.9520740740740741,0.9518518518518518,-0.00022222222222223476,-0.022222222222223476,False,False,all three target means >= reference means; no tolerance margin; descriptive only

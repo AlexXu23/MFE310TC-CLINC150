@@ -1,0 +1,38 @@
+{
+  "data_sha256": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+  "rows": 23700,
+  "schema_and_split_inventory_valid": true,
+  "blank_texts": 0,
+  "blank_labels": 0,
+  "missing_values": 0,
+  "duplicates": {
+    "exact": {
+      "groups": 5,
+      "rows_involved": 10,
+      "cross_official_split_groups": 5,
+      "cross_split_conflicting_label_groups": 4
+    },
+    "normalized": {
+      "groups": 5,
+      "rows_involved": 10,
+      "cross_official_split_groups": 5,
+      "cross_split_conflicting_label_groups": 4
+    }
+  },
+  "domains": 10,
+  "domain_mapping_covers_all_intents": true,
+  "truncated_at_64": 0,
+  "maximum_wordpieces": 33,
+  "email_like_rows_heuristic_only": 0,
+  "near_duplicate_candidates_ge_095": 80,
+  "normalization": "NFKC + casefold + whitespace collapse; punctuation preserved",
+  "near_duplicate_limit": "Train-fit word TF-IDF cosine >=0.95 flags review candidates, not proven leakage; misses semantic paraphrases.",
+  "data_policy": "No source rows changed; sensitivity masks exclude only evaluation overlap with earlier official splits.",
+  "bias_limitations": [
+    "Balanced intent counts do not demonstrate demographic fairness.",
+    "English crowdsourced assistant requests do not validate industrial or multilingual deployment.",
+    "No demographic annotations: protected-group fairness is not measured.",
+    "OOS label merges heterogeneous unsupported requests and is not a well-sampled 151st intent.",
+    "Simple email regex is not a complete privacy audit."
+  ]
+}

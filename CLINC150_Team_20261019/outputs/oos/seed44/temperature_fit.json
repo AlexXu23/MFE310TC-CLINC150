@@ -1,0 +1,13 @@
+{
+  "temperature": 0.4943238856866631,
+  "objective": "in_scope_validation_NLL",
+  "fit_examples": 3000,
+  "bounds": [
+    0.05,
+    20.0
+  ],
+  "raw_fit_nll": 0.6480611377130023,
+  "fitted_nll": 0.21298140857893025,
+  "optimizer_success": true,
+  "function_evaluations": 12
+}

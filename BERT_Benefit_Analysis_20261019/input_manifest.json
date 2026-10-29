@@ -1,0 +1,22 @@
+{
+  "data/raw/data_full.json": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+  "src/train_bert.py": "beed6d578bcf927d27b9217e634230c22799aabaf54c017dc5414c65fc25d069",
+  "src/baseline.py": "7c7ead926aa8e0276593315948799931e03f7e5da10c6dec3d791af6c3072cb2",
+  "outputs/bert/seed42/label_mapping.json": "5ea23b8888789c906fbb42425f0f34362c1b0ad827c8988a420fcb7803b654bc",
+  "data/provenance/domains.json": "b947b579d3b8e74b06f93b01083d8efaff2888b43a3e362533bd88a6e1211b3a",
+  "outputs/robustness/multiseed/tfidf_lr/clean_predictions.csv": "46aa7319930248ca5f7de9582d65e60b2c8340bffbc301a44fe87b30f03a7c1f",
+  "outputs/robustness/multiseed/seed42/clean_predictions.csv": "04b2603c9ab7df10bff6536e44d2a685061093382725bdd97332237071e9fa80",
+  "outputs/robustness/multiseed/seed43/clean_predictions.csv": "4b19d137a80e951379c0044b473e4692e03dace0f093a37f827a0d079e6af680",
+  "outputs/robustness/multiseed/seed44/clean_predictions.csv": "a2db9ca78da0183ff895fc3dd0d85c3437cd8c4bdeadcce43bf24dd53552082d",
+  "outputs/robustness/multiseed/tfidf_lr/typo_light_predictions.csv": "4c76e09db8a9ab39d274f20ec895e8573e421b34cb6bc68a7c383496f7dbaaef",
+  "outputs/robustness/multiseed/seed42/typo_light_predictions.csv": "f13d8c7df2860363925d4cee07a053181ed5531eaa5b0efbf19f89ad3bcee45a",
+  "outputs/robustness/multiseed/seed43/typo_light_predictions.csv": "30e3e6087926a10d31853080a2d9ffb73bb58cddc3c8c19a8ac97fb2336a4077",
+  "outputs/robustness/multiseed/seed44/typo_light_predictions.csv": "21808f3abc9354cc0dc5f73c20a1ad0f2e19a977a531101940abfb3c175fb261",
+  "outputs/robustness/multiseed/tfidf_lr/typo_medium_predictions.csv": "e4702eeaa7a51b53a64017ebe8b3c81bf755a4b3faf1284192abc260a12c3055",
+  "outputs/robustness/multiseed/seed42/typo_medium_predictions.csv": "fdf0d3f38b2fd2eb5095f03b27df45fa0e78b13344cde21147b67d6d4c90d2bb",
+  "outputs/robustness/multiseed/seed43/typo_medium_predictions.csv": "79562b5ec24d5742f4652b8c613c848649e4ee373970c3679a4a507666ef1158",
+  "outputs/robustness/multiseed/seed44/typo_medium_predictions.csv": "639da1799a03b6f7b1ba2f03e51f55cb93df53d721b3430c38c99c45adbe767f",
+  "outputs/multiseed/typo_classification_mean_sd.csv": "8180522837caef67fe0507fbfa65388ea212822576063e87749d94ccb64a1382",
+  "outputs/multiseed/training_by_seed.csv": "448f5a5d06c2d8772d1d4034f9ae86e05536cb8761f37c6c0c6d0b2a83dda63f",
+  "outputs/error_analysis/duplicate_sensitivity.csv": "9405a10925ff06bc61f5126bd8307398942471f0771fa5457a41098e03a502ee"
+}

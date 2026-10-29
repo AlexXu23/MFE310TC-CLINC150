@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "verified_settings": 36,
+  "validation_operating_points": 18,
+  "validation_candidates_checked": 27909,
+  "original_json_row_alignment": true,
+  "shared_classifier_predictions_verified": true,
+  "independent_manual_confusion_metrics": true,
+  "independent_auc_average_precision": true,
+  "all_validation_thresholds_and_tie_rules_verified": true,
+  "train_only_means_and_recorded_shrinkage_covariance_verified": true,
+  "distance_direct_solve_checks": [
+    {
+      "seed": 42,
+      "split": "validation",
+      "row_ids": [
+        5,
+        866,
+        2636,
+        3014,
+        3044,
+        3084
+      ],
+      "max_abs_distance_error": 9.094947017729282e-12
+    },
+    {
+      "seed": 42,
+      "split": "test",
+      "row_ids": [
+        248,
+        1159,
+        2593,
+        4644,
+        5115,
+        5373
+      ],
+      "max_abs_distance_error": 2.000888343900442e-11
+    },
+    {
+      "seed": 43,
+      "split": "validation",
+      "row_ids": [
+        165,
+        772,
+        1728,
+        3014,
+        3060,
+        3087
+      ],
+      "max_abs_distance_error": 1.6370904631912708e-11
+    },
+    {
+      "seed": 43,
+      "split": "test",
+      "row_ids": [
+        532,
+        1848,
+        4316,
+        4986,
+        5047,
+        5147
+      ],
+      "max_abs_distance_error": 3.092281986027956e-11
+    },
+    {
+      "seed": 44,
+      "split": "validation",
+      "row_ids": [
+        355,
+        1232,
+        2877,
+        3048,
+        3053,
+        3064
+      ],
+      "max_abs_distance_error": 2.1827872842550278e-11
+    },
+    {
+      "seed": 44,
+      "split": "test",
+      "row_ids": [
+        360,
+        2404,
+        2815,
+        4564,
+        5047,
+        5411
+      ],
+      "max_abs_distance_error": 1.8189894035458565e-11
+    }
+  ],
+  "hash_inventory_counts": {
+    "source_hashes": 23,
+    "code_hashes": 3,
+    "development_hashes": 15
+  },
+  "frozen_manifest_and_source_hashes_verified": true,
+  "development_manifest_sha256": "da3561ca3d60b648b568bdfc37a02ef9595e7a0df26d3465b2a5ce1e2b2d01f9",
+  "test_completion_sha256": "18d1ff0533c5c420b76a8727600a425cc4736cf37f50a088f43ca5f48d740c3d",
+  "metrics_sha256": "a7c93876b59a05d299db09b277211573784f0b72fa81fe3354dd5f98832b6c61",
+  "verified_prediction_sha256": {
+    "seed42/validation_predictions.csv": "1d59e0fc17ab99e93ac6e179b75e9fa4137f0e67183c8587bd933cc39dfe9db2",
+    "seed42/test_predictions.csv": "bd19117660db11dbf3130d3471e8589ec44a1e09df671b35e6d08a69e47cbadf",
+    "seed43/validation_predictions.csv": "b77ed27da3668609f7b5e532679255b03552961d1fe0fb46e213fa290cae7052",
+    "seed43/test_predictions.csv": "6179a5c093de972d57bb19ffc9f598a468471e69ad88ff9a5f3876272ae227bb",
+    "seed44/validation_predictions.csv": "495fc6983207852c8e342c1105e76c3ceb5d8aa358744ecc497e324b576911b9",
+    "seed44/test_predictions.csv": "ea324fb23ff415848d581a6ed5a1737dec4a64c56cdfb21a4a4fbae604f132cf"
+  },
+  "verifier_sha256": "142ba3c2ddf49f4729170548336d1a87c7462726735cd9455d12d3f5f372b594",
+  "limitations": [
+    "Verifies saved features/logits and their hashes; does not rerun BERT inference.",
+    "Reconstructs covariance using the frozen shrinkage coefficient; does not independently re-estimate that coefficient.",
+    "Direct covariance solves sample six rows per seed/split, all 150 centers per sampled row."
+  ],
+  "started_at_utc": "2026-10-19T10:32:58.776801+00:00",
+  "completed_at_utc": "2026-10-19T10:33:03.293854+00:00"
+}

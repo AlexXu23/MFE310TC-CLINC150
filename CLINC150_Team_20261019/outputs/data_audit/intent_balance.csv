@@ -1,0 +1,4 @@
+split,intents,min_per_intent,max_per_intent
+train,150,100,100
+val,150,20,20
+test,150,30,30

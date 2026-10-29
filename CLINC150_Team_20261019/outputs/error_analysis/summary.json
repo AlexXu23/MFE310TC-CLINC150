@@ -1,0 +1,16 @@
+{
+  "prediction_files": 12,
+  "per_intent_rows": 1800,
+  "review_cases": 72,
+  "clean_closed_error_seed_count_distribution": {
+    "0": 4188,
+    "1": 97,
+    "2": 60,
+    "3": 155
+  },
+  "sensitivity_removed": {
+    "official": 0,
+    "exclude_exact_earlier_overlap": 2,
+    "exclude_normalized_earlier_overlap": 2
+  }
+}
