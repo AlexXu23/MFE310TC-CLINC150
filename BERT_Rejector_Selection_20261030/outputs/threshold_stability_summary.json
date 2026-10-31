@@ -1,0 +1,342 @@
+{
+  "method": "IS validation resampled within intent (20 rows each), OOS validation (100 rows) resampled as one group; each draw reselects the threshold with the original rule; models and test rows fixed",
+  "note": "is_acceptance_95 depends only on IS validation rows; max_oos_f1 also depends on the 100 OOS rows",
+  "summary": [
+    {
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9443333333333334,
+      "original_val_is_acceptance_p50": 0.9543333333333334,
+      "original_val_is_acceptance_p97.5": 0.963,
+      "original_val_is_acceptance_width95": 0.01866666666666661,
+      "test_is_acceptance_p2.5": 0.9402222222222222,
+      "test_is_acceptance_p50": 0.9511111111111111,
+      "test_is_acceptance_p97.5": 0.9631111111111111,
+      "test_is_acceptance_width95": 0.02288888888888896,
+      "test_oos_recall_p2.5": 0.8,
+      "test_oos_recall_p50": 0.835,
+      "test_oos_recall_p97.5": 0.862,
+      "test_oos_recall_width95": 0.061999999999999944,
+      "frozen_test_is_acceptance_by_seed": [
+        0.951111,
+        0.946222,
+        0.95
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.851,
+        0.84,
+        0.834
+      ]
+    },
+    {
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9786666666666667,
+      "original_val_is_acceptance_p50": 0.9883333333333333,
+      "original_val_is_acceptance_p97.5": 0.9933333333333333,
+      "original_val_is_acceptance_width95": 0.014666666666666606,
+      "test_is_acceptance_p2.5": 0.9786666666666667,
+      "test_is_acceptance_p50": 0.9893333333333333,
+      "test_is_acceptance_p97.5": 0.9937777777777778,
+      "test_is_acceptance_width95": 0.015111111111111075,
+      "test_oos_recall_p2.5": 0.506,
+      "test_oos_recall_p50": 0.5860000000000001,
+      "test_oos_recall_p97.5": 0.735,
+      "test_oos_recall_width95": 0.22899999999999998,
+      "frozen_test_is_acceptance_by_seed": [
+        0.982667,
+        0.990222,
+        0.989111
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.718,
+        0.586,
+        0.577
+      ]
+    },
+    {
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9446666666666667,
+      "original_val_is_acceptance_p50": 0.9596666666666667,
+      "original_val_is_acceptance_p97.5": 0.9703333333333334,
+      "original_val_is_acceptance_width95": 0.025666666666666726,
+      "test_is_acceptance_p2.5": 0.9375555555555556,
+      "test_is_acceptance_p50": 0.9537777777777777,
+      "test_is_acceptance_p97.5": 0.9666666666666667,
+      "test_is_acceptance_width95": 0.029111111111111088,
+      "test_oos_recall_p2.5": 0.846,
+      "test_oos_recall_p50": 0.886,
+      "test_oos_recall_p97.5": 0.909,
+      "test_oos_recall_width95": 0.06300000000000006,
+      "frozen_test_is_acceptance_by_seed": [
+        0.952222,
+        0.951111,
+        0.953778
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.894,
+        0.887,
+        0.886
+      ]
+    },
+    {
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9836666666666667,
+      "original_val_is_acceptance_p50": 0.9923333333333333,
+      "original_val_is_acceptance_p97.5": 0.9963333333333333,
+      "original_val_is_acceptance_width95": 0.012666666666666604,
+      "test_is_acceptance_p2.5": 0.9844444444444445,
+      "test_is_acceptance_p50": 0.992,
+      "test_is_acceptance_p97.5": 0.9953333333333333,
+      "test_is_acceptance_width95": 0.010888888888888837,
+      "test_oos_recall_p2.5": 0.509,
+      "test_oos_recall_p50": 0.605,
+      "test_oos_recall_p97.5": 0.758,
+      "test_oos_recall_width95": 0.249,
+      "frozen_test_is_acceptance_by_seed": [
+        0.991333,
+        0.994,
+        0.991333
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.668,
+        0.576,
+        0.605
+      ]
+    },
+    {
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9453333333333334,
+      "original_val_is_acceptance_p50": 0.954,
+      "original_val_is_acceptance_p97.5": 0.96,
+      "original_val_is_acceptance_width95": 0.014666666666666606,
+      "test_is_acceptance_p2.5": 0.9446666666666667,
+      "test_is_acceptance_p50": 0.9517777777777777,
+      "test_is_acceptance_p97.5": 0.9586666666666667,
+      "test_is_acceptance_width95": 0.014000000000000012,
+      "test_oos_recall_p2.5": 0.768,
+      "test_oos_recall_p50": 0.8089999999999999,
+      "test_oos_recall_p97.5": 0.8160000000000001,
+      "test_oos_recall_width95": 0.04800000000000004,
+      "frozen_test_is_acceptance_by_seed": [
+        0.951556,
+        0.950444,
+        0.951778
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.816,
+        0.815,
+        0.783
+      ]
+    },
+    {
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9686666666666667,
+      "original_val_is_acceptance_p50": 0.9863333333333333,
+      "original_val_is_acceptance_p97.5": 0.992,
+      "original_val_is_acceptance_width95": 0.023333333333333317,
+      "test_is_acceptance_p2.5": 0.9706666666666667,
+      "test_is_acceptance_p50": 0.9857777777777778,
+      "test_is_acceptance_p97.5": 0.9913333333333333,
+      "test_is_acceptance_width95": 0.02066666666666661,
+      "test_oos_recall_p2.5": 0.45499999999999996,
+      "test_oos_recall_p50": 0.565,
+      "test_oos_recall_p97.5": 0.739,
+      "test_oos_recall_width95": 0.28400000000000003,
+      "frozen_test_is_acceptance_by_seed": [
+        0.987778,
+        0.987778,
+        0.985111
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.522,
+        0.535,
+        0.572
+      ]
+    },
+    {
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9463333333333334,
+      "original_val_is_acceptance_p50": 0.9553333333333334,
+      "original_val_is_acceptance_p97.5": 0.9646666666666667,
+      "original_val_is_acceptance_width95": 0.018333333333333313,
+      "test_is_acceptance_p2.5": 0.9431111111111111,
+      "test_is_acceptance_p50": 0.9506666666666667,
+      "test_is_acceptance_p97.5": 0.9633333333333334,
+      "test_is_acceptance_width95": 0.020222222222222253,
+      "test_oos_recall_p2.5": 0.806,
+      "test_oos_recall_p50": 0.843,
+      "test_oos_recall_p97.5": 0.864,
+      "test_oos_recall_width95": 0.05799999999999994,
+      "frozen_test_is_acceptance_by_seed": [
+        0.949556,
+        0.950667,
+        0.945333
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.856,
+        0.843,
+        0.853
+      ]
+    },
+    {
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.98,
+      "original_val_is_acceptance_p50": 0.9873333333333333,
+      "original_val_is_acceptance_p97.5": 0.9936666666666667,
+      "original_val_is_acceptance_width95": 0.013666666666666716,
+      "test_is_acceptance_p2.5": 0.9804444444444445,
+      "test_is_acceptance_p50": 0.9891111111111112,
+      "test_is_acceptance_p97.5": 0.9942222222222222,
+      "test_is_acceptance_width95": 0.013777777777777778,
+      "test_oos_recall_p2.5": 0.499,
+      "test_oos_recall_p50": 0.613,
+      "test_oos_recall_p97.5": 0.7170000000000001,
+      "test_oos_recall_width95": 0.21800000000000008,
+      "frozen_test_is_acceptance_by_seed": [
+        0.985111,
+        0.989778,
+        0.986
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.702,
+        0.612,
+        0.632
+      ]
+    },
+    {
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9456666666666667,
+      "original_val_is_acceptance_p50": 0.9573333333333334,
+      "original_val_is_acceptance_p97.5": 0.969,
+      "original_val_is_acceptance_width95": 0.023333333333333317,
+      "test_is_acceptance_p2.5": 0.9473333333333334,
+      "test_is_acceptance_p50": 0.9533333333333334,
+      "test_is_acceptance_p97.5": 0.9691111111111111,
+      "test_is_acceptance_width95": 0.021777777777777785,
+      "test_oos_recall_p2.5": 0.855,
+      "test_oos_recall_p50": 0.894,
+      "test_oos_recall_p97.5": 0.917,
+      "test_oos_recall_width95": 0.062000000000000055,
+      "frozen_test_is_acceptance_by_seed": [
+        0.948444,
+        0.949556,
+        0.958222
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.903,
+        0.897,
+        0.891
+      ]
+    },
+    {
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9846666666666667,
+      "original_val_is_acceptance_p50": 0.9916666666666667,
+      "original_val_is_acceptance_p97.5": 0.997,
+      "original_val_is_acceptance_width95": 0.012333333333333307,
+      "test_is_acceptance_p2.5": 0.9851111111111112,
+      "test_is_acceptance_p50": 0.9911111111111112,
+      "test_is_acceptance_p97.5": 0.996,
+      "test_is_acceptance_width95": 0.010888888888888837,
+      "test_oos_recall_p2.5": 0.509,
+      "test_oos_recall_p50": 0.646,
+      "test_oos_recall_p97.5": 0.754,
+      "test_oos_recall_width95": 0.245,
+      "frozen_test_is_acceptance_by_seed": [
+        0.994,
+        0.991111,
+        0.987778
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.609,
+        0.646,
+        0.691
+      ]
+    },
+    {
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9443333333333334,
+      "original_val_is_acceptance_p50": 0.9536666666666667,
+      "original_val_is_acceptance_p97.5": 0.9656666666666667,
+      "original_val_is_acceptance_width95": 0.021333333333333315,
+      "test_is_acceptance_p2.5": 0.9405944444444444,
+      "test_is_acceptance_p50": 0.9506666666666667,
+      "test_is_acceptance_p97.5": 0.9617777777777777,
+      "test_is_acceptance_width95": 0.021183333333333332,
+      "test_oos_recall_p2.5": 0.771,
+      "test_oos_recall_p50": 0.8049999999999999,
+      "test_oos_recall_p97.5": 0.834,
+      "test_oos_recall_width95": 0.06299999999999994,
+      "frozen_test_is_acceptance_by_seed": [
+        0.949556,
+        0.946,
+        0.950667
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.823,
+        0.824,
+        0.805
+      ]
+    },
+    {
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "draws_per_seed": 2000,
+      "original_val_is_acceptance_p2.5": 0.9743333333333334,
+      "original_val_is_acceptance_p50": 0.9863333333333333,
+      "original_val_is_acceptance_p97.5": 0.993,
+      "original_val_is_acceptance_width95": 0.01866666666666661,
+      "test_is_acceptance_p2.5": 0.9717611111111111,
+      "test_is_acceptance_p50": 0.9862222222222222,
+      "test_is_acceptance_p97.5": 0.9913333333333333,
+      "test_is_acceptance_width95": 0.019572222222222213,
+      "test_oos_recall_p2.5": 0.44899999999999995,
+      "test_oos_recall_p50": 0.577,
+      "test_oos_recall_p97.5": 0.7170000000000001,
+      "test_oos_recall_width95": 0.2680000000000001,
+      "frozen_test_is_acceptance_by_seed": [
+        0.978,
+        0.986222,
+        0.986222
+      ],
+      "frozen_test_oos_recall_by_seed": [
+        0.691,
+        0.584,
+        0.554
+      ]
+    }
+  ]
+}

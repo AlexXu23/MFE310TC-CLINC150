@@ -1,0 +1,1681 @@
+{
+  "status": "PASS",
+  "checks_run": 183,
+  "failed": 0,
+  "local_feature_files": {
+    "seed42": {
+      "train_cls": false,
+      "validation_cls": false,
+      "test_cls": false,
+      "train_metadata": true,
+      "validation_logits": false,
+      "test_logits": false
+    },
+    "seed43": {
+      "train_cls": false,
+      "validation_cls": false,
+      "test_cls": false,
+      "train_metadata": true,
+      "validation_logits": false,
+      "test_logits": false
+    },
+    "seed44": {
+      "train_cls": false,
+      "validation_cls": false,
+      "test_cls": false,
+      "train_metadata": true,
+      "validation_logits": false,
+      "test_logits": false
+    }
+  },
+  "covariance_calibration_possible": false,
+  "checks": [
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.8635584454777616,
+      "frozen": 0.8635584454777616
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.7209220286154626,
+      "frozen": 0.7209220286154626
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 3.8972482043352947,
+      "frozen": 3.8972482043352947
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 3.4710087399639886,
+      "frozen": 3.4710087399639886
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 7094.348267243073,
+      "frozen": 7094.348267243073
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 3660.9530965166186,
+      "frozen": 3660.9530965166186
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.8519102649782117,
+      "frozen": 0.8519102649782117
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.7049708733564446,
+      "frozen": 0.7049708733564446
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 4.103176552788332,
+      "frozen": 4.103176552788332
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 3.3883061346368066,
+      "frozen": 3.3883061346368066
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 8414.904625373958,
+      "frozen": 8414.904625373958
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 3913.209027929363,
+      "frozen": 3913.209027929363
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.846487965626636,
+      "frozen": 0.846487965626636
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.7260117373386499,
+      "frozen": 0.7260117373386499
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 4.11923776729598,
+      "frozen": 4.11923776729598
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 3.4778238603206697,
+      "frozen": 3.4778238603206697
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 7506.7813735445225,
+      "frozen": 7506.7813735445225
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 3944.2740183426904,
+      "frozen": 3944.2740183426904
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "original",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.7520838462312662,
+      "frozen": 0.7520838462312662
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.6273085694217482,
+      "frozen": 0.6273085694217482
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 3.6912807281330586,
+      "frozen": 3.6912807281330586
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 2.9701910019288937,
+      "frozen": 2.9701910019288937
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 7993.234487324301,
+      "frozen": 7993.234487324301
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 3574.1670015409263,
+      "frozen": 3574.1670015409263
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.8045057911464031,
+      "frozen": 0.8045057911464031
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.6227684507530413,
+      "frozen": 0.6227684507530413
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 3.868466208438712,
+      "frozen": 3.868466208438712
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 3.0438547308176216,
+      "frozen": 3.0438547308176216
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 7870.587168167553,
+      "frozen": 7870.587168167553
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 3908.5605947909717,
+      "frozen": 3908.5605947909717
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.8152817610195766,
+      "frozen": 0.8152817610195766
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.6427421646274323,
+      "frozen": 0.6427421646274323
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 3.803070484935537,
+      "frozen": 3.803070484935537
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 2.982508410940282,
+      "frozen": 2.982508410940282
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 6918.265251206218,
+      "frozen": 6918.265251206218
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 4123.984495359614,
+      "frozen": 4123.984495359614
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "typo_mix",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.8005976432653781,
+      "frozen": 0.8005976432653781
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.5902990634373874,
+      "frozen": 0.5902990634373874
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 3.942350709143967,
+      "frozen": 3.942350709143967
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 2.84520992007426,
+      "frozen": 2.84520992007426
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 8634.94567190221,
+      "frozen": 8634.94567190221
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 4259.277467099221,
+      "frozen": 4259.277467099221
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 42,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.7278760325746315,
+      "frozen": 0.7278760325746315
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.6000762339337941,
+      "frozen": 0.6000762339337941
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 3.9169495254420688,
+      "frozen": 3.9169495254420688
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 2.8097146855381494,
+      "frozen": 2.8097146855381494
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 10254.661439668142,
+      "frozen": 10254.661439668142
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 4424.5222138579265,
+      "frozen": 4424.5222138579265
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 43,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "recomputed": 0.787214797066802,
+      "frozen": 0.787214797066802
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "msp",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "recomputed": 0.6097143086714302,
+      "frozen": 0.6097143086714302
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "msp",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "recomputed": 3.809014710475487,
+      "frozen": 3.809014710475487
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "recomputed": 2.819905382265722,
+      "frozen": 2.819905382265722
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "entropy",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "recomputed": 8013.189919720724,
+      "frozen": 8013.189919720724
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "max_oos_f1"
+    },
+    {
+      "check": "frozen_threshold_recomputed",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "recomputed": 4409.8227869881175,
+      "frozen": 4409.8227869881175
+    },
+    {
+      "check": "saved_test_decisions_match_threshold",
+      "status": "PASS",
+      "model": "clean_continue",
+      "seed": 44,
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95"
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 2275.3279897985785,
+      "frozen": 2275.3279897985785
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 2784.0189945567417,
+      "frozen": 2784.0189945567417
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 3552.387887238061,
+      "frozen": 3552.387887238061
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 5245.11555080497,
+      "frozen": 5245.11555080497
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 7102.941820723763,
+      "frozen": 7102.941820723763
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 2510.5701748930696,
+      "frozen": 2510.5701748930696
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 2944.7212648121667,
+      "frozen": 2944.7212648121667
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 3730.140728688547,
+      "frozen": 3730.140728688547
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 5559.647439986394,
+      "frozen": 5559.647439986394
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 7540.480621407927,
+      "frozen": 7540.480621407927
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 2399.3639506656127,
+      "frozen": 2399.3639506656127
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 2889.00175080383,
+      "frozen": 2889.00175080383
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 3740.8662862429273,
+      "frozen": 3740.8662862429273
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 5342.951418078415,
+      "frozen": 5342.951418078415
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "clean_reference",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 7288.965901989917,
+      "frozen": 7288.965901989917
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 2406.8945485596523,
+      "frozen": 2406.8945485596523
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 2964.5470518147413,
+      "frozen": 2964.5470518147413
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 3798.9667225481653,
+      "frozen": 3798.9667225481653
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 5597.594837749428,
+      "frozen": 5597.594837749428
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 7624.734708888864,
+      "frozen": 7624.734708888864
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 2678.8653918167347,
+      "frozen": 2678.8653918167347
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 3133.9912895343523,
+      "frozen": 3133.9912895343523
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 3945.495551096382,
+      "frozen": 3945.495551096382
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 5951.1872752723875,
+      "frozen": 5951.1872752723875
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 8151.049144073886,
+      "frozen": 8151.049144073886
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 2557.9985828193912,
+      "frozen": 2557.9985828193912
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 3079.7335988194345,
+      "frozen": 3079.7335988194345
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 4014.1920691026803,
+      "frozen": 4014.1920691026803
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 5722.532445042603,
+      "frozen": 5722.532445042603
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_00",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 7927.07193070177,
+      "frozen": 7927.07193070177
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1877.4830479944417,
+      "frozen": 1877.4830479944417
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 2276.620521724386,
+      "frozen": 2276.620521724386
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 2832.5013314553917,
+      "frozen": 2832.5013314553917
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 4142.977891655688,
+      "frozen": 4142.977891655688
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 5465.327716477046,
+      "frozen": 5465.327716477046
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 2027.0616828148286,
+      "frozen": 2027.0616828148286
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 2364.8764462396457,
+      "frozen": 2364.8764462396457
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 2843.83078047228,
+      "frozen": 2843.83078047228
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 4253.878998715838,
+      "frozen": 4253.878998715838
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 6013.545417024163,
+      "frozen": 6013.545417024163
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1947.332213714135,
+      "frozen": 1947.332213714135
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 2367.026057511544,
+      "frozen": 2367.026057511544
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 2960.6262561043413,
+      "frozen": 2960.6262561043413
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 4230.759364957519,
+      "frozen": 4230.759364957519
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_10",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 5544.4194024784565,
+      "frozen": 5544.4194024784565
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1510.5245048795978,
+      "frozen": 1510.5245048795978
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 1824.644709416233,
+      "frozen": 1824.644709416233
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 2273.3142118269498,
+      "frozen": 2273.3142118269498
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 3244.129108714431,
+      "frozen": 3244.129108714431
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 4229.323039774596,
+      "frozen": 4229.323039774596
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1640.8259295408725,
+      "frozen": 1640.8259295408725
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 1864.8313946405328,
+      "frozen": 1864.8313946405328
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 2257.383818974196,
+      "frozen": 2257.383818974196
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 3314.0374577629736,
+      "frozen": 3314.0374577629736
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 4664.5367014528265,
+      "frozen": 4664.5367014528265
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1567.9959328749842,
+      "frozen": 1567.9959328749842
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 1865.7018183632517,
+      "frozen": 1865.7018183632517
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 2360.3085085778903,
+      "frozen": 2360.3085085778903
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 3297.792527172309,
+      "frozen": 3297.792527172309
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_25",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 4237.02493951686,
+      "frozen": 4237.02493951686
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1220.4859698161176,
+      "frozen": 1220.4859698161176
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 1461.959471203581,
+      "frozen": 1461.959471203581
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 1756.7261003189465,
+      "frozen": 1756.7261003189465
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 2553.788783888248,
+      "frozen": 2553.788783888248
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 42,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 3267.705397513055,
+      "frozen": 3267.705397513055
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1292.8371099832846,
+      "frozen": 1292.8371099832846
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 1460.8341867331771,
+      "frozen": 1460.8341867331771
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 1778.541492216229,
+      "frozen": 1778.541492216229
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 2480.805201653543,
+      "frozen": 2480.805201653543
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 43,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 3493.1284902126945,
+      "frozen": 3493.1284902126945
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_90",
+      "recomputed": 1243.8214058758872,
+      "frozen": 1243.8214058758872
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_92p5",
+      "recomputed": 1504.933500290977,
+      "frozen": 1504.933500290977
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_95",
+      "recomputed": 1835.512372978122,
+      "frozen": 1835.512372978122
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_97p5",
+      "recomputed": 2556.840780426781,
+      "frozen": 2556.840780426781
+    },
+    {
+      "check": "operating_point_rule_reproduced",
+      "status": "PASS",
+      "arm": "ratio_50",
+      "seed": 44,
+      "policy": "aligned_is_acceptance_99",
+      "recomputed": 3295.311003175104,
+      "frozen": 3295.311003175104
+    }
+  ]
+}

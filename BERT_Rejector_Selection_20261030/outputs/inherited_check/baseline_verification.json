@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-10-30T03:27:54.901964+00:00",
+  "snapshot_verification": {
+    "status": "PASS_WITH_EXPECTED_ANALYSIS_ADDITION",
+    "missing_files": [],
+    "extra_files": [
+      "BERT_Rejector_Selection_20261030/docs/PLAN.md"
+    ],
+    "note": "Original snapshot contents are intact. The analysis directory is intentionally outside the original manifest."
+  },
+  "result_verification": {
+    "status": "PASS",
+    "rejection_settings": 657,
+    "prediction_file_visits": 195,
+    "aggregate_metric_checks": 3930,
+    "historical_classification_groups": 6,
+    "scope": "Saved CSV decisions, point metrics and seed aggregates; no training or inference."
+  },
+  "mahalanobis_unit_tests": {
+    "status": "PASS",
+    "passed": 8,
+    "failed": 0,
+    "command": "PYTHONPATH=BERT_Rejection_Study_20261019 python -m unittest BERT_Rejection_Study_20261019/test_distance_model.py -v"
+  },
+  "method_summary_source": "BERT_Rejection_Study_20261019/outputs/summary_mean_sd.csv",
+  "summary_split": "test"
+}

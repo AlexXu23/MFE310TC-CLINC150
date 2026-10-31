@@ -1,0 +1,75 @@
+{
+  "mode": "historical two-point comparison (raw T = 1 versus fitted T); FP32 logits unavailable, so no temperature sweep",
+  "inputs": "CLINC150_Team_20261019/outputs/oos/seed{seed}/{validation,test}_scores.csv and temperature_fit.json (same checkpoints, FP16 forward)",
+  "temperature_fit": "evaluate_oos.fit_temperature on IS validation NLL, per seed (historical run)",
+  "consistency_with_fp32": {
+    "status": "PASS",
+    "per_seed": [
+      {
+        "seed": 42,
+        "rows_matched": 5500,
+        "text_identical": true,
+        "top1_agreement": 0.9994545454545455,
+        "msp_max_abs_difference": 0.0012582630230904002,
+        "msp_spearman": 0.9999967920419679
+      },
+      {
+        "seed": 43,
+        "rows_matched": 5500,
+        "text_identical": true,
+        "top1_agreement": 0.9992727272727273,
+        "msp_max_abs_difference": 0.0013757625033934406,
+        "msp_spearman": 0.9999970591974987
+      },
+      {
+        "seed": 44,
+        "rows_matched": 5500,
+        "text_identical": true,
+        "top1_agreement": 0.9998181818181818,
+        "msp_max_abs_difference": 0.0012929004177909542,
+        "msp_spearman": 0.9999968032936585
+      }
+    ]
+  },
+  "scaled_minus_raw_mean": {
+    "test_ece_15": -0.3473523717747044,
+    "test_mean_confidence": 0.3521094535500302,
+    "test_accuracy_is": 0.0,
+    "test_auroc_msp": -0.025807259259259346,
+    "test_fpr95_msp": 0.15933333333333333,
+    "val95_test_false_rejection_msp": -0.0026666666666666644,
+    "val95_test_oos_false_acceptance_msp": 0.163,
+    "test_auroc_entropy": -0.020363851851851893,
+    "test_fpr95_entropy": 0.07266666666666667,
+    "val95_test_false_rejection_entropy": -0.004000000000000001,
+    "val95_test_oos_false_acceptance_entropy": 0.07966666666666668,
+    "test_auroc_mahalanobis": 0.0
+  },
+  "scaled_minus_raw_sd": {
+    "test_ece_15": 0.006584712340620705,
+    "test_mean_confidence": 0.006858922666304694,
+    "test_accuracy_is": 0.0,
+    "test_auroc_msp": 0.0030246355914234136,
+    "test_fpr95_msp": 0.012701705922171755,
+    "val95_test_false_rejection_msp": 0.0013517250067329415,
+    "val95_test_oos_false_acceptance_msp": 0.01153256259467079,
+    "test_auroc_entropy": 0.0019362253252884327,
+    "test_fpr95_entropy": 0.011015141094572205,
+    "val95_test_false_rejection_entropy": 0.0023200681130912354,
+    "val95_test_oos_false_acceptance_entropy": 0.01563116545025781,
+    "test_auroc_mahalanobis": 0.0
+  },
+  "pair_reordering_mean": {
+    "entropy": {
+      "is_oos_pairs_reordered_worse": 0.02702703703703704,
+      "is_oos_pairs_reordered_better": 0.006663185185185185,
+      "auroc_change": -0.02036385185185185
+    },
+    "msp": {
+      "is_oos_pairs_reordered_worse": 0.030030814814814816,
+      "is_oos_pairs_reordered_better": 0.004223555555555556,
+      "auroc_change": -0.025807259259259255
+    }
+  },
+  "reading": "val95_* columns: threshold set at 95% validation IS acceptance under each calibration, then applied to clean test; equal IS acceptance isolates the effect of re-ordering from that of re-scaling"
+}

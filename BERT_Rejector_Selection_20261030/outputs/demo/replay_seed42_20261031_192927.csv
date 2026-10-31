@@ -1,0 +1,3 @@
+split,row_id,text,true_label,predicted_intent,msp_score,msp_threshold,msp_decision,entropy_score,entropy_threshold,entropy_decision,mahalanobis_score,mahalanobis_threshold,mahalanobis_decision
+test,4561,how do i make my android phone more secure,oos,sync_device,0.5867349415590921,0.7209220286154626,accept,2.923766421084845,3.4710087399639886,accept,3885.0044541107018,3660.9530965166186,REJECT
+test,5335,order me a book of stamps and envelopes,oos,order,0.7269759502560602,0.7209220286154626,REJECT,3.745374649374355,3.4710087399639886,REJECT,3106.4967226782564,3660.9530965166186,accept

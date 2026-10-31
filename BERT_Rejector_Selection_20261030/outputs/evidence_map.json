@@ -1,0 +1,57 @@
+{
+  "verify": {
+    "created_at": "2026-10-31T19:26:37.538351+08:00",
+    "files": {
+      "BERT_Rejector_Selection_20261030/outputs/inputs_verification.json": "24e90abf9305175193e1bca7acbb8d57c4a1d9ae3d30098cc01a0b5149de39fb",
+      "BERT_Rejector_Selection_20261030/INPUTS_FROZEN.json": "0a1193add6f3d3c088c4c1d18149d6b8256f2adf28afa96cd1d7112df02eee0d"
+    }
+  },
+  "mechanism": {
+    "created_at": "2026-10-31T19:26:38.286344+08:00",
+    "files": {
+      "BERT_Rejector_Selection_20261030/outputs/separation_clean.csv": "d7a02e61c514a0e0e45dae335398fe54165cfe018f65af818eeddf185def2c6f",
+      "BERT_Rejector_Selection_20261030/outputs/separation_clean_summary.csv": "196b9a91e3d44c93cbb781ae98ae3f7e2eb6f55ca0c90b0fd4fc40577425d58b",
+      "BERT_Rejector_Selection_20261030/outputs/score_correlations.csv": "7dda47692445c8c7f7d109a079c13c080f8b002ca115dce497ef49728922d715",
+      "BERT_Rejector_Selection_20261030/outputs/rejection_overlap.csv": "0f529a65f9ab612898116f2e0f7c0a60b120d3b368f5319b7361a0ddb46d01e3",
+      "BERT_Rejector_Selection_20261030/outputs/complementarity_decision.json": "5157aabacc744812af0408d17d458cc03593df67b27b15805c3ba783447975d2",
+      "BERT_Rejector_Selection_20261030/outputs/disagreement_cases.csv": "d98805cbc1fd51fae994e38c7e654fc1e1bf5c8c9186018eab1fc46bb10aa1ef",
+      "BERT_Rejector_Selection_20261030/outputs/score_distributions.png": "076cc707a13ac1448447ebae3bace118565c6dce5e7b6faef6f30f46847fb854"
+    }
+  },
+  "calibration": {
+    "created_at": "2026-10-31T19:26:39.094202+08:00",
+    "files": {
+      "BERT_Rejector_Selection_20261030/outputs/calibration_vs_separation.csv": "6ed6334311c1fd01b108748d7ac71345f9456ffe2f7a4b39c8e89243d0dfb5e3",
+      "BERT_Rejector_Selection_20261030/outputs/calibration_bins.csv": "0d69c2b92601f811848fb823879bebcf9edcd304b71c3922683a6cda58482060",
+      "BERT_Rejector_Selection_20261030/outputs/calibration_rank_flips.csv": "6baae8f2cffcd5178493a989e1c7957be870eb7869a524c758263380b70fa74f",
+      "BERT_Rejector_Selection_20261030/outputs/calibration_summary.json": "cc7bf2f2b26531d681cf0854252077bd0c9786ac2049b5dfe64b8b9bf39abb63",
+      "BERT_Rejector_Selection_20261030/outputs/calibration_vs_separation.png": "d81a1877636c99e4ae77b8ca6b56eec05d412c83c1ab309db45ca0728b5751ba"
+    }
+  },
+  "covariance": {
+    "created_at": "2026-10-31T19:26:39.143954+08:00",
+    "files": {
+      "BERT_Rejector_Selection_20261030/outputs/covariance_diagnostics.json": "26233651c0aa557d6ae7d2491bda987c7bcfe6351e2d4e69761e91a74224f935"
+    }
+  },
+  "thresholds": {
+    "created_at": "2026-10-31T19:27:35.619223+08:00",
+    "files": {
+      "BERT_Rejector_Selection_20261030/outputs/threshold_bootstrap_distribution.csv": "17c51d60038562d725bdf756fc91e58f6d6b5a178f97dd2321dcafa541431b73",
+      "BERT_Rejector_Selection_20261030/outputs/threshold_frozen_test.csv": "46e8e311f1f732298638d25b4ecd29d254d3e9ebfb85245d6dd72cb005c83c77",
+      "BERT_Rejector_Selection_20261030/outputs/threshold_stability_summary.json": "b19025e2889941087de2818102f187a4a0b1a710154410ce76e31473c1cea69a",
+      "BERT_Rejector_Selection_20261030/outputs/threshold_stability.png": "3223ca6474b3b60ddacd8974a0ef56351d6ff809987958bdba1c468759d68fca"
+    }
+  },
+  "cost": {
+    "created_at": "2026-10-31T19:29:14.955625+08:00",
+    "files": {
+      "BERT_Rejector_Selection_20261030/outputs/cost_candidates.csv": "eeff5437425c6a1ac824c29d6f52615316ec64f1a02091523ea60735fbcea1fa",
+      "BERT_Rejector_Selection_20261030/outputs/method_choice_by_cost.csv": "2808cd317cd5c52eb3cef040cfeb6440db1fdedff4e01a649f46e3c2b69c6cab",
+      "BERT_Rejector_Selection_20261030/outputs/candidate_separation.csv": "c20335f61c0fd22cf931952cbd6c85eb38b9c7184991d5c5873d1fa830eda0fb",
+      "BERT_Rejector_Selection_20261030/outputs/candidate_separation_summary.csv": "e4220215c7b02588365c81edb833abd5f404b9214b1b8443f8c6f3c21dbc64de",
+      "BERT_Rejector_Selection_20261030/outputs/rejector_candidates.json": "55828654be198b53a06940d4ff93b304001a8b4f0d46153628a28397506c6848",
+      "BERT_Rejector_Selection_20261030/outputs/method_choice_heatmap.png": "1c60a5482d4e845b28961e1c84fc7f211d4190bd19099b4b14ab209cedecc3aa"
+    }
+  }
+}

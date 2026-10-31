@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-30",
+  "kind": "post_hoc_exploratory_analysis",
+  "question": "Why does the system reject a request, and how should a rejection method be selected?",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "models": [
+    "original",
+    "typo_mix",
+    "clean_continue"
+  ],
+  "scores": [
+    "msp",
+    "entropy",
+    "mahalanobis"
+  ],
+  "decision_rule": "reject iff score >= threshold; larger scores mean more OOS",
+  "selection_data": "validation only; test oracle values are descriptive references",
+  "threshold_policies": [
+    "max_oos_f1",
+    "aligned_is_acceptance_90",
+    "aligned_is_acceptance_92p5",
+    "aligned_is_acceptance_95",
+    "aligned_is_acceptance_97p5",
+    "aligned_is_acceptance_99"
+  ],
+  "bootstrap_draws": 2000,
+  "cost": {
+    "lambdas": [
+      1,
+      2,
+      5,
+      10
+    ],
+    "pis": [
+      0.05,
+      0.1818,
+      0.3
+    ],
+    "primary": "(1-pi)*FR + lambda*pi*FA",
+    "secondary": "primary + lambda*(1-pi)*WA"
+  },
+  "training": false,
+  "new_test_inference": false,
+  "missing_assets": "Covariance ablation and full temperature sweep require unavailable CLS/FP32 arrays",
+  "test_exposure": "Earlier test results were inspected before this analysis; findings are exploratory",
+  "organisation": "Retrospective layout and naming change only; numerical methods are unchanged"
+}

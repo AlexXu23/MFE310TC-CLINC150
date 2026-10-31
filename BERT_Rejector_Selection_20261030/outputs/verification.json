@@ -1,0 +1,1520 @@
+{
+  "status": "PASS",
+  "checks_run": 188,
+  "failed": 0,
+  "independence": "No import from run_rejector_selection.py or rejector_lib.py",
+  "checks": [
+    {
+      "check": "input_manifest_nonempty",
+      "status": "PASS",
+      "files": 27
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed42/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed42/test_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed42/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed43/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed43/test_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed43/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed44/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed44/test_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Rejection_Study_20261019/outputs/seed44/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/clean_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/clean_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed43/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/clean_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed44/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/clean_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/clean_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed43/frozen_thresholds.json"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/validation_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/clean_predictions.csv"
+    },
+    {
+      "check": "upstream_input_hash",
+      "status": "PASS",
+      "file": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed44/frozen_thresholds.json"
+    },
+    {
+      "check": "input_gate_pass",
+      "status": "PASS",
+      "checks_run": 183
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9467813333333334,
+      "expected": 0.9467813333333334,
+      "seed": 42,
+      "score": "msp"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9547168888888888,
+      "expected": 0.9547168888888888,
+      "seed": 42,
+      "score": "entropy"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9773146666666667,
+      "expected": 0.9773146666666667,
+      "seed": 42,
+      "score": "mahalanobis"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9459042222222223,
+      "expected": 0.9459042222222223,
+      "seed": 43,
+      "score": "msp"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9550153333333333,
+      "expected": 0.9550153333333333,
+      "seed": 43,
+      "score": "entropy"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9761960000000001,
+      "expected": 0.9761960000000001,
+      "seed": 43,
+      "score": "mahalanobis"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.942148,
+      "expected": 0.942148,
+      "seed": 44,
+      "score": "msp"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.951099777777778,
+      "expected": 0.951099777777778,
+      "seed": 44,
+      "score": "entropy"
+    },
+    {
+      "check": "auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9759093333333333,
+      "expected": 0.9759093333333333,
+      "seed": 44,
+      "score": "mahalanobis"
+    },
+    {
+      "check": "auroc_mean_recomputed",
+      "status": "PASS",
+      "actual": 0.9449445185185185,
+      "expected": 0.9449445185185185,
+      "score": "msp"
+    },
+    {
+      "check": "auroc_sd_recomputed",
+      "status": "PASS",
+      "actual": 0.00246124315004055,
+      "expected": 0.002461243150040498,
+      "score": "msp"
+    },
+    {
+      "check": "auroc_mean_recomputed",
+      "status": "PASS",
+      "actual": 0.9536106666666667,
+      "expected": 0.9536106666666667,
+      "score": "entropy"
+    },
+    {
+      "check": "auroc_sd_recomputed",
+      "status": "PASS",
+      "actual": 0.0021796076552589925,
+      "expected": 0.0021796076552589925,
+      "score": "entropy"
+    },
+    {
+      "check": "auroc_mean_recomputed",
+      "status": "PASS",
+      "actual": 0.9764733333333334,
+      "expected": 0.9764733333333333,
+      "score": "mahalanobis"
+    },
+    {
+      "check": "auroc_sd_recomputed",
+      "status": "PASS",
+      "actual": 0.00074258048572379,
+      "expected": 0.0007425804857238426,
+      "score": "mahalanobis"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9467733333333334,
+      "expected": 0.9467733333333334,
+      "seed": 42,
+      "score": "msp",
+      "calibration": "raw"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.18,
+      "expected": 0.18,
+      "seed": 42,
+      "score": "msp",
+      "calibration": "raw"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9238762222222221,
+      "expected": 0.9238762222222221,
+      "seed": 42,
+      "score": "msp",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.347,
+      "expected": 0.347,
+      "seed": 42,
+      "score": "msp",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.954708,
+      "expected": 0.954708,
+      "seed": 42,
+      "score": "entropy",
+      "calibration": "raw"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.141,
+      "expected": 0.141,
+      "seed": 42,
+      "score": "entropy",
+      "calibration": "raw"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9363066666666667,
+      "expected": 0.9363066666666667,
+      "seed": 42,
+      "score": "entropy",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.223,
+      "expected": 0.223,
+      "seed": 42,
+      "score": "entropy",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9459055555555556,
+      "expected": 0.9459055555555556,
+      "seed": 43,
+      "score": "msp",
+      "calibration": "raw"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.177,
+      "expected": 0.177,
+      "seed": 43,
+      "score": "msp",
+      "calibration": "raw"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9169708888888888,
+      "expected": 0.9169708888888888,
+      "seed": 43,
+      "score": "msp",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.349,
+      "expected": 0.349,
+      "seed": 43,
+      "score": "msp",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.955004,
+      "expected": 0.955004,
+      "seed": 43,
+      "score": "entropy",
+      "calibration": "raw"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.154,
+      "expected": 0.154,
+      "seed": 43,
+      "score": "entropy",
+      "calibration": "raw"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9327313333333332,
+      "expected": 0.9327313333333332,
+      "seed": 43,
+      "score": "entropy",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.217,
+      "expected": 0.217,
+      "seed": 43,
+      "score": "entropy",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9421471111111112,
+      "expected": 0.9421471111111112,
+      "seed": 44,
+      "score": "msp",
+      "calibration": "raw"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.209,
+      "expected": 0.209,
+      "seed": 44,
+      "score": "msp",
+      "calibration": "raw"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9165571111111112,
+      "expected": 0.9165571111111112,
+      "seed": 44,
+      "score": "msp",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.359,
+      "expected": 0.359,
+      "seed": 44,
+      "score": "msp",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9510897777777778,
+      "expected": 0.9510897777777778,
+      "seed": 44,
+      "score": "entropy",
+      "calibration": "raw"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.157,
+      "expected": 0.157,
+      "seed": 44,
+      "score": "entropy",
+      "calibration": "raw"
+    },
+    {
+      "check": "calibration_auroc_recomputed",
+      "status": "PASS",
+      "actual": 0.9306722222222221,
+      "expected": 0.9306722222222221,
+      "seed": 44,
+      "score": "entropy",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "validation_95_false_acceptance_recomputed",
+      "status": "PASS",
+      "actual": 0.251,
+      "expected": 0.251,
+      "seed": 44,
+      "score": "entropy",
+      "calibration": "temperature_scaled"
+    },
+    {
+      "check": "calibration_delta_mean_recomputed",
+      "status": "PASS",
+      "actual": -0.025807259259259346,
+      "expected": -0.025807259259259346,
+      "score": "msp"
+    },
+    {
+      "check": "false_acceptance_delta_mean_recomputed",
+      "status": "PASS",
+      "actual": 0.163,
+      "expected": 0.163,
+      "score": "msp"
+    },
+    {
+      "check": "calibration_delta_mean_recomputed",
+      "status": "PASS",
+      "actual": -0.020363851851851893,
+      "expected": -0.020363851851851893,
+      "score": "entropy"
+    },
+    {
+      "check": "false_acceptance_delta_mean_recomputed",
+      "status": "PASS",
+      "actual": 0.07966666666666668,
+      "expected": 0.07966666666666668,
+      "score": "entropy"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94433333,
+      "expected": 0.9443333333333334,
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.963,
+      "expected": 0.963,
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94022222,
+      "expected": 0.9402222222222222,
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96311111,
+      "expected": 0.9631111111111111,
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.8,
+      "expected": 0.8,
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.862,
+      "expected": 0.862,
+      "model": "original",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.97866667,
+      "expected": 0.9786666666666667,
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99333333,
+      "expected": 0.9933333333333333,
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.97866667,
+      "expected": 0.9786666666666667,
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99377778,
+      "expected": 0.9937777777777778,
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.506,
+      "expected": 0.506,
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.735,
+      "expected": 0.735,
+      "model": "original",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94466667,
+      "expected": 0.9446666666666667,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.97033333,
+      "expected": 0.9703333333333334,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.93755556,
+      "expected": 0.9375555555555556,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96666667,
+      "expected": 0.9666666666666667,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.846,
+      "expected": 0.846,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.909,
+      "expected": 0.909,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.98366667,
+      "expected": 0.9836666666666667,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99633333,
+      "expected": 0.9963333333333333,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.98444444,
+      "expected": 0.9844444444444445,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99533333,
+      "expected": 0.9953333333333333,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.509,
+      "expected": 0.509,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.758,
+      "expected": 0.758,
+      "model": "original",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94533333,
+      "expected": 0.9453333333333334,
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96,
+      "expected": 0.96,
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94466667,
+      "expected": 0.9446666666666667,
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.95866667,
+      "expected": 0.9586666666666667,
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.768,
+      "expected": 0.768,
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.816,
+      "expected": 0.8160000000000001,
+      "model": "original",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96866667,
+      "expected": 0.9686666666666667,
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.992,
+      "expected": 0.992,
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.97066667,
+      "expected": 0.9706666666666667,
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99133333,
+      "expected": 0.9913333333333333,
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.455,
+      "expected": 0.45499999999999996,
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.739,
+      "expected": 0.739,
+      "model": "original",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94633333,
+      "expected": 0.9463333333333334,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96466667,
+      "expected": 0.9646666666666667,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94311111,
+      "expected": 0.9431111111111111,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96333333,
+      "expected": 0.9633333333333334,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.806,
+      "expected": 0.806,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.864,
+      "expected": 0.864,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.98,
+      "expected": 0.98,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99366667,
+      "expected": 0.9936666666666667,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.98044444,
+      "expected": 0.9804444444444445,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99422222,
+      "expected": 0.9942222222222222,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.499,
+      "expected": 0.499,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.717,
+      "expected": 0.7170000000000001,
+      "model": "typo_mix",
+      "score": "entropy",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94566667,
+      "expected": 0.9456666666666667,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.969,
+      "expected": 0.969,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94733333,
+      "expected": 0.9473333333333334,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96911111,
+      "expected": 0.9691111111111111,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.855,
+      "expected": 0.855,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.917,
+      "expected": 0.917,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.98466667,
+      "expected": 0.9846666666666667,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.997,
+      "expected": 0.997,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.98511111,
+      "expected": 0.9851111111111112,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.996,
+      "expected": 0.996,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.509,
+      "expected": 0.509,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.754,
+      "expected": 0.754,
+      "model": "typo_mix",
+      "score": "mahalanobis",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94433333,
+      "expected": 0.9443333333333334,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96566667,
+      "expected": 0.9656666666666667,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.94059444775,
+      "expected": 0.9405944444444444,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.96177778,
+      "expected": 0.9617777777777777,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.771,
+      "expected": 0.771,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.834,
+      "expected": 0.834,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "is_acceptance_95",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_draw_count",
+      "status": "PASS",
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "rows": 6000
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.97433333,
+      "expected": 0.9743333333333334,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.993,
+      "expected": 0.993,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "original_val_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.97176111325,
+      "expected": 0.9717611111111111,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.99133333,
+      "expected": 0.9913333333333333,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_is_acceptance"
+    },
+    {
+      "check": "bootstrap_p2p5_recomputed",
+      "status": "PASS",
+      "actual": 0.449,
+      "expected": 0.44899999999999995,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "bootstrap_p97p5_recomputed",
+      "status": "PASS",
+      "actual": 0.717,
+      "expected": 0.7170000000000001,
+      "model": "typo_mix",
+      "score": "msp",
+      "policy": "max_oos_f1",
+      "field": "test_oos_recall"
+    },
+    {
+      "check": "cost_grid_counts",
+      "status": "PASS",
+      "all": 48,
+      "primary": 24
+    },
+    {
+      "check": "primary_cost_choice_reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "primary_regret_recomputed",
+      "status": "PASS",
+      "actual": 0.006966222222222207,
+      "expected": 0.006966222222222207
+    },
+    {
+      "check": "case_count_and_interpretations",
+      "status": "PASS",
+      "rows": 30
+    },
+    {
+      "check": "covariance_limitation_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "covariance_shrinkage_mean_recomputed",
+      "status": "PASS",
+      "actual": 0.0417112577397201,
+      "expected": 0.0417112577397201
+    },
+    {
+      "check": "evidence_stage_inventory",
+      "status": "PASS",
+      "stages": [
+        "calibration",
+        "cost",
+        "covariance",
+        "mechanism",
+        "thresholds",
+        "verify"
+      ]
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "verify",
+      "file": "BERT_Rejector_Selection_20261030/outputs/inputs_verification.json"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "verify",
+      "file": "BERT_Rejector_Selection_20261030/INPUTS_FROZEN.json"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "mechanism",
+      "file": "BERT_Rejector_Selection_20261030/outputs/separation_clean.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "mechanism",
+      "file": "BERT_Rejector_Selection_20261030/outputs/separation_clean_summary.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "mechanism",
+      "file": "BERT_Rejector_Selection_20261030/outputs/score_correlations.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "mechanism",
+      "file": "BERT_Rejector_Selection_20261030/outputs/rejection_overlap.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "mechanism",
+      "file": "BERT_Rejector_Selection_20261030/outputs/complementarity_decision.json"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "mechanism",
+      "file": "BERT_Rejector_Selection_20261030/outputs/disagreement_cases.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "mechanism",
+      "file": "BERT_Rejector_Selection_20261030/outputs/score_distributions.png"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "calibration",
+      "file": "BERT_Rejector_Selection_20261030/outputs/calibration_vs_separation.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "calibration",
+      "file": "BERT_Rejector_Selection_20261030/outputs/calibration_bins.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "calibration",
+      "file": "BERT_Rejector_Selection_20261030/outputs/calibration_rank_flips.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "calibration",
+      "file": "BERT_Rejector_Selection_20261030/outputs/calibration_summary.json"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "calibration",
+      "file": "BERT_Rejector_Selection_20261030/outputs/calibration_vs_separation.png"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "covariance",
+      "file": "BERT_Rejector_Selection_20261030/outputs/covariance_diagnostics.json"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "thresholds",
+      "file": "BERT_Rejector_Selection_20261030/outputs/threshold_bootstrap_distribution.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "thresholds",
+      "file": "BERT_Rejector_Selection_20261030/outputs/threshold_frozen_test.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "thresholds",
+      "file": "BERT_Rejector_Selection_20261030/outputs/threshold_stability_summary.json"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "thresholds",
+      "file": "BERT_Rejector_Selection_20261030/outputs/threshold_stability.png"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "cost",
+      "file": "BERT_Rejector_Selection_20261030/outputs/cost_candidates.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "cost",
+      "file": "BERT_Rejector_Selection_20261030/outputs/method_choice_by_cost.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "cost",
+      "file": "BERT_Rejector_Selection_20261030/outputs/candidate_separation.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "cost",
+      "file": "BERT_Rejector_Selection_20261030/outputs/candidate_separation_summary.csv"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "cost",
+      "file": "BERT_Rejector_Selection_20261030/outputs/rejector_candidates.json"
+    },
+    {
+      "check": "derived_artifact_hash",
+      "status": "PASS",
+      "stage": "cost",
+      "file": "BERT_Rejector_Selection_20261030/outputs/method_choice_heatmap.png"
+    }
+  ]
+}

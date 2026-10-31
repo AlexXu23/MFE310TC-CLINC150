@@ -1,0 +1,186 @@
+{
+  "rule": "Only-one-rejects OOS share >= 5% on clean test at is_acceptance_95 in all three seeds (original BERT)",
+  "pairs": {
+    "entropy~mahalanobis": {
+      "per_seed": [
+        0.053,
+        0.057,
+        0.066
+      ],
+      "all_seeds_at_least_5pct": true
+    },
+    "msp~mahalanobis": {
+      "per_seed": [
+        0.088,
+        0.094,
+        0.127
+      ],
+      "all_seeds_at_least_5pct": true
+    }
+  },
+  "run_combination_extension": true,
+  "all_models": [
+    {
+      "model": "original",
+      "seed": 42,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.088
+    },
+    {
+      "model": "original",
+      "seed": 42,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.053
+    },
+    {
+      "model": "original",
+      "seed": 42,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.053
+    },
+    {
+      "model": "original",
+      "seed": 43,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.094
+    },
+    {
+      "model": "original",
+      "seed": 43,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.057
+    },
+    {
+      "model": "original",
+      "seed": 43,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.053
+    },
+    {
+      "model": "original",
+      "seed": 44,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.127
+    },
+    {
+      "model": "original",
+      "seed": 44,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.066
+    },
+    {
+      "model": "original",
+      "seed": 44,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.067
+    },
+    {
+      "model": "typo_mix",
+      "seed": 42,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.09
+    },
+    {
+      "model": "typo_mix",
+      "seed": 42,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.059
+    },
+    {
+      "model": "typo_mix",
+      "seed": 42,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.041
+    },
+    {
+      "model": "typo_mix",
+      "seed": 43,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.095
+    },
+    {
+      "model": "typo_mix",
+      "seed": 43,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.06
+    },
+    {
+      "model": "typo_mix",
+      "seed": 43,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.053
+    },
+    {
+      "model": "typo_mix",
+      "seed": 44,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.108
+    },
+    {
+      "model": "typo_mix",
+      "seed": 44,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.056
+    },
+    {
+      "model": "typo_mix",
+      "seed": 44,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.056
+    },
+    {
+      "model": "clean_continue",
+      "seed": 42,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.078
+    },
+    {
+      "model": "clean_continue",
+      "seed": 42,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.048
+    },
+    {
+      "model": "clean_continue",
+      "seed": 42,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.04
+    },
+    {
+      "model": "clean_continue",
+      "seed": 43,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.106
+    },
+    {
+      "model": "clean_continue",
+      "seed": 43,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.065
+    },
+    {
+      "model": "clean_continue",
+      "seed": 43,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.061
+    },
+    {
+      "model": "clean_continue",
+      "seed": 44,
+      "pair": "msp~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.117
+    },
+    {
+      "model": "clean_continue",
+      "seed": 44,
+      "pair": "entropy~mahalanobis",
+      "oos_rejected_by_exactly_one_share": 0.067
+    },
+    {
+      "model": "clean_continue",
+      "seed": 44,
+      "pair": "msp~entropy",
+      "oos_rejected_by_exactly_one_share": 0.058
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "mode": "no CLS features available: covariance ablation NOT run (report as a limitation)",
+  "estimator": "Ledoit-Wolf shared covariance of class-centred train residuals (assume_centered), covariance = (1 - shrinkage) * sample covariance + shrinkage * mu * I",
+  "source": "BERT_Rejection_Study_20261019/outputs/seed{seed}/development_summary.json (saved when the detector was fitted)",
+  "per_seed": [
+    {
+      "seed": 42,
+      "lw_shrinkage": 0.04059510023045637,
+      "feature_dim": 768,
+      "training_rows": 15000,
+      "classes": 150,
+      "residual_degrees_of_freedom": 14850,
+      "residual_rows_per_dimension": 19.3359375
+    },
+    {
+      "seed": 43,
+      "lw_shrinkage": 0.04271799091900426,
+      "feature_dim": 768,
+      "training_rows": 15000,
+      "classes": 150,
+      "residual_degrees_of_freedom": 14850,
+      "residual_rows_per_dimension": 19.3359375
+    },
+    {
+      "seed": 44,
+      "lw_shrinkage": 0.04182068206969968,
+      "feature_dim": 768,
+      "training_rows": 15000,
+      "classes": 150,
+      "residual_degrees_of_freedom": 14850,
+      "residual_rows_per_dimension": 19.3359375
+    }
+  ],
+  "lw_shrinkage_mean": 0.0417112577397201,
+  "lw_shrinkage_sd": 0.0010656671534181959,
+  "not_available": [
+    "identity / diagonal / OAS / empirical variants",
+    "condition numbers",
+    "validation AUROC per variant"
+  ]
+}
