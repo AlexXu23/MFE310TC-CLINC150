@@ -73,3 +73,22 @@ files; keep all sibling directory names. Complete stages freeze before test
 inference/rethresholding. Never delete original freeze files to force a rerun.
 Fresh-run hashes and runtime records must describe the new run; they will not
 match the historical source identity. This packaging step did not rerun training.
+
+## Integrated saved-score rejector analysis
+
+The uploaded study is `BERT_Rejector_Selection_20261030`. Its calculations use
+saved prediction/score CSVs, without training or checkpoint inference:
+
+```text
+python -B -m unittest BERT_Rejector_Selection_20261030/test_rejector_lib.py -v
+python -B BERT_Rejector_Selection_20261030/verify_rejector_selection.py --output .downloads/rejector_verification.json
+```
+
+The first command passed 18 tests. The second passed all 188 checks after exact
+recovery of 21 original CRLF text artifacts. It recomputes clean AUROC,
+calibration comparisons, validation-target false acceptance and bootstrap
+quantiles, and checks frozen input/derived hashes. It writes into the ignored
+download directory, keeping the snapshot intact. The legacy study RUN_README
+records its author's original local interpreter; use the activated follow-up
+environment for these portable commands. Full stage reruns must use a separate
+workspace because they regenerate their own derived outputs.

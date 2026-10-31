@@ -1,0 +1,19 @@
+{
+  "report_version": "2026.10.31-rejector.1",
+  "figures": {
+    "Fig. 1": [
+      "report_evidence/augmentation_effects_en.png"
+    ],
+    "Fig. 2a": [
+      "BERT_Rejector_Selection_20261030/outputs/calibration_vs_separation.png"
+    ],
+    "Fig. 2b": [
+      "BERT_Rejector_Selection_20261030/outputs/method_choice_heatmap.png"
+    ],
+    "Fig. 3": [
+      "report_evidence/operating_points_en.png"
+    ]
+  },
+  "table_data": "report_evidence/tables_en.json",
+  "report_text": "report_evidence/report_integrated_en.md"
+}

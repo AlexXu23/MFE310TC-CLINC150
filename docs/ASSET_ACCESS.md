@@ -1,6 +1,6 @@
 # Model and detector access
 
-Snapshot version: `2026.10.31-assets.1` (31 October 2026).
+Snapshot version: `2026.10.31-rejector.1` (31 October 2026).
 
 ## Complete seed42 demo package
 

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "report_version": "2026.10.31-rejector.1",
+  "teammate_source_commit": "4d2914e1cb199d18f2ca99c2a78c10808fda4966",
+  "independent_artifact_checks": 188,
+  "artifact_checks_failed": 0,
+  "existing_unit_tests": 18,
+  "unit_tests_status": "PASS",
+  "cost_recomputation": {
+    "status": "PASS",
+    "settings": 48,
+    "candidate_rows": 180,
+    "mean_cost_and_regret_checks": 240,
+    "primary_mahalanobis_choices": 24,
+    "wrong_acceptance_msp_choices": 4
+  },
+  "calibration_msp_false_acceptance_increase_pp": 16.3,
+  "figure_sha256": {
+    "calibration_vs_separation.png": "d81a1877636c99e4ae77b8ca6b56eec05d412c83c1ab309db45ca0728b5751ba",
+    "method_choice_heatmap.png": "1c60a5482d4e845b28961e1c84fc7f211d4190bd19099b4b14ab209cedecc3aa"
+  },
+  "received_figures_match_published_figures": true,
+  "historical_input_hashes_verified": 27,
+  "line_ending_recovery": "qa/rejector_line_ending_recovery.json",
+  "report_pages": 11,
+  "report_words_including_all_figure_labels": 2734,
+  "table_contents_unchanged": true,
+  "abstract_and_conclusion_unchanged": true,
+  "no_training_or_new_inference": true
+}

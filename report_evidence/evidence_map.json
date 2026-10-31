@@ -1,15 +1,15 @@
 {
-  "report_source": "Submission_English_Recording_20261029/output/MFE310TC_Report_EN_20261029.pdf",
-  "report_source_sha256": "9d4dc0e8bd5e01cef8c702065aa16cacb86aeef439c15c1042b521013e18f9fe",
+  "report_source": "report_evidence/report_integrated_en.md",
+  "report_source_sha256": "287416bc8e333c55304965615177d240948b2246fb4566c0885635aeb69a27ef",
   "source_report_included": false,
-  "purpose": "Current principal claim routes; does not change the report or claim full inference reproduction.",
+  "purpose": "Integrated report claim routes; formatted PDF/Word are delivered separately with a final commit/hash receipt.",
   "claims": {
     "Original clean BERT versus TF-IDF and typo degradation": [
       "CLINC150_Team_20261019/outputs/multiseed/typo_classification_mean_sd.csv"
     ],
     "Calibration versus OOS rejection": [
-      "CLINC150_Team_20261019/outputs/multiseed/clean_calibration_by_seed.csv",
-      "CLINC150_Team_20261019/outputs/multiseed/clean_oos_by_seed.csv"
+      "BERT_Rejector_Selection_20261030/outputs/calibration_summary.json",
+      "BERT_Rejector_Selection_20261030/outputs/calibration_vs_separation.csv"
     ],
     "Matched spelling augmentation": [
       "BERT_Typo_Augmentation_20261019/outputs/metrics_by_seed.csv",
@@ -28,6 +28,14 @@
     "Common-correct rejection and illustrative cases": [
       "BERT_Typo_Augmentation_20261019/outputs/common_correct_rejection_diagnostic.csv",
       "demo/recorded_demo_inference_results.json"
+    ],
+    "Validation cost selection and wrong-acceptance tradeoffs": [
+      "BERT_Rejector_Selection_20261030/outputs/cost_candidates.csv",
+      "BERT_Rejector_Selection_20261030/outputs/method_choice_by_cost.csv"
+    ],
+    "Threshold stability": [
+      "BERT_Rejector_Selection_20261030/outputs/threshold_stability_summary.json"
     ]
-  }
+  },
+  "report_version": "2026.10.31-rejector.1"
 }

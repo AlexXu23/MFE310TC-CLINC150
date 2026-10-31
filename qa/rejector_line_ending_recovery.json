@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "received_commit": "4d2914e1cb199d18f2ca99c2a78c10808fda4966",
+  "method": "Restore CRLF only when it reconstructs the exact pre-existing SHA256. No recorded hashes or numerical values changed.",
+  "files": [
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/inputs_verification.json",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "77b5f162c39d6c2a3a4cefd7d29089bde2eadd3c16c936b64c191416568fea30",
+      "expected_sha256": "24e90abf9305175193e1bca7acbb8d57c4a1d9ae3d30098cc01a0b5149de39fb"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/INPUTS_FROZEN.json",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "085d07fb8432f8aaccb21bfedaf01cf63afaf538d0bbd56808002a8cb950b3cf",
+      "expected_sha256": "0a1193add6f3d3c088c4c1d18149d6b8256f2adf28afa96cd1d7112df02eee0d"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/separation_clean.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "4efae40315e18a193c67a5a1de4c644c5328d33b409cb8e798e69ddc427991fd",
+      "expected_sha256": "d7a02e61c514a0e0e45dae335398fe54165cfe018f65af818eeddf185def2c6f"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/separation_clean_summary.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "46814ba6ee524941d496180e2862b820d807c063002829137926d5f9c69b09d8",
+      "expected_sha256": "196b9a91e3d44c93cbb781ae98ae3f7e2eb6f55ca0c90b0fd4fc40577425d58b"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/score_correlations.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "bb08659572acf31c86c00007293cecb36b5e65319d8ac46c9a9b4b217dc86123",
+      "expected_sha256": "7dda47692445c8c7f7d109a079c13c080f8b002ca115dce497ef49728922d715"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/rejection_overlap.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "d7c83730457687c7e1825d96bcb6526e532a71ad63ca5027f051d4c577a015cc",
+      "expected_sha256": "0f529a65f9ab612898116f2e0f7c0a60b120d3b368f5319b7361a0ddb46d01e3"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/complementarity_decision.json",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "6496b167834ce82cb30a015b25b5053d0d78efedb66ef2ee581b9185e5a083db",
+      "expected_sha256": "5157aabacc744812af0408d17d458cc03593df67b27b15805c3ba783447975d2"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/disagreement_cases.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "c200a8f366d31ed05df10e7aaa6d113eda154f030a3ee20e253da62f13181c0b",
+      "expected_sha256": "d98805cbc1fd51fae994e38c7e654fc1e1bf5c8c9186018eab1fc46bb10aa1ef"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/calibration_vs_separation.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "08034e619be5d6d261819226d0a7afb2632a21270254522bbe7e17c7262625ff",
+      "expected_sha256": "6ed6334311c1fd01b108748d7ac71345f9456ffe2f7a4b39c8e89243d0dfb5e3"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/calibration_bins.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "429c5494d18b88583b3f3b4d23268652557e3f5b031cd72d816e17f10d443cac",
+      "expected_sha256": "0d69c2b92601f811848fb823879bebcf9edcd304b71c3922683a6cda58482060"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/calibration_rank_flips.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "bf62876d07510ad23dc3c003103d4db614b07db9ba230196ba79d75d32629b3d",
+      "expected_sha256": "6baae8f2cffcd5178493a989e1c7957be870eb7869a524c758263380b70fa74f"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/calibration_summary.json",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "ac189c8155a4f3d9cb3888cedf9bba73b5d18804d3204964420bbb976dc3c665",
+      "expected_sha256": "cc7bf2f2b26531d681cf0854252077bd0c9786ac2049b5dfe64b8b9bf39abb63"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/covariance_diagnostics.json",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "8f3173c04e78584d86a59a51419acaf796fad249f3849e3188fe2d3d1346edde",
+      "expected_sha256": "26233651c0aa557d6ae7d2491bda987c7bcfe6351e2d4e69761e91a74224f935"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/threshold_bootstrap_distribution.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "224a797aeda088f794a44d10118e80ca217103f91f944f81051388e6b4790d48",
+      "expected_sha256": "17c51d60038562d725bdf756fc91e58f6d6b5a178f97dd2321dcafa541431b73"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/threshold_frozen_test.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "83a4dbfb34c7ae69f116fbcf6b38213e3d5175248db2dde6ee1ca58320e5335b",
+      "expected_sha256": "46e8e311f1f732298638d25b4ecd29d254d3e9ebfb85245d6dd72cb005c83c77"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/threshold_stability_summary.json",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "36bc8ed2cad52ebf1681f48e9721a68aa6e4eb98fab26bd3f5a3b4aa35592319",
+      "expected_sha256": "b19025e2889941087de2818102f187a4a0b1a710154410ce76e31473c1cea69a"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/cost_candidates.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "d8e56bb5e4bfe097c789a3224351a3ffba33a1bba2e9fab18fc5224e31c972cd",
+      "expected_sha256": "eeff5437425c6a1ac824c29d6f52615316ec64f1a02091523ea60735fbcea1fa"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/method_choice_by_cost.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "83d879259b02ba4406100aad462d20c98d3dc2ece6f2ff61a33f7eaecdf0587c",
+      "expected_sha256": "2808cd317cd5c52eb3cef040cfeb6440db1fdedff4e01a649f46e3c2b69c6cab"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/candidate_separation.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "f6890fc600c1b4f35f36c5a3ad1d511904c8931945444b1fb8a7c77866c3337e",
+      "expected_sha256": "c20335f61c0fd22cf931952cbd6c85eb38b9c7184991d5c5873d1fa830eda0fb"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/candidate_separation_summary.csv",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "d5a97ea2389ee1154a847c31e80561c5b3d36148d86639e4fa986a97cd52d59f",
+      "expected_sha256": "e4220215c7b02588365c81edb833abd5f404b9214b1b8443f8c6f3c21dbc64de"
+    },
+    {
+      "path": "BERT_Rejector_Selection_20261030/outputs/rejector_candidates.json",
+      "crlf_reconstructs_exact_original_hash": true,
+      "received_sha256": "bfc6163129fe346dfe1170845e4cd9b87eb06c50b628dba5292cb3b382ce6961",
+      "expected_sha256": "55828654be198b53a06940d4ff93b304001a8b4f0d46153628a28397506c6848"
+    }
+  ],
+  "future_byte_preservation": ".gitattributes"
+}

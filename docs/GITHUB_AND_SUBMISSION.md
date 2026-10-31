@@ -17,7 +17,7 @@ and records that verification; it does not alter experiments or results.
 The final repository commit and archive SHA256 are recorded beside the ZIP in
 `GITHUB_FINALIZATION_RECEIPT.json`. The report appendix uses that final commit.
 The archive and Git tree are verified to contain the same snapshot file bytes.
-Snapshot `2026.10.31-assets.1` adds the seed42 model-access route, asset
+Snapshot `2026.10.31-rejector.1` adds the seed42 model-access route, asset
 verification/download tooling and updated inference output routing. Frozen
 experimental code, weights, prediction CSVs and measured results are unchanged.
 The public-access state is recorded in SUBMISSION_STATUS.json; see ASSET_ACCESS.md

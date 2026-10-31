@@ -5,6 +5,7 @@ outputs/verification.json. Missing or inconsistent artifacts produce FAIL.
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import math
@@ -52,6 +53,10 @@ def aligned_threshold(is_scores, target=0.95):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=OUT / "verification.json",
+                        help="Write audit JSON here; use .downloads/rejector_verification.json to retain the frozen snapshot.")
+    args = parser.parse_args()
     checks = []
 
     def check(name, ok, **detail):
@@ -164,7 +169,8 @@ def main():
         "independence": "No import from run_rejector_selection.py or rejector_lib.py",
         "checks": checks,
     }
-    (OUT / "verification.json").write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Independent verification: {result['status']} ({len(checks)} checks, {len(failed)} failed)")
     if failed:
         raise SystemExit(1)

@@ -1,7 +1,7 @@
 # CLINC150 intent classification, OOS rejection and spelling robustness
 
-This is snapshot `2026.10.31-assets.1`, updated on 31 October 2026 with a
-verified seed42 model-access package. It collects the
+This is snapshot `2026.10.31-rejector.1`, updated on 31 October 2026 with a
+verified seed42 model-access package and the integrated rejector-selection study. It collects the
 baseline, original three-seed BERT, matched spelling-augmentation comparison,
 rejection methods, reference mixtures and acceptance-target sensitivity studies.
 The official dataset, all included prediction CSVs and measured numeric values
@@ -37,6 +37,7 @@ Historical independent-verification records remain in each experiment's outputs.
 | `BERT_Rejection_Ratio_20261019/` | 0%, 10%, 25%, 50% reference mixtures |
 | `BERT_Rejection_Alignment_20261019/` | Exact validation-acceptance alignment at 95% |
 | `BERT_Rejection_Operating_Points_20261019/` | Five acceptance targets, 90% to 99% |
+| `BERT_Rejector_Selection_20261030/` | Saved-score separation, temperature calibration, threshold stability and validation cost selection |
 | `environment/` | Hardware/runtime declarations, recorded dependency lists and installation commands |
 | `report_evidence/` | Current English report tables, plot source data and claim-to-file map |
 | `assets/ASSET_MANIFEST.json` | Paths, sizes and SHA256 for locally held weights and numeric caches |
@@ -46,6 +47,29 @@ Most comparison tables are `outputs/metrics_by_seed.csv` and
 `outputs/summary_mean_sd.csv` within the relevant experiment. The original
 classification tables are in `CLINC150_Team_20261019/outputs/multiseed/`.
 See `report_evidence/evidence_map.json` for current principal claim routes.
+
+## Integrated rejector analysis
+
+Report version `2026.10.31-rejector.1` incorporates the teammate's study uploaded
+in commit `4d2914e1cb199d18f2ca99c2a78c10808fda4966`. Its two supplied figures match
+the published PNGs exactly. The report preserves all table contents, abstract
+and conclusion, with figure references renumbered in first-citation order.
+`report_evidence/report_integrated_en.md`, `tables_en.json` and `figure_map.json`
+bind the integrated report to the measured outputs.
+
+Using the follow-up environment, run from the repository root:
+
+```text
+python -B -m unittest BERT_Rejector_Selection_20261030/test_rejector_lib.py -v
+python -B BERT_Rejector_Selection_20261030/verify_rejector_selection.py --output .downloads/rejector_verification.json
+```
+
+Integration checks passed 18 existing tests, 188 independent checks, and a
+separate recomputation of all 48 validation-cost selections. The uploaded text
+files had LF line endings while 21 stored hashes described their original CRLF
+bytes. Those original bytes were recovered exactly; `.gitattributes` preserves
+them. `qa/rejector_integration_verification.json` and the linked recovery record
+retain the audit. Experimental numbers and recorded source hashes were retained.
 
 ## Recorded hardware and software
 
@@ -128,8 +152,10 @@ Students remain responsible for final interpretation and contribution statements
 The code/results are published in the public repository
 [https://github.com/AlexXu23/MFE310TC-CLINC150](https://github.com/AlexXu23/MFE310TC-CLINC150). The original assessed code and measured results were
 first published in commit [fdd333f](https://github.com/AlexXu23/MFE310TC-CLINC150/tree/fdd333f78425d1f5147d36483d424f8c5623ec9c).
-The subsequent publication-metadata update changes documentation and manifests;
-experimental code, prediction CSVs and measured results remain unchanged.
+Later updates add verified model access and the teammate's saved-score
+rejector study. Original prediction/results bytes are retained; new study text
+artifacts preserve their recorded CRLF hashes. The assessed snapshot includes
+the integrated report evidence and validation records.
 
 The final ZIP preserves the repository file bytes. Its accompanying
 `GITHUB_FINALIZATION_RECEIPT.json` records the final repository commit and ZIP
