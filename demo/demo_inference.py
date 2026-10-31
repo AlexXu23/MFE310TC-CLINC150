@@ -36,6 +36,7 @@ def saved_rows(arm):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--interactive',action='store_true',help='Preload both models, then press Enter to infer each example.')
+    parser.add_argument('--output',type=Path,default=OUT/'demo_inference_results.json',help='JSON result path; use .downloads/demo_inference_results.json to keep the snapshot clean.')
     args=parser.parse_args()
     torch.set_num_threads(4)
     torch.backends.cuda.matmul.allow_tf32=False
@@ -82,7 +83,8 @@ def main():
             print(arm+': '+prediction+'    '+('REJECT' if rejected else 'ACCEPT'),flush=True)
     record={'kind':'actual_model_inference','seed':42,'device':device,'precision':'FP32','training_performed':False,
             'threshold_refit':False,'matches_saved_predictions':True,'cases_are_postselected':True,'results':results}
-    (OUT/'demo_inference_results.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
+    args.output.parent.mkdir(parents=True,exist_ok=True)
+    args.output.write_text(json.dumps(record,indent=2),encoding='utf-8')
     print('\nPASS: fresh inference agrees with the frozen predictions for all four pipeline/example pairs.',flush=True)
 
 if __name__=='__main__':main()

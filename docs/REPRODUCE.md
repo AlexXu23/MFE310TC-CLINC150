@@ -16,18 +16,20 @@ Initial BERT and TF-IDF classification results are also recomputed from CSV.
 They do not establish that GPU operations ran as logged, refit calibration,
 reselect thresholds or resample uncertainty intervals.
 
-## Demo, after supplying seed-42 assets
+## Demo with the separately downloadable seed42 assets
 
 Use the follow-up environment and retain the repository layout:
 
 ```text
-python demo/demo_inference.py
+python tools/download_assets.py
+python tools/download_assets.py --verify-only
+python demo/demo_inference.py --output .downloads/demo_inference_results.json
 ```
 
 This runs fresh FP32 inference for the presentation's two postselected examples
 and checks labels/rejection against stored decisions. It needs the seed-42
 model/detector files described in `ASSET_ACCESS.md`. It writes only
-`demo/demo_inference_results.json`. It does not train or tune thresholds.
+`.downloads/demo_inference_results.json`. It does not train or tune thresholds.
 
 ## New experiments
 

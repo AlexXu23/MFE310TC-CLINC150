@@ -1,0 +1,87 @@
+{
+  "asset_version": "assets-seed42-v1",
+  "source_inventory": "assets/ASSET_MANIFEST.json",
+  "extract_to": "repository root",
+  "files": [
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/config.json",
+      "bytes": 8567,
+      "sha256": "f3f35899c8a299efd58e52f1919390525b9208d2db35dbe73cbf12ee2325f89c"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "86b37e6a0e4aa0cfed31b28c145b7fa5d44fc3e94ed7c57c39b34437f20b009d"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/special_tokens_map.json",
+      "bytes": 732,
+      "sha256": "5aa43c2f985a25296d5a5ce621c2f77376ca8091a47993c492fd5460b895b140"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/tokenizer.json",
+      "bytes": 711493,
+      "sha256": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/tokenizer_config.json",
+      "bytes": 1388,
+      "sha256": "fd20f11a150c8c2e5a7460f4b6d6d0f0b91e19023b5a19723981a699f42911fd"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/final_model/vocab.txt",
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/distance_model.npz",
+      "bytes": 10768156,
+      "sha256": "c04d1376dc3b20647f4bede4aa3c59c3e75ded0444454b65fbc72dda06a88886"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/clean_continue/seed42/frozen_thresholds.json",
+      "bytes": 1723,
+      "sha256": "c143cc930cd76fdfbd61f9d9d73b6a699b44fb51ee6cc4006bd2858587c63898"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/final_model/config.json",
+      "bytes": 8567,
+      "sha256": "f3f35899c8a299efd58e52f1919390525b9208d2db35dbe73cbf12ee2325f89c"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/final_model/model.safetensors",
+      "bytes": 438413896,
+      "sha256": "fcd6a134a015694ff1c4423df65993aa15c01dbf675623319c07bcc8c0551f46"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/final_model/special_tokens_map.json",
+      "bytes": 732,
+      "sha256": "5aa43c2f985a25296d5a5ce621c2f77376ca8091a47993c492fd5460b895b140"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/final_model/tokenizer.json",
+      "bytes": 711493,
+      "sha256": "8406160b692103eb0af606ffd0d7963678491aa8719a131fd165927e64eb5416"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/final_model/tokenizer_config.json",
+      "bytes": 1388,
+      "sha256": "fd20f11a150c8c2e5a7460f4b6d6d0f0b91e19023b5a19723981a699f42911fd"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/final_model/vocab.txt",
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/distance_model.npz",
+      "bytes": 10771424,
+      "sha256": "aed4a870f73133a88ae9bc5ddaf5348d988a1bdd491ef895090711ddb81ebf02"
+    },
+    {
+      "path": "BERT_Typo_Augmentation_20261019/outputs/typo_mix/seed42/frozen_thresholds.json",
+      "bytes": 1686,
+      "sha256": "05b040bbe7a628f2901bed0f45cf0c58afe609c3ea43733dca7011fcff35f851"
+    }
+  ]
+}

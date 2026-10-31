@@ -1,6 +1,7 @@
 # CLINC150 intent classification, OOS rejection and spelling robustness
 
-This is the 29 October 2026 code/results submission candidate. It collects the
+This is snapshot `2026.10.31-assets.1`, updated on 31 October 2026 with a
+verified seed42 model-access package. It collects the
 baseline, original three-seed BERT, matched spelling-augmentation comparison,
 rejection methods, reference mixtures and acceptance-target sensitivity studies.
 The official dataset, all included prediction CSVs and measured numeric values
@@ -70,11 +71,34 @@ course teaching materials, diagnostic smoke runs and large binary assets.
 It does not include `.safetensors`, `.npy`, `.npz` or `.joblib` files.
 `assets/ASSET_MANIFEST.json` indexes those retained in the local experiment trees.
 
-CSV result auditing works directly from this ZIP. Fresh inference and legacy
-array-level audits additionally require the indexed assets. No checkpoint
-download/release URL has been published by this preparation step; asset access
-must be resolved before calling the snapshot fully self-contained for inference.
-See `docs/ASSET_ACCESS.md` and `docs/REPRODUCE.md`.
+CSV result auditing works directly from this ZIP. For fresh demo inference,
+download the separate [complete seed42 model ZIP](https://github.com/AlexXu23/MFE310TC-CLINC150/releases/download/assets-seed42-v1/MFE310TC_Demo_seed42_v1.zip)
+from [GitHub Releases](https://github.com/AlexXu23/MFE310TC-CLINC150/releases/tag/assets-seed42-v1). It contains both `clean_continue` and
+`typo_mix` complete `final_model/` folders, their own `distance_model.npz` and
+`frozen_thresholds.json`. Configurations, tokenizers and thresholds also remain
+in the compact repository. Extract into the **repository root**, merging the
+existing `BERT_Typo_Augmentation_20261019/` directory.
+
+**Verified public access:** the Release ZIP was downloaded without authentication
+into a clean extraction of the code ZIP, installed with all 16 payload hashes
+checked, and used for fresh GPU inference. All four model/example decisions
+matched the frozen predictions. See `qa/asset_inference_verification.json`.
+
+With the [follow-up environment](environment/ENVIRONMENT.md) installed, run from
+the repository root:
+
+```text
+python tools/verify_snapshot.py
+python tools/download_assets.py
+python tools/download_assets.py --verify-only
+python demo/demo_inference.py --output .downloads/demo_inference_results.json
+```
+
+The downloader checks the release ZIP and all 16 payload files with SHA256.
+Manual download/extraction and all other major experiments' exact-asset request
+and rebuilding routes are in [docs/ASSET_ACCESS.md](docs/ASSET_ACCESS.md).
+The demo checks all four model/example decisions against frozen predictions;
+it does not train a model or refit thresholds.
 
 Historical freeze records refer to the original experimental bytes. Exported
 metadata has private workspace prefixes removed, so its embedded historical
@@ -111,5 +135,6 @@ The final ZIP preserves the repository file bytes. Its accompanying
 `GITHUB_FINALIZATION_RECEIPT.json` records the final repository commit and ZIP
 SHA256 without requiring a self-referential commit hash inside this repository.
 The report appendix should link to that final repository commit.
-Checkpoint/feature-cache access remains pending; see `docs/ASSET_ACCESS.md`.
+Seed42 inference assets are packaged separately; public-access status and
+remaining experiments' access routes are in `docs/ASSET_ACCESS.md`.
 CSV result auditing works directly from this repository and ZIP.

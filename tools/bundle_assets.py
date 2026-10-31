@@ -35,7 +35,7 @@ def main():
             archive.write(source / record['path'], record['path'])
             if i % 20 == 0:
                 print(f'Archived {i}/{len(records)} assets.', flush=True)
-        archive.write(root / 'assets/ASSET_MANIFEST.json', 'ASSET_MANIFEST.json')
+        archive.write(root / 'assets/ASSET_MANIFEST.json', 'assets/ASSET_MANIFEST.json')
     with zipfile.ZipFile(args.output) as archive:
         for record in records:
             value = hashlib.sha256()

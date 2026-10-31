@@ -1,0 +1,88 @@
+{
+  "snapshot_version": "2026.10.31-assets.1",
+  "status": "PASS",
+  "verification_date": "2026-10-31",
+  "archive": {
+    "asset_version": "assets-seed42-v1",
+    "filename": "MFE310TC_Demo_seed42_v1.zip",
+    "bytes": 836936987,
+    "sha256": "3e52249b9081d6799dbe2962625dc7c0aba4a7bb017a37c9a974f084ead26334",
+    "uncompressed_bytes": 900278157,
+    "files": 16,
+    "release_url": "https://github.com/AlexXu23/MFE310TC-CLINC150/releases/tag/assets-seed42-v1",
+    "url": "https://github.com/AlexXu23/MFE310TC-CLINC150/releases/download/assets-seed42-v1/MFE310TC_Demo_seed42_v1.zip"
+  },
+  "public_download_verified": true,
+  "authentication_used_for_download": false,
+  "installation": "Clean extraction of the code ZIP; tools/download_assets.py downloaded the public Release ZIP and installed all 16 verified payloads.",
+  "command": "python demo/demo_inference.py --output .downloads/demo_inference_results.json",
+  "inference": {
+    "kind": "actual_model_inference",
+    "seed": 42,
+    "device": "cuda",
+    "precision": "FP32",
+    "training_performed": false,
+    "threshold_refit": false,
+    "matches_saved_predictions": true,
+    "cases_are_postselected": true,
+    "results": {
+      "clean_continue": {
+        "predictions": [
+          {
+            "row_id": 180,
+            "text": "can you help me find my pone, pease",
+            "true_label": "find_phone",
+            "prediction": "do_you_have_pets",
+            "rejected": true,
+            "distance": 11993.794267188876,
+            "threshold": 4259.277467099221,
+            "matches_frozen_prediction": true
+          },
+          {
+            "row_id": 4883,
+            "text": "what is a normal rseting hart rate",
+            "true_label": "oos",
+            "prediction": "interest_rate",
+            "rejected": true,
+            "distance": 5397.043309375353,
+            "threshold": 4259.277467099221,
+            "matches_frozen_prediction": true
+          }
+        ],
+        "load_seconds": 0.653978599999391
+      },
+      "typo_mix": {
+        "predictions": [
+          {
+            "row_id": 180,
+            "text": "can you help me find my pone, pease",
+            "true_label": "find_phone",
+            "prediction": "find_phone",
+            "rejected": false,
+            "distance": 3152.9804290513503,
+            "threshold": 3574.1670015409263,
+            "matches_frozen_prediction": true
+          },
+          {
+            "row_id": 4883,
+            "text": "what is a normal rseting hart rate",
+            "true_label": "oos",
+            "prediction": "interest_rate",
+            "rejected": false,
+            "distance": 2917.356927320183,
+            "threshold": 3574.1670015409263,
+            "matches_frozen_prediction": true
+          }
+        ],
+        "load_seconds": 0.43934920000174316
+      }
+    }
+  },
+  "dependencies": "Existing recorded follow-up environment; not a fresh dependency installation.",
+  "csv_audit": {
+    "status": "PASS",
+    "rejection_settings": 657,
+    "aggregate_metric_checks": 3930,
+    "classification_groups": 6
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "status": "Local inventory; separate asset archive not yet published",
+  "status": "Full historical local inventory; seed42 demo weights/detectors publicly released; other assets available by owner request or reconstruction.",
   "bytes": 6149396446,
   "files": [
     {
@@ -986,5 +986,6 @@
       "sha256": "2589c2d832e99ec6dcf42f65177d02504cee6ecdafe8490e4be4a2b9f71f4e38",
       "kind": "numeric_cache_or_fitted_model"
     }
-  ]
+  ],
+  "seed42_demo_release_url": "https://github.com/AlexXu23/MFE310TC-CLINC150/releases/tag/assets-seed42-v1"
 }

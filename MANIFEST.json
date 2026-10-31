@@ -1,5 +1,6 @@
 {
   "snapshot": "MFE310TC_Code_Results_20261029",
+  "snapshot_version": "2026.10.31-assets.1",
   "self_exclusion": "MANIFEST.json",
   "files": [
     {
@@ -9,8 +10,18 @@
     },
     {
       "path": "assets/ASSET_MANIFEST.json",
-      "bytes": 43670,
-      "sha256": "729b6d0855b42e611dd8b063bdc06923b738865cf7e8b94e65b5aa53a7100f5d"
+      "bytes": 43862,
+      "sha256": "df8d8fd947e6f94cc1aa886736c6b6ab0fb59ced7f6d8df40f1b96a38e9ce1e3"
+    },
+    {
+      "path": "assets/DEMO_ASSET_MANIFEST.json",
+      "bytes": 3688,
+      "sha256": "ae4eceb04039c83a7adc697ac2973f7217a2847f65b4b0b7be831dc9c153ff61"
+    },
+    {
+      "path": "assets/DEMO_DOWNLOAD.json",
+      "bytes": 456,
+      "sha256": "b29ecb65be473c5bbe173d4bf2e19b3a1595a9abf9c38fd35d3c9c5649cf8af4"
     },
     {
       "path": "BERT_Benefit_Analysis_20261019/analyze_bert_benefit.py",
@@ -6604,8 +6615,8 @@
     },
     {
       "path": "demo/demo_inference.py",
-      "bytes": 5015,
-      "sha256": "e08e3f2f4cf6b97199c03d11027b327a74c225ace84b238a32c5718d9a1e90ae"
+      "bytes": 5234,
+      "sha256": "874d1bff720082ee91f0680e9c8ec0ab6fa58145a6115af151d4420dc704ca09"
     },
     {
       "path": "demo/recorded_demo_inference_results.json",
@@ -6614,13 +6625,13 @@
     },
     {
       "path": "docs/ASSET_ACCESS.md",
-      "bytes": 1532,
-      "sha256": "5e90b18f36a98ac3db287bd40981a386b938fe34e5802cdacb4251be32801c26"
+      "bytes": 10302,
+      "sha256": "83e6608b059561611be09d847289772230b7ae23efbd47d9a06790af9fc89bad"
     },
     {
       "path": "docs/GITHUB_AND_SUBMISSION.md",
-      "bytes": 1458,
-      "sha256": "48b0ec07b2510d0e0ddae489952b72c3dd7310745108cd5a72fd9a63bf05dea2"
+      "bytes": 1793,
+      "sha256": "7bd351a76edd71bef1b7c91b44e19299892aaeaf4e057be1b4c757f06fea0376"
     },
     {
       "path": "docs/PROVENANCE.md",
@@ -6629,8 +6640,8 @@
     },
     {
       "path": "docs/REPRODUCE.md",
-      "bytes": 3965,
-      "sha256": "ed0579f028605c7616e241b78da352add58b31a5f00daeeb90359eafd9051dad"
+      "bytes": 4114,
+      "sha256": "79904658207585223ecff824b970606272f69b11dffed5f3341a8d33218e5259"
     },
     {
       "path": "environment/ENVIRONMENT.md",
@@ -6668,6 +6679,11 @@
       "sha256": "436f975777e756169ff419a75c33b66eae9c2bf7487cec81e302472543ac740d"
     },
     {
+      "path": "qa/asset_inference_verification.json",
+      "bytes": 3087,
+      "sha256": "a6942259106c551dd77b618b345b03e022a492074b844517a24964ef8e4ea703"
+    },
+    {
       "path": "qa/csv_result_verification.txt",
       "bytes": 604,
       "sha256": "dc5e58801fbb26a98fe5751a4902aa3593b003b3b6d753ba608657454739587a"
@@ -6679,8 +6695,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6742,
-      "sha256": "829bb4c35e8e30279584626322df0461966063690c3e778ec93a58f992601739"
+      "bytes": 8157,
+      "sha256": "9651f0e26ec0ca56fb616affd882efddb98cae5cffd93a537380a321fdbde0ed"
     },
     {
       "path": "report_evidence/augmentation_effects_en.png",
@@ -6704,13 +6720,18 @@
     },
     {
       "path": "SUBMISSION_STATUS.json",
-      "bytes": 764,
-      "sha256": "6b8ada79aedc4d0361d8ab4416bc4525d9e9bcf97f5f27cde9ec3b858cfbf2be"
+      "bytes": 1821,
+      "sha256": "a94832cf3ab144a183e137fda91e8268576dd18c8615e460c1a445ba9a1efa13"
     },
     {
       "path": "tools/bundle_assets.py",
-      "bytes": 2351,
-      "sha256": "5a75717f8c4f1843b12e44363253f918d562215e04186347e306df535f1801ff"
+      "bytes": 2358,
+      "sha256": "778f3206ca3f2fe815467f518642295ae087af62d0f42d1f5f6c31340fa4b649"
+    },
+    {
+      "path": "tools/download_assets.py",
+      "bytes": 7638,
+      "sha256": "22cee1212a25c495e0db148d7f220997f31118cc3b18c7b7b5ac1385803163e8"
     },
     {
       "path": "tools/verify_results.py",
@@ -6719,8 +6740,8 @@
     },
     {
       "path": "tools/verify_snapshot.py",
-      "bytes": 1326,
-      "sha256": "077e0e5b225ae8b3a401f9ea74c19886c33a70e48aebb327c50a0aadf944429e"
+      "bytes": 2119,
+      "sha256": "6a6189b1fd7f546990a664a0b88461cdb0d5c4726162f3697b01776b52be108c"
     }
   ]
 }

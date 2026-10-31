@@ -1,13 +1,30 @@
 {
-  "snapshot_date": "2026-10-29",
-  "status": "Code/results published and publicly readable; separate checkpoint access pending",
+  "snapshot_date": "2026-10-31",
+  "status": "Code/results and public seed42 demo asset access verified",
   "repository_url": "https://github.com/AlexXu23/MFE310TC-CLINC150",
-  "commit_sha": "fdd333f78425d1f5147d36483d424f8c5623ec9c",
-  "checkpoint_release_url": null,
+  "checkpoint_release_url": "https://github.com/AlexXu23/MFE310TC-CLINC150/releases/tag/assets-seed42-v1",
   "local_gpu_exception": "User-confirmed in original project documentation; current report states supervisor-confirmed exception.",
-  "remaining": [
-    "Provide access to indexed checkpoints if fresh inference is required; the compact snapshot supports CSV result auditing."
-  ],
+  "remaining": [],
   "visibility": "public",
-  "commit_sha_role": "Original assessed code/results commit; later documentation-only commit is recorded in the accompanying finalization receipt."
+  "snapshot_version": "2026.10.31-assets.1",
+  "updated_date": "2026-10-31",
+  "demo_asset_archive": {
+    "asset_version": "assets-seed42-v1",
+    "filename": "MFE310TC_Demo_seed42_v1.zip",
+    "bytes": 836936987,
+    "sha256": "3e52249b9081d6799dbe2962625dc7c0aba4a7bb017a37c9a974f084ead26334",
+    "uncompressed_bytes": 900278157,
+    "files": 16,
+    "release_url": "https://github.com/AlexXu23/MFE310TC-CLINC150/releases/tag/assets-seed42-v1",
+    "url": "https://github.com/AlexXu23/MFE310TC-CLINC150/releases/download/assets-seed42-v1/MFE310TC_Demo_seed42_v1.zip"
+  },
+  "demo_local_inference": "PASS; four decisions match frozen predictions on RTX 4060 Laptop GPU",
+  "demo_public_download_verified": true,
+  "other_experiment_assets": "Exact historical files available by owner request; full inventory and rebuilding commands documented in docs/ASSET_ACCESS.md.",
+  "validation_record": "qa/asset_inference_verification.json",
+  "original_snapshot_date": "2026-10-29",
+  "demo_download_authentication_required": false,
+  "original_code_results_commit_sha": "fdd333f78425d1f5147d36483d424f8c5623ec9c",
+  "assessed_version": "2026.10.31-assets.1",
+  "assessed_commit_record": "GITHUB_FINALIZATION_RECEIPT.json, distributed beside the assessed code ZIP; kept outside the Git tree to avoid a self-referential commit hash."
 }
